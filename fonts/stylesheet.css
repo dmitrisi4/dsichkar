@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'ttnorm';
+    src: url('TTNorms-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'ttnorm';
+    src: url('TTNorms-Bold.otf');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'ttnorm';
+    src: url('TTNorms-Medium.otf');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'ttnorm';
+    src: url('TTNorms-Light.otf');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'ttnorm';
+    src: url('TTNorms-Italic.otf');
+    font-style: italic;
+    font-weight: 400;
+}
