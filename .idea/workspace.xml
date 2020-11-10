@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3a83841b-4d7a-4c79-a49d-4b1fef41e126" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +44,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pr/moroshka" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -60,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604906664964</updated>
       <workItem from="1604906666029" duration="9194000" />
-      <workItem from="1605006622430" duration="3179000" />
+      <workItem from="1605006622430" duration="4632000" />
     </task>
     <servers />
   </component>
@@ -86,5 +86,9 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="458" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.875@0.25.1440.875" timestamp="1605007461952" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1605010517429">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1605010517429" />
   </component>
 </project>

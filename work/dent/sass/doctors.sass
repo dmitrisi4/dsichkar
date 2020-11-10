@@ -1,0 +1,513 @@
+@import "_vars"
+
+// doctor-inner
+.doctor-inner
+	&__row
+		display: flex
+		@media(max-width: 576px)
+			flex-direction: column
+			align-items: center
+	&__left
+		width: 35.31%
+		@media(max-width: 576px)
+			width: 100%
+	&__right
+		width: 51%
+		margin-left: 30px
+		@media(max-width: 576px)
+			width: 100%
+	&__image
+		border-radius: 12px
+		height: 373px
+		object-fit: cover
+		object-position: right
+		@media(max-width: 576px)
+			height: 240px
+	&__link-wrap
+		margin-top: 30px
+		display: flex
+		align-items: center
+		@media(max-width: 576px)
+			flex-direction: column-reverse
+	&__education
+		margin-top: 30px
+	&__title-block
+		font-size: 18px
+		font-weight: 700
+	&__specialization
+		margin-top: 40px
+	&__certificates
+		margin-top: 35px
+		padding-left: 40px
+		@media(max-width: 576px)
+			padding-left: 0
+	&__certificates-slider
+		margin-top: 25px
+		@media(max-width: 992px)
+			margin: 0 auto
+			margin-top: 25px
+
+// end - doctor-inner
+// info-doctor
+.info-doctor
+	@media(max-width: 576px)
+		font-size: 14px
+	&__name
+		font-size: 36px
+		font-weight: 600
+		@media(max-width: 576px)
+			display: block
+			font-size: 27px
+			margin-top: 10px
+	&__post
+		margin-top: 40px
+		margin-bottom: 0
+		position: relative
+		padding-left: 30px
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 19px
+			height: 19px
+			background-image: url('../img/exp-ico.png')
+	&__adds
+		display: block
+		margin-top: 20px
+		position: relative
+		padding-left: 30px
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 19px
+			height: 21px
+			background-image: url('../img/location-ico.png')
+	&__experience
+		margin-top: 20px
+		position: relative
+		padding-left: 30px
+		&:before
+			content: ''
+			position: absolute
+			top: calc(50% - 9px)
+			left: 0
+			width: 18px
+			height: 18px
+			background-image: url('../img/calendar-icon.png')
+	&__link
+		margin-left: 24px
+		font-size: 14px
+		font-weight: 700
+		color: $c-main
+		@media(max-width: 576px)
+			margin-left: 0
+		&:hover, &:focus
+			color: $c-main
+	&__link-btn
+		margin-top: 20px
+// end - info-doctor
+// education-block
+.education-block
+	padding-top: 35px
+	padding-right: 45px
+	padding-left: 40px
+	padding-bottom: 35px
+	border-radius: 12px
+	background-color: $c-f4f3f2
+	@media(max-width: 576px)
+		padding-right: 20px
+		padding-left: 20px
+	&__list
+		padding-left: 0
+		margin: 0
+		margin-top: 20px
+		list-style: none
+	&__list-item
+		display: flex
+		@media(max-width: 576px)
+			flex-direction: column
+	&__date
+		max-width: 50px
+		width: 100%
+		color: $c-fbaf44
+	&__text
+		margin-left: 20px
+		margin-top: 0
+		@media(max-width: 576px)
+			margin-left: 0
+			font-size: 14px
+// end - education-block
+// specialization-block
+.specialization-block
+	&__list
+		margin-top: 20px
+		list-style: none
+		padding-left: 0
+	&__list-item
+		padding-left: 35px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 5px
+			left: 0
+			width: 16px
+			height: 13px
+			background-image: url('../img/checked-icon.png')
+		&:not(:first-child)
+			margin-top: 10px
+	&__text
+		margin: 0
+// end - specialization-block
+// certificates-slider
+.certificates-slider
+	max-width: 770px
+	@media(max-width: 992px)
+		max-width: 600px
+	img
+		margin: auto 7.5px
+	.slick-arrow
+		transform: translateY(-50%)
+	.slick
+		&-prev
+			left: -65px
+			@media(max-width: 992px)
+				left: -50px
+		&-next
+			right: -65px
+			@media(max-width: 992px)
+				right: -50px
+		&-dots
+			bottom: -55px
+// end - certificates-slider
+// doctors-block
+.doctors-block
+
+// filter-form
+.filter-form
+	&__wrap
+		display: flex
+		justify-content: space-between
+		@media(max-width: 576px)
+			flex-direction: column
+			align-items: center
+	&__select
+		margin-bottom: 10px
+	.button
+		max-width: 260px
+// end - filter-form 
+// doctors-list
+.doctors-list
+	padding-left: 0
+	margin: 0
+	list-style: none
+	&__nav
+		margin-top: 25px
+	&__item
+		&:not(:first-child)
+			margin-top: 20px
+	&__pagination
+		padding: 0
+		margin: 0		
+		margin-top: 25px
+	&__list
+		list-style: none
+		padding-left: 0
+		margin: 0
+		margin-top: 20px
+	&__list-item
+		&:not(:first-child)
+			margin-top: 25px
+// end - doctors-list
+// pagination-page
+.pagination-list
+	list-style: none
+	display: flex
+	justify-content: center
+	padding-left: 0
+	&__link
+		display: block
+		width: 54px
+		height: 40px
+		border-radius: 19px
+		border: 1px solid transparent
+		background-color: transparent
+		text-align: center
+		font-size: 15px
+		line-height: 36px
+		color: $c-main
+		&_active
+			border-color: $c-ebebe9
+			background-color: $c-f4f3f2
+		&:hover, &:focus
+			color: $c-main
+		&:focus
+			border-color: $c-ebebe9
+			background-color: $c-f4f3f2
+// end - pagination-page
+// card-doctor
+.card-doctor
+	border-radius: 12px
+	border: 2px solid $c-edeef2
+	display: flex
+	padding: 25px
+	@media(max-width: 576px)
+		flex-direction: column
+		align-items: center
+	&__info
+		margin-left: 40px
+		width: 65.33%
+		@media(max-width: 576px)
+			width: 100%
+			margin-left: 0
+	&__name
+		display: block
+		font-size: 18px
+		font-weight: 700
+		color: $c-e3802c
+	&__post
+		display: block
+		margin-top: 10px
+	&__location
+		display: block
+		position: relative
+		margin-top: 20px
+		padding-left: 30px
+		&:before
+			content: ''
+			position: absolute
+			top: calc(50% - 10px)
+			left: 0
+			width: 19px
+			height: 21px
+			background-image: url('../img/location-ico.png')
+	&__link-wrap
+		display: flex
+		margin-top: 30px
+		align-items: center
+		width: 100%
+		@media(max-width: 576px)
+			flex-direction: column-reverse
+	&__link-btn
+		margin-top: 15px
+	&__link-more
+		margin-left: 25px
+		font-weight: 700
+		color: $c-main
+		&:hover, &:focus
+			color: $c-main
+		@media(max-width: 576px)
+			margin-left: 0
+// end - card-doctor
+// end - doctors-block
+// type
+.list-type
+	&__list
+		display: flex
+		flex-direction: column
+		list-style: none
+		padding: 0
+		margin: 0
+		margin-top: 20px
+	&__list-item
+		width: 100%
+		&:not(:first-child)
+			margin-top: 25px
+// type-card
+.type-card
+	&__name
+		font-size: 18px
+		font-weight: 700
+		color: $c-e3802c
+	&__info
+		width: 60%
+		margin-left: 30px
+		padding-top: 15px
+		@media(max-width: 576px)
+			width: 100%
+			margin-left: 0
+			font-size: 14px
+	&__text
+		margin-top: 15px
+		margin-bottom: 0
+		line-height: 24px
+	&__date
+		display: block
+		margin-top: 20px
+		font-size: 13px
+		color: $c-888		
+
+.type-card
+	width: 100%
+	display: flex
+	padding: 25px
+	border: 2px solid $c-edeef2
+	border-radius: 12px
+	@media(max-width: 576px)
+		flex-direction: column
+		align-items: center
+	&__image-wrap
+		max-width: 225px
+		width: 100%
+		border-radius: 12px
+		border: 2px solid $c-edeef2
+		background-color: $c-e8e8e8
+	&__image
+		object-fit: cover
+// end - type-card
+// end - type
+
+// doctors-info
+// doctors-info__left
+.doctors-info
+	&__wrap
+		display: flex
+		justify-content: space-between
+		@media(max-width: 767px)
+			flex-direction: column
+	&__left
+		width: 25.287%
+		text-align: center
+		@media(max-width: 767px)
+			width: 100%
+	&__image
+		border-radius: 5px
+	&__nav
+		display: flex
+		flex-direction: column
+		margin-top: 15px
+		.button:not(:first-child)
+			margin-top: 10px
+		@media(max-width: 767px)
+			align-items: center
+	&__adds
+		display: inline-block
+		position: relative
+		padding-left: 20px
+		margin-top: 15px
+		&:before
+			content: ''
+			position: absolute
+			top: 3px
+			left: 0
+			width: 10px
+			height: 12px
+			background-image: url('../img/adds-icon.png')
+	.prices-table
+		margin-top: 0
+		&__title
+			display: block
+			margin-top: 15px
+		&__cost
+			padding-right: 40px
+		&__service
+			padding-left: 0
+// end - doctors-info__left
+// doctors-info__right
+.doctors-info
+	&__right
+		width: 71.839%
+		padding-top: 20px
+		@media(max-width: 767px)
+			width: 100%
+	&__text
+		margin-top: 10px
+		margin-bottom: 0
+	&__title
+		margin-top: 25px
+
+		&--mt-35
+			margin-top: 35px
+		&--mt-30
+			margin-top: 30px
+// education-list
+.education-list
+	margin: 0
+	padding-left: 0
+	list-style: none
+	@media(max-width: 767px)
+		max-width: 600px
+		width: 100%
+		margin: 0 auto
+	&__item
+		display: flex
+		flex-wrap: wrap
+		align-items: baseline
+		@media(max-width: 767px)
+			flex-direction: column
+			margin-top: 10px
+	&__year
+	&__text
+		max-width: 525px
+		margin: 0
+		margin-top: 15px
+		margin-left: 30px
+		@media(max-width: 1200px)
+			max-width: 420px
+		@media(max-width: 767px)
+			max-width: 525px
+			margin-top: 10px
+			margin-left: 15px
+// end - education-list
+// skills-list
+.skills-list
+	padding: 0
+	margin: 0
+	list-style: none
+	padding-top: 15px
+	max-width: 600px
+	width: 100%
+	margin: 0 auto
+	&__item
+		position: relative
+		padding-left: 36px
+		&:not(:first-child)
+			margin-top: 10px
+		&:before
+			content: ''
+			position: absolute
+			top: 5px
+			left: 0
+			width: 12px
+			height: 10px
+			background-image: url('../img/tick-img.png')
+// end - skills-list
+// end - doctors-info__right
+// reviews-block
+.reviews-block
+	&__button
+		margin-top: 30px	
+	
+
+// reviews-list
+.reviews-list
+	list-style: none
+	padding: 0
+	margin: 0
+	&__item
+		margin-top: 35px
+		@media(max-width: 992px)
+			margin-top: 25px
+// end - reviews-list
+// feedback-block
+.feedback-block
+	&__head
+		color: $c-00b2de
+	&__topic
+		display: block
+		font-size: 18px
+		font-weight: 700
+		margin-top: 5px
+		margin-bottom: 0
+	&__comment
+		margin: 0
+		margin-top: 5px
+// end - feedback-block
+
+
+
+// end - reviews-block
+// end - doctors-info

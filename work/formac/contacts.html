@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Главная</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/grid.css">
+	<link rel="stylesheet" href="assets/css/global.css">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/slick-theme.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/media.css">
+</head>
+<body>
+	<header>
+		<div class="top-line">
+			<div class="container">
+				<div class="time"><img src="assets/img/clock.png" alt="clock"><span>Ежедневно C 10:00 ДО 21:00</span></div>
+				<div class="phone"><img src="assets/img/phone.png" alt="phone"><a href="tell:8 (499) 955-59-55">8 (499) 955-59-55</a></div>
+				<div class="call-back"><a href="#">Заказать обратный звонок</a></div>
+			</div>
+		</div>
+		<div class="line">
+			<div class="container">
+				<div class="logo"><a href="#"><img src="assets/img/logo.png" alt="logo"></a></div>
+				<div class="burger">
+					<button>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a  href="#">РЕМОНТ</a></li>
+						<li><a href="#">ДИЗАЙН ИНТЕРЬЕРОВ</a></li>
+						<li><a href="#">ГАЛЕРЕЯ РАБОТ </a></li>
+						<li><a href="#">ОТЗЫВЫ </a></li>
+						<li><a class="active" href="#">КОНТАКТЫ</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="about">
+		<div class="bread-crumbs">
+			<div class="container">
+				<a href="#">ГЛАВНАЯ</a>
+				<span>КОНТАКТЫ</span>
+			</div>
+		</div>
+		<h1 class="block-title">КОНТАКТЫ</h1>
+		<div class="map" id="map">
+			<div class="container rel">
+				<div class="plashka">
+					<p><span>Время работы офиса:</span> <br>Пн-Вс с 10:00 до 21:00 <br>Мы доступны для звонков <br>ежедневно с 10:00 до 21:00 <br><span>Адрес: </span><br>г. Москва, ул. Зоологическая, дом 22 <br><span>E-mail:</span> <br>info@msk-stroi.com <br><span>Телефон:</span> <br>8 (499) 955-59-54</p>
+					<div class="call-btn"><a href="#">заказать звонок</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="logo"><a href="#"><img src="assets/img/logo-bot.png" alt="logo"></a></div>
+			<div class="formac"><p>Фомас © 2017 Все права защищены.</p></div>
+			<div class="bot-right">
+				<div class="phone"><img src="assets/img/phone.png" alt="phone"><a href="tell:8 (499) 955-59-55">8 (499) 955-59-55</a></div>
+				<div class="call-back"><a href="#">Заказать обратный звонок</a></div>
+			</div>
+		</div>
+	</footer>
+	<script src="assets/js/jquery-3.1.1.min.js"></script>
+	<script src="assets/js/jquery.fancybox.pack.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+	<script type="text/javascript">
+		var myMap; 
+		ymaps.ready(
+			function () { 
+			var myMap = new ymaps.Map('map', { 
+				center: [55.766121, 37.582529], 
+				zoom: 15
+			}); 
+			var myPlacemark = new ymaps.Placemark( 
+				[55.766121, 37.582529] , { 
+
+				}); 
+
+			myMap.geoObjects.add(myPlacemark); 
+		
+		}
+		); 
+		
+	</script>
+</body>
+</html>

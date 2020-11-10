@@ -1,0 +1,229 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	//
+		
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.main-board
+		background-image: url('../img/first-bg-mobile.jpg')
+		.nav-wrap
+			display: none
+		.btn-burger
+			display: block
+			width: 40px
+			background-color: transparent
+			padding: 0 5px
+			border: 0
+			span
+				display: block
+				margin: 7px 0 5px
+				width: 100%
+				background-color: #fff
+				height: 2px
+		.header
+			padding-top: 30px
+			&__wrap
+				align-items: center
+	.nav-wrap
+		background-color: #fff
+		position: relative
+		padding-bottom: 60px
+		&__top
+			display: flex
+		.logo
+			position: relative
+			display: block
+			width: 200px
+			height: 80px
+			margin: 0 auto
+			img
+				position: absolute
+				max-width: 200px
+				width: 100%
+				height: auto
+				bottom: 0
+				left: 0
+		.btn-burger
+			position: absolute
+			right: 0
+			display: block
+			margin-right: 20px
+			align-self: flex-end
+			span
+				background-color: $color-main
+		.main-nav
+			margin-top: 50px
+			display: flex
+			flex-direction: column
+			align-items: center
+			a
+				font-size: 28px
+				margin: 10px 0
+				text-decoration: none
+				color: $color-main
+				font-family: 'Old Standard TT', serif
+				transition: all .2s
+				&:hover
+					color: #898686
+					transition: all .2s
+
+	.gallery
+		.col-wrap
+			display: flex
+			flex-direction: column-reverse
+		.link-gallery
+			position: relative
+			background-image: url('../img/feature3.jpg')
+			background-repeat: no-repeat
+			background-size: cover
+			height: 250px
+			span
+				display: flex
+				align-items: center
+				justify-content: center
+				background-color: rgba(15, 180, 186, 0.7)
+				width: 100%
+				height: 100%
+
+	.services
+		background-position: center
+
+	.header__logo
+		max-width: 240px
+		margin: 0 auto
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.gallery
+		.link-gallery
+			height: 250px
+	.services
+		position: relative
+		padding-top: 970px
+		padding-bottom: 0
+		&__box
+			position: absolute
+			bottom: 0
+			left: 0
+			max-width: 100%
+			> img
+				display: block
+	.about
+		&__wrap
+			margin: 0
+			padding: 0
+			> img
+				display: block
+		&__box
+			padding-right: 15px
+			padding-left: 20px
+			margin-left: 0
+			max-width: 100%
+
+@media only screen and (max-width : 767px)
+	.gallery .link-gallery
+		height: 195px
+	.services
+		padding-top: 885px
+		background-image: none
+
+	.footer
+		padding-top: 20px
+		&__wrap
+			flex-direction: column
+			.social-networks
+				justify-content: center
+			.section-title
+				margin-top: 15px
+	.nav-wrap
+		.social-networks
+			margin-top: 10px
+			display: flex
+			flex-direction: row
+			justify-content: center
+			&__fb, &__inst, &__pinterest
+				margin: 0 5px
+			&__fb
+				background-image: url('../img/facebook.svg')
+				background-size: cover
+			&__inst
+				background-image: url('../img/instagram.svg')
+				background-size: cover
+			&__pinterest
+				background-image: url('../img/pinterest.svg')
+				background-size: cover
+
+@media only screen and (max-width : 480px)
+	.services
+		padding-top: 775px
+	.gallery .link-gallery
+		height: 132px
+	.main-board
+		background-image: url('../img/first-bg.jpg')
+		background-position: center
+	.header__logo, .nav-wrap .logo img
+		max-width: 160px
+		left: calc(50% - 80px)
+
+	.nav-wrap .main-nav a
+		font-size: 24px
+
+	.about p, .contact p, .sub-title
+		font-size: 13px
+	.services__box p
+		font-size: 13px
+		max-width: 310px
+	
+	.section-title
+		font-size: 28px
+
+@media only screen and (max-width : 375px)
+	.services
+		padding-top: 715px
+	.gallery .link-gallery
+		height: 115px
+		span
+			font-size: 26px
+@media only screen and (max-width : 320px)
+	.gallery .link-gallery
+		height: 95px
+
+
+
+
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1600px)
+	//
+

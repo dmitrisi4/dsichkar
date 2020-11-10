@@ -1,0 +1,179 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-bullet {
+  background-image: url(sprite.png);
+  background-position: -523px -446px;
+  width: 8px;
+  height: 10px;
+}
+.icon-find {
+  background-image: url(sprite.png);
+  background-position: -505px -446px;
+  width: 18px;
+  height: 18px;
+}
+.icon-foot-logo {
+  background-image: url(sprite.png);
+  background-position: -204px -279px;
+  width: 190px;
+  height: 40px;
+}
+.icon-l1 {
+  background-image: url(sprite.png);
+  background-position: 0px -390px;
+  width: 82px;
+  height: 90px;
+}
+.icon-l1h {
+  background-image: url(sprite.png);
+  background-position: -408px -168px;
+  width: 82px;
+  height: 90px;
+}
+.icon-l2 {
+  background-image: url(sprite.png);
+  background-position: -163px -390px;
+  width: 81px;
+  height: 90px;
+}
+.icon-l2h {
+  background-image: url(sprite.png);
+  background-position: -82px -390px;
+  width: 81px;
+  height: 90px;
+}
+.icon-left {
+  background-image: url(sprite.png);
+  background-position: -311px -319px;
+  width: 43px;
+  height: 43px;
+}
+.icon-link {
+  background-image: url(sprite.png);
+  background-position: -394px -279px;
+  width: 30px;
+  height: 35px;
+}
+.icon-lock {
+  background-image: url(sprite.png);
+  background-position: -531px -446px;
+  width: 7px;
+  height: 9px;
+}
+.icon-logo {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 505px;
+  height: 168px;
+}
+.icon-right {
+  background-image: url(sprite.png);
+  background-position: -268px -319px;
+  width: 43px;
+  height: 43px;
+}
+.icon-s1 {
+  background-image: url(sprite.png);
+  background-position: -244px -390px;
+  width: 67px;
+  height: 75px;
+}
+.icon-s1h {
+  background-image: url(sprite.png);
+  background-position: -311px -390px;
+  width: 67px;
+  height: 75px;
+}
+.icon-s2 {
+  background-image: url(sprite.png);
+  background-position: -378px -390px;
+  width: 67px;
+  height: 75px;
+}
+.icon-s2h {
+  background-image: url(sprite.png);
+  background-position: -505px 0px;
+  width: 67px;
+  height: 75px;
+}
+.icon-s3 {
+  background-image: url(sprite.png);
+  background-position: -505px -75px;
+  width: 67px;
+  height: 75px;
+}
+.icon-s3h {
+  background-image: url(sprite.png);
+  background-position: -505px -150px;
+  width: 67px;
+  height: 75px;
+}
+.icon-s4 {
+  background-image: url(sprite.png);
+  background-position: -505px -225px;
+  width: 67px;
+  height: 75px;
+}
+.icon-s4h {
+  background-image: url(sprite.png);
+  background-position: -505px -300px;
+  width: 67px;
+  height: 75px;
+}
+.icon-s5 {
+  background-image: url(sprite.png);
+  background-position: -505px -375px;
+  width: 64px;
+  height: 71px;
+}
+.icon-s5h {
+  background-image: url(sprite.png);
+  background-position: -204px -319px;
+  width: 64px;
+  height: 71px;
+}
+.icon-st1 {
+  background-image: url(sprite.png);
+  background-position: -102px -279px;
+  width: 102px;
+  height: 111px;
+}
+.icon-st1h {
+  background-image: url(sprite.png);
+  background-position: -102px -168px;
+  width: 102px;
+  height: 111px;
+}
+.icon-st2 {
+  background-image: url(sprite.png);
+  background-position: -306px -168px;
+  width: 102px;
+  height: 111px;
+}
+.icon-st2h {
+  background-image: url(sprite.png);
+  background-position: 0px -279px;
+  width: 102px;
+  height: 111px;
+}
+.icon-st3 {
+  background-image: url(sprite.png);
+  background-position: 0px -168px;
+  width: 102px;
+  height: 111px;
+}
+.icon-st3h {
+  background-image: url(sprite.png);
+  background-position: -204px -168px;
+  width: 102px;
+  height: 111px;
+}

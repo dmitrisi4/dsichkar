@@ -1,0 +1,86 @@
+@import "vars"
+
+// reviews-page
+.reviews-page
+	&__list
+		list-style: none
+		padding: 0
+		margin: 0
+	&__content
+		background-color: transparent
+		margin-top: 25px
+// end - reviews-page
+
+// directions
+.directions
+	&__list
+		display: flex
+		list-style: none
+		padding: 0
+		margin: 0
+		margin-top: 15px
+	&__list-item
+		position: relative
+		padding-left: 35px
+		&:not(:first-child)
+			margin-left: 25px
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: calc(50% - 6px)
+			width: 16px
+			height: 13px
+			background-image: url(../img/checked-icon.png)			
+// end - directions
+// card-review
+.card-review
+	background-color: $c-fffbf7
+	padding: 35px
+	padding-right: 30px
+	border-radius: 12px
+	@media(max-width: 576px)
+		padding: 20px
+	&__user-data
+		margin-top: 40px
+		font-size: 13px
+		font-weight: 600
+		color: $c-e3802c
+		@media(max-width: 576px)
+			margin-top: 10px
+	&__title
+		display: block
+		font-size: 18px
+		font-weight: 700
+		margin-top: 5px
+	&__text
+		margin-top: 20px
+		margin-bottom: 0
+		line-height: 24px
+	&__top
+		display: flex
+		align-items: center
+	&__info-doctor
+		margin-left: 25px
+		display: flex
+		flex-direction: column
+	&__d-name
+		color: $c-e3802c
+		font-weight: 700
+	&__post
+		font-size: 13px
+// end - card-review
+// reviews-list
+.reviews-list
+	&__pagination
+		margin-top: 40px
+		margin-bottom: 0
+	.reviews-page__list
+		margin-top: 45px
+		@media(max-width: 576px)
+			margin-top: 25px
+	.reviews-page__list-item
+		&:not(:first-child)
+			margin-top: 30px
+
+// end - reviews-list

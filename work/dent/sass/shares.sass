@@ -1,0 +1,153 @@
+@import "vars"
+
+// all-shares
+.all-shares
+	&__list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		margin: 0
+		padding: 0
+		list-style: none
+		@media(max-width: 576px)
+			justify-content: center
+	&__list-item
+		max-width: 360px
+		width: 100%
+		margin-top: 30px
+		@media(max-width: 992px)
+			max-width: 340px
+	&__link
+		&:hover, &:focus
+			text-decoration: none
+
+// end - all-shares
+
+// shares-item
+.shares-item
+	display: block
+	max-width: 360px
+	width: 100%
+	padding-top: 35px
+	padding-bottom: 35px
+	padding-right: 10px
+	background-repeat: no-repeat
+	background-size: cover
+	border-radius: 10px
+	&__title
+		position: relative
+		padding-left: 60px
+		display: block
+		max-width: 205px
+		font-size: 24px
+		font-weight: 700
+		text-transform: uppercase
+		color: $c-fff
+		&:before
+			content: ''
+			position: absolute
+			top: 5px
+			left: 0
+			width: 44px
+			height: 50px
+			background-image: url("../img/denture-icon.png")
+	&__text
+		margin-top: 15px
+		margin-bottom: 0
+		padding-left: 60px
+		max-width: 285px
+		font-size: 16px
+		color: $c-fff
+		padding-left: 0
+	&__content
+		padding-left: 25px
+	&__cost-line
+		display: flex
+		align-items: center
+		max-width: 220px
+		padding-left: 85px
+		margin-top: 20px
+		width: 100%
+		height: 35px
+		background-color: $c-fff
+		border-radius: 0 17px 17px 0
+		@media(max-width: 992px)
+			margin-top: 10px
+	&__cost
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+		color: $c-e3802c
+		margin: 0
+	&_orange
+		background-image: url('../img/discounts-img-orange.png')		
+	&_pink
+		background-image: url('../img/discounts-img-pink.png')
+		.shares-item__cost
+			color: $c-e02659
+	&_blue
+		background-image: url('../img/discounts-img-blue.png')
+		.shares-item__cost
+			color: $c-4784e6
+	&_red
+		background-image: url('../img/discounts-img-red.png')
+		.shares-item__cost
+			color: $c-e13127
+// end - shares-item
+
+// shares-inner
+.shares-inner
+	&__text
+		margin-top: 30px
+		margin-bottom: 0
+		line-height: 24px
+	&__time-procedure
+		margin-top: 30px
+	&__list
+		padding-left: 0
+		margin: 0
+		margin-top: 25px
+		list-style: none
+	&__list-item
+		position: relative
+		padding-left: 35px
+		@media(max-width: 576px)
+			padding-left: 20px
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: calc(50% - 2px)
+			width: 4px
+			height: 4px
+			border-radius: 50%
+			background-color: $c-e27921
+		&:not(:first-child)
+			margin-top: 10px
+
+.time-procedure
+	border-top: 2px solid $c-e27921
+	border-bottom: 2px solid $c-e27921
+	padding-top: 15px
+	padding-bottom: 12px
+	&__time-wrap
+		position: relative
+		padding-left: 60px
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			width: 42px
+			height: 42px
+			background-image: url('../img/clock-icon.png')
+	&__time
+		font-size: 18px
+		font-weight: 600
+		margin: 0
+	&__info
+		margin: 0
+		font-size: 13px
+		color: $c-636363
+// end - shares-inner

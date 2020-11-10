@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,700i,800&amp;subset=cyrillic" rel="stylesheet">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+<body>
+	<div class="arow-top">
+		<button>
+			<img src="img/arow-top.png" alt="img">
+		</button>
+	</div>
+	<header class="header">
+		<div class="container">
+			<div class="header__logo">
+				<a href="#"><img src="img/logo.png" alt="logo"></a>
+			</div>
+			<div class="header__nav">
+				<ul>
+					<li><a href="#">Доставка </a>
+						<ul class="under-menu">
+							<li><a href="#">Меню</a></li>
+							<li><a href="#">Концепция</a></li>
+							<li><a href="#">Правила ресторана</a></li>
+							<li><a href="#">Новости и акции</a></li>
+							<li><a href="#">Обратная связь</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Ресторан</a>
+						<ul class="under-menu">
+							<li><a href="#">Меню</a></li>
+							<li><a href="#">Условия доставки</a></li>
+						</ul>
+					</li>
+				</ul>
+				<a href="#"><img src="img/cab-ico.png" alt="cab"></a>
+				<a href="#"><span>25</span><img src="img/cart-ico.png" alt="cab"><b>5 460Р</b></a>
+			</div>
+			<div class="header__burger">
+				<button>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+			<div class="header__contacts">
+				<p>
+					<span>Доставка</span>
+					<a href="tel:8 (347) 216 77 88">8 (347) 216 77 88</a>
+				</p>
+				<p>
+					<span>Ресторан</span>
+					<a href="tel:8 (347) 299 59 55">8 (347) 299 59 55</a>
+				</p>
+			</div>
+		</div>
+	</header>
+
+	<main class="page page--basket-checkout">
+		<div class="container">
+			<h1 class="page-title">Корзина</h1>
+			<section class="page__content">
+				<h3>Оформление заказа</h3>
+				<div class="row">
+					<div class="col-lg-3 col-lg-push-9">
+						<div class="basket-checkout__order basket-checkout__order--right">
+							<form>
+								<p>Товаров на:<span>1240 ₽</span></p>
+								<p>Доставка:<span>0 ₽</span></p>
+								<p>Итого:<span>1240 ₽</span></p>
+
+								<label>
+									<input type="checkbox">
+									<span>я соглашаюсь с правилами доставки и соглашением на обработку персональных данных</span>
+								</label>
+
+								<button class="btn">Оформить</button>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-9 col-lg-pull-3">
+						<div class=" basket-checkout">
+
+							<form>
+								<div class="basket-step basket-checkout__order">
+									<p>Товаров на:<span>1240 ₽</span></p>
+									<p>Доставка:<span>0 ₽</span></p>
+									<p>Итого:<span>1240 ₽</span></p>
+									<p><button class="btn">Оформить</button></p>
+								</div>
+
+								<div class="basket-step basket-step--1">
+									<div class="basket-step__title">
+										<span>1 Выберите способ оплаты</span>
+									</div>
+
+									<div class="basket-step__content">
+										<div class="payment-wrap">
+
+											<div class="payment-item">
+												<input id="hard-cash" class="radio" type="radio" name="payment" checked />
+												<label for="hard-cash">Наличные</label>
+
+											</div>
+											<div class="payment-item">
+												<input id="online-payment" class="radio" type="radio" name="payment" />
+												<label for="online-payment">Банковская карта онлайн</label>
+											</div>
+											<div class="payment-item">
+												<input id="payment-card" class="radio" type="radio" name="payment" />
+												<label for="payment-card">Банковская карта у курьера</label>
+											</div>
+										</div>
+										<div class="basket-step__next">
+											<button class="btn">Далее</button>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="basket-step basket-step--2">
+									<div class="basket-step__title">
+										<span>2 Выберите район доставки</span>
+									</div>
+
+									<div class="basket-step__content">
+										<div class="payment-wrap">
+											<input id="pickup" class="radio" type="radio" name="delivery" checked />
+											<label for="pickup">Самовывоз (50 лет Октября, 105)</label>
+											<input id="delivery-to" class="radio" type="radio" name="delivery" />
+											<label for="delivery-to">Доставка до адреса</label>
+										</div>
+										<div class="basket-step__next">
+											<button class="btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="basket-step basket-step--3">
+									<div class="basket-step__title">
+										<span>3 Заполнить контактные данные</span>
+									</div>
+
+									<div class="basket-step__content">
+										<div class="payment-wrap">
+											<p><span>*</span> ФИО</p>
+											<input type="text" required>
+											<p><span>*</span> E-mail</p>
+											<input type="text" required>
+											<p><span>*</span> Телефон</p>
+											<input type="text" required>
+											<p>Комментарии</p>
+											<textarea name="" id=""></textarea>
+										</div>
+										<div class="basket-step__next">
+											<button class="btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="basket-step basket-step--4">
+									<div class="basket-step__title">
+										<span>4 Товары в заказе</span>
+									</div>
+
+									<div class="basket-step__content">
+										<div class="payment-wrap order-goods">
+
+											<div class="order-goods__item">
+												<img src="img/img-small-product.jpg" alt="image">
+												<div class="order-goods__info">
+													<span>Пиво BeerBerry Lager</span>
+													<p>1000мл<span>520 ₽</span></p>
+													<p>Упаковка<span>100 ₽</span></p>
+												</div>
+											</div>
+
+											<div class="order-goods__item">
+												<img src="img/img-small-product-2.jpg" alt="image">
+												<div class="order-goods__info">
+													<span>Пиво BeerBerry Season</span>
+													<p>1000мл<span>520 ₽</span></p>
+													<p>Упаковка<span>100 ₽</span></p>
+												</div>
+											</div>
+
+										</div>
+										<div class="basket-step__next">
+											<button class="btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__logo">
+				<a href="#">
+					<img src="img/logo.png" alt="logo">
+				</a>
+				<div class="footer__soc">
+					<p>в социальных сетях</p>
+					<a href="#"><img src="img/soc.png" alt="ico"></a>
+					<a href="#"><img src="img/soc1.png" alt="ico"></a>
+					<a href="#"><img src="img/soc2.png" alt="ico"></a>
+				</div>
+			</div>
+			<div class="footer__contacts">
+				<p>
+					<span>Доставка</span>
+					<a href="tel:8 (347) 216 77 88">8 (347) 216 77 88</a>
+				</p>
+				<p>
+					<span>Ресторан</span>
+					<a href="tel:8 (347) 299 59 55">8 (347) 299 59 55</a>
+				</p>
+			</div>
+			<div class="footer__nav">
+				<ul>
+					<h6>Ресторан</h6>
+					<li><a href="#">Меню</a></li>
+					<li><a href="#">Концепция</a></li>
+					<li><a href="#">Правила ресторана</a></li>
+					<li><a href="#">Новости и акции</a></li>
+					<li><a href="#">Обратная связь</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul>
+					<h6>Доставка</h6>
+					<li><a href="#">Меню</a></li>
+					<li><a href="#">Условия доставки</a></li>
+				</ul>
+			</div>
+			<div class="footer__bot">
+				<p>© 2013-2017. Создание сайта: <a href="#">«Экспресс лаб»</a></p>
+				<a href="#">Политика конфиденциальности</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
+
+
+

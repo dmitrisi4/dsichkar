@@ -1,0 +1,233 @@
+/*Global*/
+
+* {
+	color: #000;
+}
+
+button:focus {
+outline: none;
+}
+
+.info-product__total button:hover, .item__price button:hover {
+	cursor: pointer;
+	background-color: #ececec;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*Global - end*/
+
+.delivery-item {
+	padding-bottom: 85px;
+}
+
+.page h1 {
+	margin-bottom: 40px;
+	font-size: 60px;
+	font-weight: 300;
+	margin-top: 0;
+}
+
+.delivery-item__info {
+	min-height: 513px;
+	position: relative;
+}
+
+.delivery-item__info> b {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.delivery-item__info > p {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.delivery-item__info > span {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.delivery-item__info h3{
+	margin-bottom: 30px;
+	font-size: 35px;
+	font-weight: 400;
+	margin-top: 0;
+	line-height: 35px;
+}
+
+.info-product__price {
+	display: block;
+	font-size: 30px;
+	line-height: 30px;
+	position: relative;
+	margin-top: -15px;	
+	font-weight: 300;
+	font-style: normal;
+}
+
+.info-product__price:before {
+	display: inline-block;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #d6d6d6;
+}
+
+.info-product__total {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.info-product__total:before {
+	display: inline-block;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #d6d6d6;
+}
+
+.info-product__total span {
+	display: block;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.total__price {
+	display: inline-block;
+	font-size: 48px;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.info-product__total button {
+	float: right;
+	position: relative;
+	display: block;
+	max-width: 166px;
+	width: 100%;
+	height: 56px;
+	font-size: 12px;
+	font-weight: 400;
+	background-color: #f9f9f9;
+	border: 1px solid #e0e0e0;
+}
+
+
+
+
+
+.info-product__total button:before {
+	position: absolute;
+	top: calc(50% - 11.5px);
+	left: 24px;
+	content: '';
+	width: 24px;
+	height: 23px;
+	background-image: url(../img/icon-basket.png);
+}
+
+.link-backbeer {
+	display: block;
+	margin-top: 27px;
+	max-width: 143px;
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+	border: 3px solid #000000;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 50px;
+	text-align: center;
+	color: #000;
+}
+
+.link-backbeer:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+
+/*section-recommendation*/
+
+.section-recommendation {
+	text-align: center;
+}
+
+
+
+h2.block-title--line{
+	position: relative;
+	font-size: 36px;
+}
+
+h2.block-title--line:before {
+	position: absolute;
+	right: 75%;
+	top: 50%;
+	display: inline-block;
+	content: '';
+	width: 25%;
+	height: 1px;
+	background-color: #d6d6d6;
+}
+
+h2.block-title--line:after { 
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	content: '';
+	width: 25%;
+	height: 1px;
+	left: 75%;
+	background-color: #d6d6d6;
+}
+
+.recomendation-item {
+	border: 1px solid #e9e9e9;
+	text-align: left;
+}
+ 
+.recomendation-item__price{
+	position: relative;
+	min-height: 155px;
+	padding: 20px;
+}
+
+.recomendation-item__price i {
+	display: block;
+	font-size: 18px;
+	font-weight: 400;
+	min-height: 60px;
+	font-style: normal;
+}
+
+.recomendation-item__bot p {
+	display: inline-block;
+	margin-right: 25px;
+	font-size: 18px;
+	vertical-align: middle;
+	font-weight: 400;
+}
+
+.recomendation-item__bot p  span{
+	display: block;
+	margin-bottom: 5px;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.recomendation-item__price button {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 59px;
+	width: 100%;
+	height: 56px;
+	background: #f9f9f9 url(../img/icon-basket.png) 50% 50% no-repeat;
+	border: 1px solid #e9e9e9;
+}
+

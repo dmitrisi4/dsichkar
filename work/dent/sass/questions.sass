@@ -1,0 +1,310 @@
+@import "vars"
+
+.questions-answers
+	padding-top: 5px
+	&__select-section
+		margin-top: 25px
+// select-section
+.select-section
+	padding-top: 20px
+	padding-right: 20px
+	padding-bottom: 15px
+	padding-left: 20px
+	background-color: $c-f4f3f2
+	border-radius: 5px
+	&__title
+		font-size: 18px
+		font-weight: 700
+	&__form
+	&__radio-wrap
+		display: flex
+		flex-wrap: wrap
+		margin-top: 15px
+		padding-right: 0
+		@media(max-width: 767px)
+			flex-direction: column
+		.radio
+			max-width: 220px
+			width: 100%
+			margin-bottom: 10px	
+			&_ml30
+				margin-left: 30px
+				@media(max-width: 576px)
+					margin-left: 0
+
+	&__search
+		display: flex
+		margin-top: 15px
+		@media(max-width: 767px)
+			flex-direction: column
+			.select-section__button
+				margin-top: 15px
+				margin-left: 0
+				max-width: 100%
+
+	&__button
+		margin-left: 10px
+
+// end - select-section
+
+// radio
+.radio input
+	position: absolute
+	z-index: -1
+	opacity: 0
+	margin: 10px 0 0 7px
+
+.radio__text
+	position: relative
+	padding: 0 0 0 25px
+	cursor: pointer
+
+.radio__text:before
+	content: ''
+	position: absolute
+	top: 2px
+	left: 0
+	width: 16px
+	height: 16px
+	border: 1px solid $c-e5e5e5
+	border-radius: 50%
+	background: #fff
+
+.radio__text:after
+	content: ''
+	position: absolute
+	top: 6px
+	left: 4px
+	width: 8px
+	height: 8px
+	border-radius: 50%
+	background: $c-f79637
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.5)
+	opacity: 0
+	transition: .2s
+.radio input:checked + .radio__text:after
+	opacity: 1
+// end - radio
+
+// question-page
+.question-page
+	&__query-box
+	&__wrapper
+		margin-top: 30px
+		@media(max-width: 1200px)
+			flex-direction: column
+	&__left
+		width: 28.73%
+		@media(max-width: 1200px)
+			width: 100%
+	&__right
+		width: 68.96%
+		@media(max-width: 1200px)
+			width: 100%
+	&__issues
+		margin-top: 50px
+
+.topical-issues
+	margin-top: 40px
+	&__item
+		&:not(:first-child)
+			margin-top: 15px
+
+// issues-item
+.issues-item
+	border: 1px solid $c-e5e5e5
+	border-radius: 5px
+	padding-top: 23px
+	padding-right: 20px
+	padding-bottom: 25px
+	padding-left: 20px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	color: $c-main
+	&:hover, &:focus
+		text-decoration: none
+		color: $c-main
+		box-shadow: 0 3px 7px rgba(0,0,0,.16)
+	&__title
+		font-size: 18px
+		font-weight: 700
+		color: $c-e3802c
+		@media(max-width: 767px)
+			display: block
+			text-align: center
+			@media(max-width: 576px)
+				text-align: left
+	&__text
+		line-height: 24px
+		margin-top: 5px
+		margin-bottom: 0
+		@media(max-width: 767px)
+			margin-top: 10px
+	@media(max-width: 767px)
+		flex-direction: column
+// end - issues-item
+// end - question-page
+
+// question-inner
+
+.question-inner
+	&__top-row
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		@media(max-width: 576px)
+			flex-direction: column
+	&__foto-wrapper
+		background-color: #fff
+		margin-right: 20px
+	&__content
+		padding: 35px
+		@media(max-width: 576px)
+			padding: 15px
+		&--first 
+			width: 100%
+			max-width: 455px
+			padding-right: 20px
+			background-color: $c-f4f3f2
+			border-radius: 12px
+			position: relative
+			z-index: 0
+			@media(max-width: 992px)
+				max-width: 430px
+			@media(max-width: 576px)
+				margin-top: 15px
+		&--second
+			margin-top: 30px
+			background-color: $c-fffbf7
+			border-radius: 12px
+			@media(max-width: 576px)
+				margin-top: 15px
+	&__title
+		font-size: 16px
+		font-weight: 700
+	&__text
+		line-height: 24px
+		margin: 0
+		margin-top: 20px
+	&__tags
+		margin-top: 20px
+	&__form-question
+		margin-top: 40px
+	&__right
+		width: 100%
+		max-width: 455px
+
+	.form-question
+		@media(max-width: 576px)
+			padding-left: 10px
+			padding-right: 10px
+		
+// card-doc
+.card-doc
+	display: flex
+	flex-direction: column
+	align-items: center
+	max-width: 270px
+	width: 100%
+	border-radius: 12px
+	border: 2px solid $c-edeef2
+	padding: 30px
+	@media(max-width: 576px)
+		max-width: 100%
+	&__title
+		margin-top: 10px
+		line-height: 24px
+		max-width: 190px
+		font-size: 18px
+		font-weight: 700
+		text-align: center
+		color: $c-e3802c
+	&__post
+		margin-top: 5px
+	&__location
+		margin-top: 10px
+		padding-left: 35px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			display: block
+			top: 0
+			left: 0
+			width: 19px
+			height: 21px
+			background-image: url('../img/location-ico.png')
+	&__link
+		margin-top: 30px
+	&__link-info
+		display: block
+		margin-top: 20px
+		font-weight: 700
+		color: $c-main
+		&:hover
+			text-decoration: underline
+			color: $c-main
+		&:focus
+			text-decoration: none
+			color: $c-main
+// end - card-doc
+// tags
+.tags
+	display: flex
+	align-items: center
+	&__tags-list
+		display: flex
+		list-style: none
+		padding: 0
+		margin: 0
+		padding-left: 20px
+	&__list-item
+		&:not(:first-child)
+			margin-left: 10px
+	&__link
+		display: block
+		height: 40px
+		line-height: 36px
+		color: $c-main
+		padding-left: 20px
+		padding-right: 20px
+		transition: all .2s
+		border-radius: 19px
+		border: 2px solid $c-edeef2
+		&:hover, &:focus
+			color: $c-main
+			text-decoration: none
+			background-color: $c-edeef2
+			transition: all .2s
+// end - tags
+// form-question
+.form-question
+	width: 100%
+	padding-top: 55px
+	padding-bottom: 55px
+	border-radius: 12px
+	border: 2px solid $c-edeef2
+	@media(max-width: 576px)
+		padding-top: 25px
+		padding-bottom: 35px
+	&__title
+		display: block
+		font-size: 18px
+		font-weight: 700
+		text-align: center
+	&__wrap
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-top: 40px
+	&__input
+		&:not(:first-child)
+			margin-top: 20px
+		.input-theme
+			text-align: center
+	&__btn
+		margin-top: 25px
+// end - form-question
+
+// end - question-inner

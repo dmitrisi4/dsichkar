@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Общежитие в Москве</title>
+	<meta http-equiv="X-UA-Compatible"
+	content="IE=edge">
+	<meta name="description"
+	content="">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto&amp;subset=cyrillic"
+	rel="stylesheet">	
+	<link rel="stylesheet"
+	type="text/css"
+	href="assets/css/bootstrap.css" />
+	<link rel="stylesheet"
+	type="text/css"
+	href="assets/css/jquery.fancybox.min.css">
+	<link rel="stylesheet"
+	type="text/css"
+	href="assets/css/bootstrap-datetimepicker.min.css" />
+	<link rel="stylesheet"
+	type="text/css"
+	href="assets/css/slick.css" />
+	<link rel="stylesheet"
+	type="text/css"
+	href="assets/css/style.css" />
+	<link rel="stylesheet"
+	type="text/css"
+	href="assets/css/media.css" />
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">	
+			<div class="row">
+				<div class="col-sm-4 mobile-hidden">
+					<img src="assets/img/project-logo.png" class="header__img-logo" alt="project-logo">
+				</div>
+				<div class="col-sm-4 mobile-hidden">
+					<p class="header__text-adds">ул. Константиновская 123 <span>станция Авиастроителей</span></p>
+				</div>
+				<div class="col-sm-4">
+					<a href="tel:+84951234567" class="item-link">8 (495) 123-45-67</a>
+					<a href="#modal-form" class="modal-btn mobile-hidden">Заказать звонок</a>
+					<p class="mobile-display">Кликните на номер для звонка</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section class="section-board">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9">
+					<div class="section-board__wrap">
+						<div class="wrap__box-form">
+							<h1>Уютное общежитие в Москве</h1>
+							<p class="box-form__text-title">Рядом со станцией Текстильщики</p>
+							<form  action="mail.php" class="box-form__form form" name="rewiew" method="post">
+								<input type="hidden" name="subject" value="Новый отзыв на сайте">
+
+								<div class="row">
+									<div class="col-sm-6">	
+										<input type="text"
+										class="form__input"
+										placeholder="Введите ваше имя">
+										<input type="text" 
+										class="form__input"
+										placeholder="Введите ваш телефон">
+									</div>
+									<div class="col-sm-6">
+										<div class="form-datepicker date"
+										id="datetimepicker">
+										<input id="date-from"
+										type="text"
+										class="form__input"
+
+										name="order_date_from"
+										placeholder="Выберите дату заселения">
+										<span class=" form-datepicker__icon"></span>
+									</div>
+									<button class="form__button">Забронировать</button>
+								</div>								
+							</div>
+						</form>
+						<p class="text-or">Или позвоните по телефону:</p>
+						<a href="tel:+84951234567" class="item-link item-link_mod">8 (495) 123-45-67</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<img class= "box-form__img" src="assets/img/img-cost.png"  alt="price">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-about">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<p class="section-about__title">Об общежитии</p>
+				<p class="section-about__text1">Наши бригады состоят только из культурных и воспитанных людей. Мы не нанимаем на работу жителей из солнечных
+					Республик, у которых иной менталилет. Наши рабочие - граждане РФ, которые обладают чувством такта и бережно относятся
+					к вашему имуществу. Мы имеем свой личный кадровый резерв, не привлекаем рабочую силу со стороны, 
+					поэтому уверены в каждом своём монтажнике.</p>
+					<p class="section-about__text2">Ждем вас в гости!</p>
+				</div>
+				<div class="col-sm-6">
+					<p class="section-about__title">Удобства</p>
+					<div class="section-about__wrap">
+						<ul class="section-about__list">       
+							<li class="list__item">Удобное спальное место</li>
+							<li class="list__item">Прикроватная тумбочка</li>
+							<li class="list__item">Холодильник</li>
+							<li class="list__item">Телевизор</li>
+							<li class="list__item">Бесплатный доступ к Wі-Fі</li>
+							<li class="list__item">Шкаф для верхней одежды</li>
+							<li class="list__item">Уборка помещения</li>
+							<li class="list__item">Круглосуточная охрана</li>
+							<li class="list__item">Смена постельного белья</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+	
+	<section class="section-send">
+		<div class="container container_padding-none">
+			<div class="section-send__wrap">
+				<div class="section-send__box-hint">
+					<p class="box-hint__text">Забронируйте место в общежитии<br/>
+						<span>за 28 секунд!</span>
+					</p>
+					<a href="#modal-form" class="wrap__link-modal modal-btn">Забронировать</a>
+				</div>				
+			</div>
+			<div class="section-send__wrap-link">
+				<p class="text-or">Или позвоните по телефону:</p>
+				<a href="tel:+84951234567" class="item-link item-link_mod item-link_size">8 (495) 123-45-67</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-slider">
+		<div class="container container_padding">
+			<h2>О нас говорят</h2>
+			<div class="section-slider__slider-singleitem">
+				<div class="slider-singleitem">
+					<div class="slider-singleitem__slide">
+						<div class="slide__header-slide">
+							<div class="header-slide__contact">
+								<div class="contact__wrap">
+									<img src="assets/img/img-avatar-2.jpg" class="contact__avatar" alt="">
+								</div>
+								<span class="contact__title">Павел Дуров</span>
+								<a href="https://vk.com/" class="contact__link">https://vk.com/enotink...</a>
+							</div>		
+						</div>
+						<p class="slide__text">
+							Наши бригады состоят только из культурных и воспитанных людей.
+							Мы не нанимаем на работу жителей из солнечных Республик, у которых иной менталилет.
+							Наши рабочие - граждане РФ, которые обладают чувством такта и бережно относятся к вашему имуществу.
+						</p>
+						<div class="slide__box-rate">            
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Цена</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Качество</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star_2"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Точность описания</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Сервис</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Чистота</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star_2"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Расположение</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>            
+						</div>
+					</div>
+				</div>
+				<div class="slider-singleitem">
+					<div class="slider-singleitem__slide">
+						<div class="slide__header-slide">
+							<div class="header-slide__contact">
+								<div class="contact__wrap">
+									<img src="assets/img/img-avatar-3.jpg" class="contact__avatar" alt="">
+								</div>
+								<span class="contact__title">Марк Цукерберг</span>
+								<a href="https://vk.com/" class="contact__link">https://vk.com/enotink...</a>
+							</div>		
+						</div>
+						<p class="slide__text">
+							Наши бригады состоят только из культурных и воспитанных людей.
+							Мы не нанимаем на работу жителей из солнечных Республик, у которых иной менталилет.
+							Наши рабочие - граждане РФ, которые обладают чувством такта и бережно относятся к вашему имуществу.
+						</p>
+						<div class="slide__box-rate">            
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Цена</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Качество</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star_2"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Точность описания</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Сервис</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Чистота</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star_2"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Расположение</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>            
+						</div>
+					</div>
+				</div>
+				<div class="slider-singleitem">
+					<div class="slider-singleitem__slide">
+						<div class="slide__header-slide">
+							<div class="header-slide__contact">
+								<div class="contact__wrap">
+									<img src="assets/img/img-avatar-2.jpg" class="contact__avatar" alt="">
+								</div>
+								<span class="contact__title">Павел Дуров</span>
+								<a href="https://vk.com/" class="contact__link">https://vk.com/enotink...</a>
+							</div>		
+						</div>
+						<p class="slide__text">
+							Наши бригады состоят только из культурных и воспитанных людей.
+							Мы не нанимаем на работу жителей из солнечных Республик, у которых иной менталилет.
+							Наши рабочие - граждане РФ, которые обладают чувством такта и бережно относятся к вашему имуществу.
+						</p>
+						<div class="slide__box-rate">            
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Цена</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Качество</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star_2"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Точность описания</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Сервис</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Чистота</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star_2"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Расположение</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>            
+						</div>
+					</div>
+				</div>
+				<div class="slider-singleitem">
+					<div class="slider-singleitem__slide">
+						<div class="slide__header-slide">
+							<div class="header-slide__contact">
+								<div class="contact__wrap">
+									<img src="assets/img/img-avatar-3.jpg" class="contact__avatar" alt="">
+								</div>
+								<span class="contact__title">Марк Цукерберг</span>
+								<a href="https://vk.com/" class="contact__link">https://vk.com/enotink...</a>
+							</div>		
+						</div>
+						<p class="slide__text">
+							Наши бригады состоят только из культурных и воспитанных людей.
+							Мы не нанимаем на работу жителей из солнечных Республик, у которых иной менталилет.
+							Наши рабочие - граждане РФ, которые обладают чувством такта и бережно относятся к вашему имуществу.
+						</p>
+						<div class="slide__box-rate">            
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Цена</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Качество</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star_2"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Точность описания</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Сервис</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Чистота</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star_2"></div>
+								</div>
+							</div>
+							<div class="box-rate__wraper-rate">
+								<span class="wraper-rate__title">Расположение</span>
+								<div class="wraper-rate__wrap-star">
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+									<div class="box-star"></div>
+								</div>
+							</div>            
+						</div>
+					</div>
+				</div>									
+			</div>
+		</div>
+	</section>
+
+	<section class="section-form">
+		<div class="container container_padding-none">
+			<div class="section-form__box-title">
+				<p>Жили в нашем общежитии? <span>Оставьте свой отзыв.</span></p>
+			</div>
+			<div class="section-form__wrap">
+				<div class="section-form__form-rate" id="">
+					<form action="mail.php" class="form" name="rewiew" method="post">
+						<input type="hidden" name="subject" value="Новый отзыв на сайте">
+						<div class="wrap-rate wrap-rate_display-modal">
+							<div class="row">
+								<!-- RATE -->
+								<div class="col-sm-6">
+
+									<div class="wraper">
+										<span class="title-wrap">
+											Цена
+										</span>
+										<div class="wrap__block-star ">
+											<div class="stars">
+												<div class="stars__star"></div>
+												<div class="stars__star"></div>
+												<div class="stars__star"></div>
+												<div class="stars__star"></div>
+												<div class="stars__star"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="wraper">
+										<span class="title-wrap">
+											Качество
+										</span>
+										<div class="wrap__block-star ">
+											<div class="stars">
+												<div class="stars__star"></div>
+												<div class="stars__star"></div>
+												<div class="stars__star"></div>
+												<div class="stars__star"></div>
+												<div class="stars__star"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="wraper">
+										<span class="title-wrap">
+											Точность описания
+										</span>
+										<div class="wrap__block-star ">
+											<div class="stars">
+												<div class="stars__star"></div>
+												<div class="stars__star"></div>
+												<div class="stars__star"></div>
+												<div class="stars__star"></div>
+												<div class="stars__star"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+
+									<div class="wraper">
+										<span class="title-wrap">
+											Сервис
+										</span>
+										<div class="wrap__block-star ">
+											<div class="wrap__block-star ">
+												<div class="stars">
+													<div class="stars__star"></div>
+													<div class="stars__star"></div>
+													<div class="stars__star"></div>
+													<div class="stars__star"></div>
+													<div class="stars__star"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="wraper">
+										<span class="title-wrap">
+											Расположение
+										</span>
+										<div class="wrap__block-star ">
+											<div class="wrap__block-star ">
+												<div class="stars">
+													<div class="stars__star"></div>
+													<div class="stars__star"></div>
+													<div class="stars__star"></div>
+													<div class="stars__star"></div>
+													<div class="stars__star"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="wraper">
+										<span class="title-wrap">
+											Точность описания
+										</span>
+										<div class="wrap__block-star ">
+											<div class="wrap__block-star ">
+												<div class="stars">
+													<div class="stars__star"></div>
+													<div class="stars__star"></div>
+													<div class="stars__star"></div>
+													<div class="stars__star"></div>
+													<div class="stars__star"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="text"
+								class="com-input mod-active"
+								name="order_name"
+								placeholder="Введите ваше имя"
+								required>
+							</div>
+							<div class="col-sm-6">
+								<input type="text"
+								class="com-input mod-active"
+								name="order_phone"
+								placeholder="Введите ваш телефон"
+								required>
+							</div>
+							<div class="col-xs-12">
+								<input type="text" 
+								class="com-input link-vk mod-active"
+								name="order_link"
+								placeholder="Ссылка на профиль ВКОНТАКТЕ">
+								<textarea class="form-textarea mod-active" name="rewiew_message" id="" placeholder="Ваш отзыв"></textarea>
+								<button class="btn-call btn-call_fix"  type="submit" id="submit">
+									Оставить отзыв
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-map">
+		<div class="container">
+			<p class="footer__title">
+				Где мы находимся?
+			</p>
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="wrap-map">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aef32496717a8daa4fdc8aa5763d7fa7d94d1a52b4250ad4fd7f2d75a279f22fe&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<a href="tel:+84951234567" class="item-link map__link_mod">8 (495) 123-45-67</a>
+					<p class="item-adds">ул. Ленина 123 <span>станция Авиастроителей</span></p>
+					<a href="#modal-form" class="modal-btn header__call-modal_fix" >Заказать звонок</a>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<footer class="footer__line">
+		<p class="footer__closing-caption">(с) 2017 - Общежитие на Текстильщиках</p>
+	</footer>
+	<!-- MODAL -->
+	<div class="modal-form modal-1"
+	id="modal-form">
+	<h3>Заказ звонка</h3>
+	<form action="mail.php" class="form" name="call-order" id="contact_2" method="post">
+		<input type="hidden" name="subject" value="Заявка с сайта">
+		<div id="note"></div>
+		<input type="text"
+		class="form-input form-input_size"
+		name="order_name"
+		placeholder="Введите ваше имя"
+		required>
+		<input type="text"
+		class="form-input form-input_size"
+		name="order_phone"
+		placeholder="Введите ваш телефон"
+		required>
+		<button class="btn-call go" type="submit" id="submit">
+			Заказать звонок
+		</button>
+	</form>
+</div>
+<div class="modal" id="success-modal">Заявка отправлена.</div>
+<!-- end -->
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<script src="assets/js/moment-with-locales.min.js"></script>
+<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.fancybox.min.js"></script>	
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script type="text/javascript">
+
+	$('.form').submit(function(e){
+		e.preventDefault();
+		form = $(this);
+		$.ajax({ 
+			type: "POST", 
+			url: "mail.php", 
+			data: form.serialize(), 
+			success: function(response){ 
+				$.fancybox.open({
+					src:'#success-modal', 
+					'padding' : 0, 
+					helpers : { 
+						overlay : { 
+							locked : false 
+						} 
+					}
+				})
+				form.find('input, textarea').val('');
+			}, 
+			error: function (xhr, ajaxOptions, thrownError) { 
+				alert(xhr.status); 
+				alert(thrownError);
+			} 
+		}); 
+	});
+</script>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Главная</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+<!-- begin billboard  -->
+<div class="billboard billboard--payment">
+	<!-- begin header  -->
+	<header class="header">
+		<div class="container">
+			<a href="#" class="header__logo"><img src="assets/img/logo.png" alt="logo"></a>
+
+			<!-- begin header__adress  -->
+			<p class="header__adress">г. Санкт-Петербург, пл. Конституции, д.7</p>
+			<!-- end header__adress -->
+
+			<!-- begin header__btn  -->
+			<a href="#modal" class="header__btn">Заказать звонок</a>
+			<!-- end header__btn -->
+
+			<!-- begin header__contacts  -->
+			<div class="header__contacts">
+				<span class="header__city">Санкт-Петербург</span>
+				<span class="header__number">8-812-309-40-71</span>
+			</div>
+			<!-- end header__contacts -->
+
+			<!-- begin header__contacts  -->
+			<div class="header__contacts header__contacts--border">
+				<span class="header__city">Другие регионы</span>
+				<span class="header__number">8-800-700-41-72</span>
+			</div>
+			<!-- end header__contacts -->
+		</div>
+	</header>
+	<!-- end header -->
+
+	<!-- begin nav  -->
+	<nav class="nav">
+		<div class="container">
+			<!-- begin nav-toggle  -->
+			<div class="nav-toggle">
+				<h3 class="nav-toggle__title">Меню</h3>
+
+				<button class="nav-toggle__btn">
+					<span class="nav-toggle__line"></span>
+					<span class="nav-toggle__line"></span>
+					<span class="nav-toggle__line"></span>
+				</button>
+			</div>
+			<!-- end nav-toggle -->
+
+			<!-- begin nav-list  -->
+			<ul class="nav-list">
+				<li class="nav-list__item"><a href="#block1" class="nav-list__link nav-list__link--active">Главная</a></li>
+				<li class="nav-list__item"><a href="#block1" class="nav-list__link">О компании</a></li>
+				<li class="nav-list__item"><a href="#block1" class="nav-list__link">Тариф</a></li>
+				<li class="nav-list__item"><a href="#block1" class="nav-list__link">Оплата</a></li>
+				<li class="nav-list__item"><a href="#block1" class="nav-list__link">Дополнительные пакет</a></li>
+				<li class="nav-list__item"><a href="#block1" class="nav-list__link">Функционал оборудования</a></li>
+			</ul>
+			<!-- end nav-list -->
+		</div>
+	</nav>
+	<!-- end nav -->
+
+	<!-- begin payment  -->
+	<div class="payment">
+		<div class="container">
+			<h2 class="payment__title">Оплата</h2>
+
+			<form class="payment-form">
+				<div class="row">
+					<div class="row__col-lg-3">
+						<span class="payment-form__desc">Номер договора *</span>
+						<input type="text" class="payment-form__input" required>
+						
+						<span class="payment-form__desc">Период оплаты *</span>
+						<input type="text" class="payment-form__input" required>
+						
+						<span class="payment-form__desc">Дата заключения *</span>
+						<input type="text" class="payment-form__input" required>
+
+						<span class="payment-form__desc">Сумма *</span>
+						<input type="text" class="payment-form__input" required>
+					</div>
+
+					<div class="row__col-lg-9">
+						<span class="payment-form__desc">Фамилия *</span>
+						<input type="text" class="payment-form__input" required>
+						
+						<span class="payment-form__desc">Отчество *</span>
+						<input type="text" class="payment-form__input" required>
+						
+						<span class="payment-form__desc">Email *</span>
+						<input type="text" class="payment-form__input" required>
+
+						<span class="payment-form__desc">Комментарии *</span>
+						<textarea type="text" class="payment-form__input payment-form__input--area" required></textarea>
+
+						<div class="payment-form__bottom">
+							<span class="payment-form__text">* Обязательное для заполнения поле</span>
+							<button class="rates-form__btn payment-form__btn">оплатить</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- end payment -->
+</div>
+<!-- end billboard -->
+	<!-- begin footer  -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="row__col-lg-9 row__col-lg-push-3">
+					<!-- begin nav-list  -->
+					<ul class="nav-list nav-list--bot">
+						<li class="nav-list__item"><a href="#block1" class="nav-list__link nav-list__link--active">Главная</a></li>
+						<li class="nav-list__item"><a href="#block1" class="nav-list__link">О компани</a></li>
+						<li class="nav-list__item"><a href="#block1" class="nav-list__link">Тариф</a></li>
+						<li class="nav-list__item"><a href="#block1" class="nav-list__link">Оплат</a></li>
+						<li class="nav-list__item"><a href="#block1" class="nav-list__link">Дополнительные пакет</a></li>
+						<li class="nav-list__item"><a href="#block1" class="nav-list__link">Функционал оборудования</a></li>
+					</ul>
+					<!-- end nav-list -->
+				</div>
+
+				<div class="row__col-lg-3 row__col-lg-pull-9">
+					<span class="footer__copy">Copyright © 2016 dzrt.ru</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<!-- begin modal  -->
+	<div class="modal" id="modal">
+		<h3 class="modal__title">Заказать звонок</h3>
+
+		<form class="modal-form">
+			<span class="modal-form__desc">Ваше имя *</span>
+			<input type="text" name="name" class="modal-form__input" required>
+
+			<span class="modal-form__desc">Удобное время звонка *</span>
+			<select type="text" name="name" class="modal-form__input modal-form__input--select">
+				<option>12:00 - 13:00</option>
+				<option>12:00 - 13:00</option>
+			</select>
+
+			<span class="modal-form__desc">Телефон *</span>
+			<input type="text" name="name" class="modal-form__input modal-form__input--tel" placeholder="+7 (___) ___-__-__" required>
+
+			<button class="rates-form__btn modal-form__btn">отправить</button>
+		</form>
+	</div>
+	<!-- end modal -->
+	
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

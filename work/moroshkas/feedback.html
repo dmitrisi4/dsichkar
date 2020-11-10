@@ -1,0 +1,227 @@
+<!--   <?php
+  /**
+  * Recaptcha
+  * **************************** */
+  require_once 'recaptcha/autoload.php';
+
+  $secret = '6LccvzsUAAAAAP_tNLqIsBu-cPEH7TN38C2TMbal'; // Вставляем сюда секретный ключ
+  $remoteIp = $_SERVER['REMOTE_ADDR'];
+  $gRecaptchaResponse = $_POST['g-recaptcha-response'];
+  $success = $fail = '';
+
+  if ( !empty( $_POST ) ) {
+  $recaptcha = new \ReCaptcha\ReCaptcha( $secret );
+  $resp = $recaptcha -> verify( $gRecaptchaResponse, $remoteIp );
+  if ( $resp -> isSuccess() ) {
+  // Проверка успешно пройдена
+  $success = 'Форма успешно отправлена, спасибо!';
+} else {
+// Ошибка
+$fail = 'Ошибка отправки формы: ';
+$errors = $resp -> getErrorCodes();
+foreach ( $errors as $error ) {
+$fail .= $error . '; ';
+}       
+}
+}
+?> -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Title</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,700i,800&amp;subset=cyrillic" rel="stylesheet">
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+</head>
+<body>
+  <div class="arow-top">
+    <button>
+      <img src="img/arow-top.png" alt="img">
+    </button>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <a href="#"><img src="img/logo.png" alt="logo"></a>
+      </div>
+      <div class="header__nav">
+        <ul>
+          <li><a href="#">Доставка </a>
+            <ul class="under-menu">
+              <li><a href="#">Меню</a></li>
+              <li><a href="#">Концепция</a></li>
+              <li><a href="#">Правила ресторана</a></li>
+              <li><a href="#">Новости и акции</a></li>
+              <li><a href="#">Обратная связь</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Ресторан</a>
+            <ul class="under-menu">
+              <li><a href="#">Меню</a></li>
+              <li><a href="#">Условия доставки</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a href="#"><img src="img/cab-ico.png" alt="cab"></a>
+        <a href="#"><span>25</span><img src="img/cart-ico.png" alt="cab"><b>5 460Р</b></a>
+      </div>
+      <div class="header__burger">
+        <button>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="header__contacts">
+        <p>
+          <span>Доставка</span>
+          <a href="tel:8 (347) 216 77 88">8 (347) 216 77 88</a>
+        </p>
+        <p>
+          <span>Ресторан</span>
+          <a href="tel:8 (347) 299 59 55">8 (347) 299 59 55</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="page page--feedback">
+    <div class="container">
+      <h1 class="page-title">Ресторан <button class="btn btn-sidebar">Меню</button></h1>
+      <div class="row">
+        <div class="col-lg-2 col-md-3">
+          <aside class="side-bar">
+            <ul>
+              <li><a href="#">Концепция</a></li>
+              <li><a href="#">Меню</a></li>
+              <li class="active"><a href="#">Правила ресторана</a></li>
+              <li><a href="#">Новости и акции</a></li>
+              <li><a href="#">Обратная связь</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="col-md-9 col-lg-offset-1">
+          <section class="page__content feedback-info">
+            <h3>Обратная связь</h3>
+            <p>Ваше мнение самое важное для нас и мне всегда нужно знать понравилось  ли Вам обслуживание в нашем ресторане, достаточно ли хрустящими были листья салата в "Цезаре" , дружелюбным ли был официант, и не была ли фоновая музыка настолько громкой, что мешала Вашему времяпрепровождению в нашем ресторане!</p>
+            <p>Я предлагаю Вам написать, в представленной ниже форме, все свои пожелания, замечания и предложения мне лично и я обязательно Вам  отвечу!<br>
+            Спасибо!</p>
+
+            <div class="feedback-info__comment">
+              <img src="img/img-director.jpg" alt="photo">
+              <p>С уважением,<br> Павел Емельянов<br> Генеральный директор<br> Группы ресторанов "RESTПУБЛИКА"</p>
+            </div>
+
+            <div class="feedback-info__wrap">
+
+              <form  action="#" method="POST">
+                <h3>Письмо директору</h3>
+                <div class="row">
+                  <div class="col-sm-4 col--padding">
+                    <input type="text" placeholder="Ваше имя*" required>
+                    <input type="text" placeholder="Телефон*" required>
+                    <input type="text" placeholder="Почта*" required>
+                    <img src="img/captcha-img.jpg" alt="image">
+                  </div>
+                  <div class="col-sm-8 col--padding">
+                    <textarea name="" id="" placeholder="Сообщение*" required></textarea>
+                    <button class="btn">Отправить</button>
+                  </div>
+                </div>
+
+
+              </form>
+            </div>
+
+          </section>
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo">
+          <a href="#">
+            <img src="img/logo.png" alt="logo">
+          </a>
+          <div class="footer__soc">
+            <p>в социальных сетях</p>
+            <a href="#"><img src="img/soc.png" alt="ico"></a>
+            <a href="#"><img src="img/soc1.png" alt="ico"></a>
+            <a href="#"><img src="img/soc2.png" alt="ico"></a>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <p>
+            <span>Доставка</span>
+            <a href="tel:8 (347) 216 77 88">8 (347) 216 77 88</a>
+          </p>
+          <p>
+            <span>Ресторан</span>
+            <a href="tel:8 (347) 299 59 55">8 (347) 299 59 55</a>
+          </p>
+        </div>
+        <div class="footer__nav">
+          <ul>
+            <h6>Ресторан</h6>
+            <li><a href="#">Меню</a></li>
+            <li><a href="#">Концепция</a></li>
+            <li><a href="#">Правила ресторана</a></li>
+            <li><a href="#">Новости и акции</a></li>
+            <li><a href="#">Обратная связь</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul>
+            <h6>Доставка</h6>
+            <li><a href="#">Меню</a></li>
+            <li><a href="#">Условия доставки</a></li>
+          </ul>
+        </div>
+        <div class="footer__bot">
+          <p>© 2013-2017. Создание сайта: <a href="#">«Экспресс лаб»</a></p>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/scripts.min.js"></script>
+  </body>
+  </html>
+
+
+

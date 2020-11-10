@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'ttnorm';
+    src: url('TTNorms-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'ttnorm';
+    src: url('TTNorms-Bold.otf');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'ttnorm';
+    src: url('TTNorms-Medium.otf');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'ttnorm';
+    src: url('TTNorms-Light.otf');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'ttnorm';
+    src: url('TTNorms-Italic.otf');
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Exo 2.0 ';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Exo 2.0 Bold'), local('Exo2.0-Bold'),
+        url(http://allfont.ru/cache/fonts/exo-20-bold_230be31e545802ce2864d7d56753471b.woff) format('woff'),
+        url(http://allfont.ru/cache/fonts/exo-20-bold_230be31e545802ce2864d7d56753471b.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Exo 2.0';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Exo 2.0 Italic'), local('Exo2.0-Italic'),
+        url(http://allfont.ru/cache/fonts/exo-20-italic_f9dce039ec986aca5cacfadb7cef4abe.woff) format('woff'),
+        url(http://allfont.ru/cache/fonts/exo-20-italic_f9dce039ec986aca5cacfadb7cef4abe.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Exo 2.0';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Exo 2.0'), local('Exo2.0-Regular'),
+        url(http://allfont.ru/cache/fonts/exo-20_a10e7b029dd9dfeff5d1ccff97fb5cf1.woff) format('woff'),
+        url(http://allfont.ru/cache/fonts/exo-20_a10e7b029dd9dfeff5d1ccff97fb5cf1.ttf) format('truetype');
+}

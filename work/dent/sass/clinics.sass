@@ -1,0 +1,151 @@
+@import "_vars"
+
+// clinic-page
+.clinic-page
+	padding-top: 5px
+	&__nav-list
+		width: 100%
+		list-style: none
+		display: flex
+		justify-content: space-between
+		padding: 0
+		margin: 0
+		margin-top: 25px
+		@media(max-width: 1200px)
+			flex-wrap: wrap
+			justify-content: space-between
+		@media(max-width: 576px)
+			justify-content: center
+	&__form
+		padding-left: 10px
+	&__list-item
+		margin-bottom: 15px
+		&:not(:first-child)
+			@media(max-width: 576px)
+				margin-left: 10px
+		.button_msmall
+			@media(max-width: 576px)
+				height: 30px
+				line-height: 30px
+		&:last-child
+			text-align: center
+			margin: 0
+	&__list-item_w170
+		max-width: 170px
+		width: 100%
+	&__clinic-info
+		margin-top: 25px
+	&__slider-doctor
+		margin-top: 50px
+	&__title
+		font-size: 24px
+		font-weight: 600
+	&__discounts
+		margin-top: 65px
+	&__table
+		margin-top: 75px
+		.table-scroll
+			margin-top: 30px	
+	
+	.form-question
+		padding-left: 20px
+		padding-right: 20px
+
+.map
+	width: 100%
+	height: 300px
+	border-radius: 12px
+	margin-top: 25px
+// end - clinic-page
+// clinic-info
+.clinic-info
+	border-radius: 12px
+	background-color: $c-f4f3f2
+	padding: 45px 55px 45px 30px
+	@media(max-width: 576px)
+		padding: 30px 20px 25px 25px
+	&__title
+		font-size: 18px
+		font-weight: 700
+	&__text
+		margin-top: 20px
+		margin-bottom: 0
+		line-height: 24px
+		@media(max-width: 576px)
+			margin-top: 15px
+			font-size: 14px
+// end - clinic-info
+// slider-discounts
+.slider-discounts
+	max-width: 630px
+	margin: 0 auto
+	margin-top: 25px
+	text-align: center
+	@media(max-width: 1200px)
+		max-width: 580px
+	&__image
+		max-width: 300px
+		width: 100%
+		height: 263px
+		@media(max-width: 1440px)
+			height: 235px
+		@media(max-width: 1200px)
+			max-width: 270px
+			height: 215px
+	.slick
+		&-arrow
+			top: 50%
+			transform: translateY(-50%)
+			
+		&-prev
+			left: -70px
+			@media(max-width: 1200px)
+				left: -40px
+			@media(max-width: 992px)
+				left: -50px
+		&-next
+			right: -70px
+			@media(max-width: 1200px)
+				right: -40px
+			@media(max-width: 992px)
+				right: -50px
+		&-dots
+			bottom: -55px
+
+// end - slider-discounts
+// checkbox
+.checkbox 
+	input
+		position: absolute
+		z-index: -1
+		opacity: 0
+		margin: 10px 0 0 20px
+	&__text
+		margin-top: 10px
+		position: relative
+		padding: 0 0 0 25px
+		cursor: pointer
+		&:before
+			content: ''
+			position: absolute
+			top: 2px
+			left: 0
+			width: 14px
+			height: 14px
+			border-radius: 2px
+			background-color: #fff
+			transition: .2s
+		&:after
+			content: ''
+			position: absolute
+			top: 6px
+			left: 2px
+			width: 10px
+			height: 8px
+			transition: .2s
+.checkbox input:checked + .checkbox__text:after
+	background-image: url('../img/check-icon.png')
+	background-repeat: no-repeat
+// end - checkbox
+
+// end - photo-clinic
