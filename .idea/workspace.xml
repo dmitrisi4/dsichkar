@@ -20,30 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a83841b-4d7a-4c79-a49d-4b1fef41e126" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/1-icon.dcd9eef3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/2-icon.e64181e1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/3-icon.8bf680e1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/close.f9a566bc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/g-icon.6dadd0b6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/look-icon.6614fb89.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.b0c12f2f.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/scripts.min.d3577b85.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/TTNorms-Bold.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/TTNorms-Italic.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/TTNorms-Light.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/TTNorms-Medium.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/TTNorms-Regular.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/common.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/bootstrap-grid/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/bootstrapGrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_libs.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/_libs.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604906664964</updated>
       <workItem from="1604906666029" duration="9194000" />
-      <workItem from="1605006622430" duration="1923000" />
+      <workItem from="1605006622430" duration="2978000" />
     </task>
     <servers />
   </component>
