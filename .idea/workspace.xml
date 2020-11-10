@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a83841b-4d7a-4c79-a49d-4b1fef41e126" name="Default Changelist" comment="" />
+    <list default="true" id="3a83841b-4d7a-4c79-a49d-4b1fef41e126" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/1-icon.dcd9eef3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/2-icon.e64181e1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/3-icon.8bf680e1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/close.f9a566bc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/g-icon.6dadd0b6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/look-icon.6614fb89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.b0c12f2f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/scripts.min.d3577b85.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTNorms-Bold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTNorms-Italic.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTNorms-Light.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTNorms-Medium.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTNorms-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/bootstrap-grid/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/bootstrapGrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_libs.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/_libs.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.sass" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1k2leopF3rOIyjAFGdcM7B3Hy1j" />
   <component name="ProjectViewState">
@@ -20,10 +66,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -36,16 +82,31 @@
       <option name="presentableId" value="Default" />
       <updated>1604906664964</updated>
       <workItem from="1604906666029" duration="9194000" />
+      <workItem from="1605006622430" duration="1923000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="458" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604909007826">
+    <state x="458" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605007461952">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="458" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.875@0.25.1440.875" timestamp="1604909007826" />
+    <state x="458" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.875@0.25.1440.875" timestamp="1605007461952" />
   </component>
 </project>
