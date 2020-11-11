@@ -1,0 +1,453 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.menu-bar__nav
+		max-width: 625px
+	.logo
+		margin-top: 0
+
+	.main-board__wrap
+		padding: 80px 0 150px
+
+	.advantages
+		.advantages-item
+			&__title
+				font-size: 24px
+			&__content
+				padding: 25px 40px 25px 150px
+			&__wrap
+				max-width: 300px
+				p:not(:first-child)
+					margin-top: 14px
+
+	.gallery__wrap
+		justify-content: space-around
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	// mobile header menu
+	.header		
+		.mobile-menu
+			display: none
+		
+		.mobile-js
+			display: flex
+			justify-content: space-between
+		.burger-menu
+			margin-top: 10px
+			padding: 10px 0 10px
+			width: 100%
+			background-color: $color-second
+			.open-menu
+				display: block
+				margin-left: 15px
+			span
+				background-color: #fff
+	
+	.menu-bar__nav
+		padding-top: 25px
+		padding-bottom: 20px
+		margin: auto
+		flex-direction: column
+		text-align: center
+		a
+			margin: 13px 0
+
+	.menu-bar__nav a
+		border: none
+		&:hover
+			border: none
+
+	.header.header-shrink
+		padding: 0
+		.mobile-wrap
+			display: none
+		.burger-menu
+			margin-top: 0
+
+	// end - mobile header menu
+
+	.box-callback__call-link
+		font-size: 14px
+
+	.advantages
+		.advantages-item
+			&__content
+				padding: 28px 32px 30px 130px
+
+	.advantages .advantages-item
+		&__content
+			padding: 20px 5px 0px 65px
+		&__title
+			font-size: 18px
+			&:before
+				left: -55px
+			br
+				display: none
+		&__wrap p
+			font-size: 14px
+
+	.download-application__right
+		margin-left: 45px
+		.download-application__link-dwn
+			.android-img, .bth-img, .ios-img
+				background-size: contain
+				background-repeat: no-repeat
+				height: 30px
+				max-width: 90px
+	// order
+	.box-order__wrap
+		flex-direction: column
+		align-items: center
+		.tovar-info
+			margin-top: 50px
+	// end -order
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+	.main-board
+		padding-top: 150px
+	.main-board__wrap
+		background: none
+	.main-board
+		background: url(../img/bg-main-board.png) right 35% no-repeat
+	.main-board__wrap
+		padding: 40px 0 150px
+	.сall-action
+		background-repeat: repeat
+		&__wrap
+			padding-top: 0
+			flex-direction: column
+			align-items: center
+		&__image
+			margin-top: -80px
+		&__order
+			text-align: center
+		&__form
+			p
+				text-align: center
+
+	.footer
+		padding-top: 45px
+		padding-bottom: 55px
+		.menu-bar
+			flex-direction: column
+			align-items: center
+		.menu-bar__nav
+			flex-direction: row
+		.footer__wrap .scroll_up
+			margin-top: 55px
+		.box-callback
+			align-items: center
+
+
+@media only screen and (max-width : 767px)
+	// mobile menu .box-callback
+	.header.header-shrink
+		position: static
+		padding: 10px
+		.mobile-menu
+			top: 0
+		.mobile-wrap
+			display: block
+		.burger-menu
+			width: 60px
+			height: 60px
+			border-radius: 50%
+			background-color: #fff
+			.open-menu
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				margin: 0
+	.burger-menu
+		position: fixed
+		z-index: 100
+		right: 17px
+	.mobile-menu
+		position: fixed
+		left: 0
+		z-index: 5
+		top: 50px
+		background-color: #fff
+		width: 100%
+
+
+	.header
+		.mobile-menu
+			padding-bottom: 20px
+		.menu-bar__nav a
+			padding: 0
+		.box-callback
+			align-items: center
+		.burger-menu
+			padding: 0
+			margin: 0
+			background-color: transparent
+			width: auto
+			.open-menu
+				span
+					background-color: #000
+	// end - mobile menu
+	.form-buy
+		flex-direction: column
+		align-items: center
+		.main-btn
+			margin: 15px 0 0 
+	.main-board__wrap
+		text-align: center
+	.main-board__tagline
+		max-width: none
+		p
+			display: none
+
+	.download-application__right
+		margin-left: 25px
+
+	.footer__wrap
+		.menu-bar
+			margin-top: 40px
+	
+@media only screen and (max-width : 675px)
+	.section-title
+		font-size: 24px
+	.main-board__wrap
+			padding-bottom: 65px
+	.advantages
+		padding-bottom: 0
+		.advantages-item
+			flex-direction: column
+			align-items: center
+			&__content
+				max-width: 100%
+				text-align: center
+				padding: 20px 5px 0 5px
+			&__title
+				display: block
+				max-width: 320px
+				margin: auto
+			&__image
+				margin-top: 55px
+				max-width: 100%
+			&__wrap
+				max-width: 100%
+		.advantages-item:nth-child(2)
+			.advantages-item__image
+				order: 2
+
+	.comparison
+		display: none
+
+	.profit
+		padding-top: 65px
+		&__wrap
+			margin-top: 0
+			justify-content: center
+		.profit-item
+			padding-left: 0
+			padding-top: 105px
+			margin-bottom: 20px
+			text-align: center
+			p
+				margin: 30px auto 0 
+			&__title
+				&:before
+					top: -80px
+					left: 50%
+					transform: translateX(-50%)
+
+	.app-info
+		&__wrap
+			max-width: 200px
+			padding-top: 60px
+			margin: auto
+			.app-function
+				margin: 0
+	.download-application
+		&__wrap
+			flex-direction: column
+			justify-content: center
+		&__right
+			margin-left: 0
+			p
+				max-width: none
+				text-align: center
+			.download-application__link-dwn
+				margin-top: 35px
+				.android-img, .bth-img, .ios-img
+					background-size: contain
+					background-repeat: no-repeat
+					height: 40px
+					max-width: 120px
+
+	.gallery__wrap
+		max-width: 320px
+		margin: 0 auto
+		padding: 45px 0 140px
+		img
+			max-width: none
+			max-height: none
+			margin: 0
+
+	.footer__wrap
+		display: flex
+		flex-direction: column-reverse
+	.footer
+		.menu-bar__nav
+			flex-direction: column
+		.box-callback__call-link
+			font-size: 16px
+		.scroll_up
+			margin-top: 0
+
+
+@media only screen and (max-width : 480px)
+	.main-board__title
+		font-size: 26px
+	.price
+		&__new
+			display: block
+	.main-board
+		background-position: 80% 11%
+	.scroll
+		margin-top: 40px
+		width: 40px
+		height: 40px
+
+	.advantages
+		&__wrap
+			box-shadow: none
+		.advantages-item
+			width: 100%
+			&__title
+				padding-top: 70px
+				font-size: 22px
+				&:before
+					left: 50%
+					transform: translateX(-50%)
+			&__content
+				margin-top: 310px
+			&__image
+				position: absolute
+				margin-top: 15px
+				left: 0
+			&__wrap
+				p
+					font-size: 16px
+					max-width: 240px
+					margin: auto
+			&__content
+				padding-top: 10px
+	.download-application
+		padding: 54px 0 36px
+		&__right
+			.download-application__link-dwn
+				flex-direction: column
+				align-items: center
+				a:not(:first-child)
+					margin-top: 20px
+				.bth-img, .ios-img, .android-img
+					max-width: 135px
+					height: 38px
+
+	// order
+	.box-order
+		padding: 80px 0 60px
+	.tovar-slider
+		max-width: 300px
+		margin: 0
+		.slider-for__item
+			text-align: center
+			height: 200px
+			img
+				width: 70%
+		.slider-nav__item img
+			width: 60px
+			height: 60px
+	.tovar-info
+		&__name
+			display: inline-block
+			font-size: 18px
+			max-width: 145px
+		&__characteristics
+			font-size: 15px
+		.tabs-caption
+			margin-top: 26px
+		&__characteristics
+			max-width: 257px
+			margin: 35px auto 0
+			li
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					top: 5px
+					left: -24px
+					width: 10px
+					height: 8px
+					background: url(../img/spritesheet.png) -55px -70px
+		.price__new
+			display: inline-block	
+
+	.delivery
+		position: relative
+		margin-top: 60px
+		overflow: hidden
+		&__wrap
+			flex-direction: column
+			align-items: center
+		.delivery__item:not(:last-child)
+			border-right: 0
+			&:before
+				content: ''
+				position: absolute
+				top: 100%
+				width: 3000px
+				height: 5px
+				background-color: #fff
+	// end - order
+
+
+
+			
+
+
+			
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	//
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1600px)
+	//
+

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,700i,800&amp;subset=cyrillic" rel="stylesheet">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body>
+
+	<div class="main-screen">
+
+		<header class="header">
+			<div class="container">
+				<div class="header__wrap">
+					<p class="header__logo">ХРОМ
+						<span>PRO</span>
+					</p>
+
+					<div class="header__content">
+						<p class="header__address">
+							<span>ул. Шоссейная 2Гс1</span>
+							<a class="main-btn-js" href=".map">Показать на карте</a>
+						</p>
+
+						<a href="tel:84952660632" class="header__call">8 (495) <b>266-06-32</b></a>
+						<a class="main-btn main-btn_blue call-back-btn" data-fancybox data-src="#call-back-modal" href="javascript://">Заказать звонок</a>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container">
+
+			<div class="main-screen__content">
+				<h1>хромирование</h1>
+				<h2>и восстановление хрома <span>любого цвета</span></h2>
+				<span>в Москве с гарантией качества</span>
+			</div>
+
+			<div class="main-screen__feedback">
+				<p>Проконсультируйтесь со специалистом <span>за 26 секунд</span></p>
+				<a href="#call-back-modal" class="main-btn main-btn_dark call-back-btn">Перезвоните мне</a>
+			</div>
+		</div>
+
+	</div>
+
+	<section class="guarantees">
+		<div class="container">
+		
+			<h3 class="section-title">Наша 100% гарантия</h3>
+			<div class="guarantees__wrap">
+
+				<div class="guarantees__right">
+					<p class="guarantees__text">Мы предлогаем хромирование любых изделии из металла, пластика, дерева и стекла Благодаря огромному опыту в сфере хромирования, мы смело можем дать гарантию на свои работы</p>
+					<p class="bold guarantees__list-title">Работая с нами, вы избежите следующих проблем:</p>
+					<ol>
+						<li>Нехромированные труднодоступные места</li>
+						<li>Отслаивание хромового покрытия</li>
+						<li>Трудности при полировке деталей</li>
+						<li>На деталях имеются нехромированные участки</li>
+						<li>Матовые участки хрома на покрытии</li>
+						<li>Коричневые пятна на покрытии</li>
+						<li>Коррозия под хромовым покрытием</li>
+					</ol>
+					<p><b>Рассчитайте стоимость хромирования</b> в два шага прямо сейчас!</p>
+					<a class="main-btn main-btn_blue main-btn-js" href=".form-payment">Расчитать стоимость хромирования</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="calculation">
+		<div class="container">
+			<div id="parallax-bg3">
+				<img id="bg3-1" src="img/pr1.png" alt="stone">
+				<img id="bg3-2" src="img/pr2.png" alt="stone">
+				<img id="bg3-3" src="img/pr3.png" alt="stone">
+			</div>
+
+			<h3 class="section-title section-title_white">Рассчитайте стоимость хромирования в 2 шага</h3>
+			<p class="calculation__text">Рассчитали стоимость: <span class="small-btn small-btn_fz counter">654</span> человека</p>
+			<div class="calc-block js-calc-block" data-current-step="1">
+				<div class="form-wrap js-calc-block__step" data-step="1">
+					<span class="inscription">Хромируем автомобиль?</span>
+					<button class="small-btn form-btn-1-2 js-calc-block__btn small-btn_width" data-value="type:автомобиль" data-to-step="3">Да</button>
+					<button class="small-btn form-btn-1 js-calc-block__btn small-btn_width" data-to-step="2">Нет</button>
+					<p>Стоимость: <span>2 759</span>Р</p>
+				</div>
+
+				<div class="form-wrap-1 js-calc-block__step" data-step="2">
+					<span class="inscription">Хромируем автомобиль?</span>
+					<div class="calc-wrapp">
+					<button class="small-btn small-btn_width form-btn-2 js-calc-block__btn" data-value="type:диски" data-to-step="3">Диски</button>
+					<button class="small-btn small-btn_width form-btn-2 js-calc-block__btn" data-value="type:фары" data-to-step="3">Фары</button>
+					<button class="small-btn small-btn_width form-btn-2 js-calc-block__btn" data-value="type:кузов" data-to-step="3">Кузов</button>
+					</div>
+					<p>Стоимость: <span>2 759</span>Р</p>
+				</div>
+
+				<form action="mail.php" id="form1" class="js-calc-block__step js-calc-block__form" data-step="3">
+					<div class="form-wrap-2">
+						<span class="inscription">Хромируем автомобиль?</span>
+						<input type="text" placeholder="Введите телефон" name="phone">
+						<input type="hidden" name="type">
+						<button class="small-btn" type="submit">Рассчитать стоимость</button>
+						<p>Стоимость: <span>2 759</span>Р</p>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="about-service">
+		<div class="container">
+			<h3 class="section-title">Пару слов о хромировании</h3>
+
+			<div class="about-service__right">
+				<p>Хромирование является одним из наиболее распространнёных видов гальванических покрытий Хромирование изделий применяется как для защиты от коррозии, износа, так и для декоративной отделки поверхности изделий Хромовые покрытия имеют высокий коэффициент отражения и уступают только серебру, поэтому декоративное хромирование пользуется большой популярностью у автомобилистов.
+				</p>
+				<b>Хромирование притягивает взгляд и завораживает, а его свойства придают антикоррозийные преимущества. Рассчитайте стоимость хромирования прямо сейчас в два шага!</b>
+				<a class="main-btn main-btn_blue main-btn-js" href=".form-payment">Расчитать стоимость хромирования</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="advantages">
+		<div class="container">
+			<h3 class="section-title">Почему нас выбрали 748 клиентов</h3>
+			<div class="advantages__wrap">
+
+				<div class="advantages-item">
+					<div class="advantages-item__image">
+						<img src="img/adv-1.png" alt="adv">
+					</div>
+					<span class="advantages-item__title">Демократичные цены</span>
+					<p>Мы раз в месяц делаем оценку
+						конкурентов и предлагаем
+						действительно высокий сервис
+						по низким ценам.
+					</p>
+				</div>
+				<div class="advantages-item advantages-item_width">
+					<div class="advantages-item__image">
+
+						<img src="img/adv-2.png" alt="adv">
+					</div>
+					<span class="advantages-item__title">Высокое качество</span>
+					<p>Благодаря огромному опыту, современному
+						оборудованию и сертифицированным
+						специалистам, мы предлагаем услугу по
+						хромированию любых материалов с
+						гарантией качества!
+					</p>
+				</div>
+				<div class="advantages-item">
+					<div class="advantages-item__image">
+
+						<img src="img/adv-3.png" alt="adv">
+					</div>
+					<span class="advantages-item__title">Современное оборудование</span>
+					<p>Мы оснащены современным
+						оборудованием позволяющим
+						оперативно выполнять любые
+						работы по хромированию
+					</p>
+				</div>
+				<div class="advantages-item">
+					<div class="advantages-item__image">
+
+						<img src="img/adv-4.png" alt="adv">
+					</div>
+					<span class="advantages-item__title">Индивидуальный подход</span>
+					<p>Благодаря высокому качеству
+						и индивидуальному подходу,
+						наши клиенты советуют нас
+						своим родным и близким
+					</p>
+				</div>
+				<div class="advantages-item">
+					<div class="advantages-item__image">
+
+						<img src="img/adv-5.png" alt="adv">
+					</div>
+					<span class="advantages-item__title">Точные сроки</span>
+					<p>Наши специалисты строго
+						соблюдают сроки выполнения работ,
+						оговоренные с клиентом, мы ценим
+						ваше время
+					</p>
+				</div>
+				<div class="advantages-item">
+					<div class="advantages-item__image">
+
+						<img src="img/adv-6.png" alt="adv">
+					</div>
+					<span class="advantages-item__title">Прозрачные гарантии</span>
+					<p>Каждый клиент получает
+						гарантию на наши работы Залог нашего
+						успеха - Качественное хромирование
+						по адекватным ценам с гарантией
+						качества!
+					</p>
+				</div>
+			</div>
+			<a class="main-btn main-btn_blue main-btn-js" href=".form-payment">Расчитать стоимость хромирования</a>
+		</div>
+	</section>
+
+	<section class="calculation form-payment">
+		<div class="container">
+			<h3 class="section-title section-title_white">Рассчитайте стоимость хромирования в 2 шага</h3>
+			<p class="calculation__text">Рассчитали стоимость: <span class="small-btn small-btn_fz counter">654</span> человека</p>
+
+			<div class="form-wrap form-wrap-on">
+				<form id="form2">
+					<div class="form-wrap-on__radio">
+						<label class="radio">
+							<input type="radio" name="radiobutton" value="avto-diski" />
+							<div class="radio__text">Автомобильные диски, фары</div>
+						</label>
+						<label class="radio">
+							<input type="radio" name="radiobutton"  value="elementy-kuzova" />
+							<div class="radio__text">Элементы кузова автомобиля</div>
+						</label>
+						<label class="radio">
+							<input type="radio" name="radiobutton" value="metal-derevo-steklo" />
+							<div class="radio__text">Металл, дерево, стекло или пластик</div>
+						</label>
+					</div>
+
+					<div class="form-wrap-on__input-fields">
+						<input type="text" placeholder="Ваше имя:" name="name">
+						<input type="text" placeholder="Телефон:" name="phone">
+					</div>
+					<p>Стоимость: <span>2 759</span>Р</p>
+					<button class="small-btn small-btn_width" href="#">Следующий шаг</button>
+				</form>
+			</div>
+
+
+
+		</div>
+	</section>
+
+	<section class="example">
+		<div class="container">
+			<h3 class="section-title">Что мы хромируем</h3>
+			<div class="example__wrap">
+
+				<div class="example-item">
+					<img src="img/example-img-1.jpg" alt="img">
+					<div class="example-item__wrap">
+						<p class="example-item__title">Хромирование
+						автомобильных дисков</p>
+						<div class="example-item__bottom">
+							<a class="send-ms main-btn main-btn_blue call-back-btn" href="#order-services">Узнать цену</a>
+
+							<div class="example-item__call">
+								<p>Или звоните нам:</p>
+								<a href="tel:84951234567">8 (495) 123-45-67</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="example-item">
+					<img src="img/example-img-2.jpg" alt="img">
+					<div class="example-item__wrap">
+						<p class="example-item__title">Хромирование
+						автомобильных фар</p>
+						<div class="example-item__bottom">
+							<a class="send-ms main-btn main-btn_blue call-back-btn" href="#order-services">Узнать цену</a>
+
+
+							<div class="example-item__call">
+								<p>Или звоните нам:</p>
+								<a href="tel:84951234567">8 (495) 123-45-67</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="example-item">
+					<img src="img/example-img-3.jpg" alt="img">
+					<div class="example-item__wrap">
+						<p class="example-item__title">Хромирование элементов
+						кузова автомобиля</p>
+						<div class="example-item__bottom">
+						<a class="send-ms main-btn main-btn_blue call-back-btn" href="#order-services">Узнать цену</a>
+
+
+							<div class="example-item__call">
+								<p>Или звоните нам:</p>
+								<a href="tel:84951234567">8 (495) 123-45-67</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="example-item">
+					<img src="img/example-img-4.jpg" alt="img">
+					<div class="example-item__wrap">
+						<p class="example-item__title">Хромирование
+						поверхностей из метала</p>
+						<div class="example-item__bottom">
+							<a class="send-ms main-btn main-btn_blue call-back-btn" href="#order-services">Узнать цену</a>
+
+
+							<div class="example-item__call">
+								<p>Или звоните нам:</p>
+								<a href="tel:84951234567">8 (495) 123-45-67</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="example-item">
+					<img src="img/example-img-5.jpg" alt="img">
+					<div class="example-item__wrap">
+						<p class="example-item__title">Хромирование
+						поверхностей из дерева</p>
+						<div class="example-item__bottom">
+						<a class="send-ms main-btn main-btn_blue call-back-btn" href="#order-services">Узнать цену</a>
+
+							<div class="example-item__call">
+								<p>Или звоните нам:</p>
+								<a href="tel:84951234567">8 (495) 123-45-67</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="example-item">
+					<img src="img/example-img-6.jpg" alt="img">
+					<div class="example-item__wrap">
+						<p class="example-item__title">Хромирование
+						поверхностей из пластика</p>
+						<div class="example-item__bottom">
+							<a class="send-ms main-btn main-btn_blue call-back-btn" href="#order-services">Узнать цену</a>
+
+
+							<div class="example-item__call">
+								<p>Или звоните нам:</p>
+								<a href="tel:84951234567">8 (495) 123-45-67</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="example-item">
+					<img src="img/example-img-7.jpg" alt="img">
+					<div class="example-item__wrap">
+						<p class="example-item__title">Хромирование
+						поверхностей из стекла</p>
+						<div class="example-item__bottom">
+							<a class="send-ms main-btn main-btn_blue call-back-btn" href="#order-services">Узнать цену</a>
+
+
+							<div class="example-item__call">
+								<p>Или звоните нам:</p>
+								<a href="tel:84951234567">8 (495) 123-45-67</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box-manager">
+					<div class="box-manager__wrap">
+						<span>Остались вопросы?</span>
+						<p>менеджер перезвонит через 26 секунд</p>
+						<a class="main-btn main-btn_dark call-back-btn" href="#call-back-modal">Заказать звонок</a>
+					</div>
+				</div>
+
+
+			</div>
+
+
+		</div>
+	</section>
+
+	<section class="map">
+		<div class="map-contact">
+			<span class="map-contact__title">Как к нам проехать</span>
+			<div class="map-contact__wrap">
+				<p class="map-contact__addr">ул. Шоссейная 2Гс1</p>
+				<a class="map-contact__tel" href="tel:84952660632" >8 (495) <b>266-06-32</b></a>
+				<p class="map-contact__hour-work">Работаем с 9:00 до 19:00</p>
+			</div>
+
+			<a class="main-btn main-btn_dark call-back-btn" href="#call-back-modal">Заказать звонок</a>
+		</div>
+		<div id="map"></div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<p>© 2018 ХромPRO - Копирование материалов запрещенно!</p>
+		</div>
+	</footer>
+
+	<!-- modal -->
+
+	<div class="modal-window thx-mesage js-success-modal" id="thx-mesage">
+		<p>Спасибо.<br/> Ваша заявка успешно отправлена.</p>
+	</div>
+
+	<div class="callback-modal" id="call-back-modal">
+		<div class="callback-modal__wrap">
+			<form action="mail.php">
+				<p>Проконсультируйтесь со специалистом</p>
+				<input type="text" placeholder="Ваш номер:" name="phone">
+				<input type="text" placeholder="Ваше имя:" name="name">
+				<button class="main-btn main-btn_blue">Перезвоните мне</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="callback-modal" id="order-services">
+		<div class="callback-modal__wrap">
+			<form id="form3">
+				<p>Хромирование автомобильных дисков</p>
+				<input type="hidden" class="serv" name="serv">
+				<input type="text" placeholder="Ваш номер:" name="phone">
+				<input type="text" placeholder="Ваше имя:" name="name">
+				<button class="main-btn main-btn_blue">Перезвоните мне</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- end - modal -->
+
+	
+	<script src="js/scripts.min.js"></script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL46RDmcOJza0hEcUZW7kq9Uzvl38t31A&callback=initMap">
+</script>
+</body>
+</html>

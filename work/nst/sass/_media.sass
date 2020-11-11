@@ -1,0 +1,421 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.wrap-razdel__item h2
+		position: relative
+		margin-top: 0
+		padding-top: 300px
+		left: auto
+		right: auto 
+	.wrap-razdel .wrap-list
+		position: relative
+		top: auto
+		left: auto
+		right: auto
+	.wrap-razdel .wrap-razdel__item
+		width: 100%
+		padding: 50px 
+		min-height: auto
+		float: none
+		.wrap-list
+			display: none
+			left: auto
+			right: auto     
+			text-align: left
+		&:hover
+			.wrap-list
+				display: block
+			h2
+				display: none
+	.wrap-razdel__item:nth-child(2) h2
+		left: auto
+	.wrap-razdel__item:nth-child(2) .wrap-list ul
+		margin-left: 0
+		margin-right: 50px
+	.footer-contacts
+		display: block
+		text-align: center
+		float: none
+	h2.title-block
+		font-size: 36px
+	.general-partner .partner-wrap__column
+		float: none
+		display: block 
+		width: 100%
+	.general-partner .partner-wrap__column:nth-child(2)
+		float: none 
+	.general-partner__img
+		position: static 
+		margin: 20px 0
+	// 
+	.page-content__basket .basket-item>div
+		font-size: 14px
+	.page-content__basket .basket-item__name
+		margin-left: 20px
+		max-width: 150px
+	.page-content__basket .basket-item__del
+		width: 15px
+	.page-content__basket .basket-item__price
+		max-width: 100px
+	.page-content__basket .basket-item__final
+		max-width: 90px
+	.cart-form__item p
+		text-align: left
+	.cart-form
+		padding-bottom: 30px
+		b
+			font-size: 18px
+		&__item
+			padding-right: 0
+		input
+			margin-top: 15px
+			padding-left: 15px
+		select
+			margin-top: 15px
+			margin-bottom: 15px
+		p
+			text-align: left
+			margin: 0
+	.product-additional
+		&__info
+			max-width: 350px
+			margin-right: 30px
+		&__bonuses
+			max-width: 310px
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.other-part__item a p
+		text-align: center
+	.partner-wrap__column
+		float: none  
+		width: 100%
+		margin: 10px 0
+	.hidro__img 
+		text-align: center
+	.partner-wrap .link
+		margin-left: 20px    
+	.hidro__img img
+		position: static
+	.termo__img
+		width: auto
+		position: static
+	.termo .partner-wrap .partner-wrap__column:first-child
+		float: none
+	.termo .partner-wrap:before
+		display: none
+	.seminar
+		position: static
+		h2.title-block
+			display: none
+			&--mob
+				display: block
+				margin-bottom: 80px
+	.seminar-wrap:before
+		height: calc(100% + 60px)
+	.seminar:after
+		display: none
+	.footer-links
+		display: block
+		width: 100%
+		max-width: 260px
+		margin: 20px auto  
+		text-align: left
+	.footer
+		text-align: center
+	.footer__app
+		text-align: center
+	.block3-wrap
+		background-image: none
+		background-color: #f2f0eb
+	.termo .partner-wrap .partner-wrap__column:first-child
+		padding: 0
+	.foto .foto-wrap
+		margin: 0 -15px
+		a
+			margin-bottom: 10px
+	.seminar
+		padding-top: 0
+	.seminar h2.title-block--mob
+		text-align: right
+	.seminar-item
+		padding: 70px 20px 30px
+		border-width: 15px
+	.seminar .quote
+		width: 60px
+		height: 60px 
+		line-height: 60px
+		img
+			width: 35px
+	.seminar-item h4
+		font-size: 18px
+		text-align: center
+	.seminar-info .partner-wrap .partner-wrap__column
+		width: 100% 
+		padding: 0 30px 0 20px
+	.seminar-info
+		padding-left: 0
+	.seminar-info .partner-wrap .partner-wrap__column:first-child
+		display: none
+		
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.slick-initialized .slick-slide
+		text-align: center
+		img
+			max-width: 100%
+	.foto .partner-wrap .partner-wrap__column, .seminar-info .partner-wrap .partner-wrap__column:nth-child(2)
+		padding: 0 50px 0 20px
+	.header-main__logo
+		max-width: 100px
+		display: inline-block
+		margin-left: 5px
+		vertical-align: middle
+		margin-right: 7px
+	.wrap-razdel .arow-down
+		display: none
+	.wrap-razdel .wrap-razdel__item
+		padding: 20px 50px
+		min-height: 200px 
+	.wrap-razdel__item h2
+		-webkit-transform: translateY(0)
+		-moz-transform: translateY(0)
+		-ms-transform: translateY(0)
+		-o-transform: translateY(0)
+		transform: translateY(0)
+		padding-top: 40px !important
+		margin-bottom: 40px
+	.wrap-razdel .wrap-list ul h4 a
+		font-size: 16px
+	.header-main__top
+		text-align: left
+	.header-main__burger button span
+		width: 34px
+		height: 5px
+		margin: 3px 0
+	.header-main__burger
+		right: 10px  
+	.wrap-razdel__item h2
+		padding-top: 0
+		font-size: 24px 
+	.wrap-razdel .wrap-list ul h4
+		font-size: 16px
+		margin: 10px 0
+	.wrap-razdel .wrap-list ul li
+		display: none
+	h2.title-block
+		font-size: 24px !important 
+	.partner-main .partner-wrap__column:nth-child(3)
+		display: none
+	.wrap-filter ul li
+		margin-left: 15px
+		a
+			text-transform: none          
+	.catalouge-slider
+		padding: 0 10px 20px
+	.general-partner__logo
+		text-align: center
+	.general-partner .partner-wrap__column:nth-child(2)
+		padding: 0
+		margin: 0 -10px
+		img
+			width: 100%  
+	.other-part__item a p
+		padding: 10px 0
+		font-size: 16px
+		text-align: left 
+		br
+			display: none
+	.other-part-wrap .col-xs-6
+		padding: 0 5px          
+	.other-part-wrap
+		overflow: hidden
+		padding: 0 7px 
+	.hidro__img
+		max-height: 300px
+		overflow: hidden
+		img
+			width: 100%
+	.aside .aside-slider
+		padding: 0 0px
+	.aside .aside-item__info b
+		font-size: 18px
+	.aside .aside-slider .slick-arrow
+		display: none
+	.contacts h2.title-block
+		text-align: right
+	.contacts h2.title-block:after
+		right: 15%
+	.contacts-info p
+		padding-left: 20px
+	.contacts-info__form h4
+		font-size: 22px
+	.contacts-info__form
+		padding: 15px
+	.map
+		margin-top: 20px
+		padding: 0
+		#map
+			height: 250px
+	.footer-mob
+		display: block
+		> a
+			display: block
+			margin-bottom: 20px
+	.footer-logo
+		display: none
+	.footer-contacts .soc-wrap
+		display: none
+	.footer__app
+		text-align: left
+		padding-left: 25px
+	.footer__app a
+		display: block
+		margin-left: 0
+		margin-top: 15px
+	.footer-contacts
+		text-align: left
+		padding-left: 15px
+	.header-main__nav
+		> p
+			display: none
+	.mob-phone
+		display: inline-block
+		vertical-align: middle
+		a
+			font-size: 16px
+			font-family: $roboto
+			color: #23326e
+	//  
+	.side-bar
+		display: none
+	.title-block--page
+		a
+			display: none
+	.cart-form__item p
+		text-align: left
+	.title-block--right-mobile
+		text-align: right
+		&:after
+			left: auto
+			right: 0
+	
+	.order-delivery__left
+		padding-left: 25px
+	//
+	.product-info
+		padding: 0 90px
+		a
+			display: block
+			margin-bottom: 20px
+	.slider-nav
+		display: none 
+	.product-additional
+		margin-top: 35px
+		&__info
+			margin-right: 50px
+	.slick-dots
+		list-style: none
+		text-align: center
+		margin-top: 15px
+		li
+			display: inline-block
+			margin: 0 5px
+			button
+				width: 14px
+				height: 14px
+				background-color: #fff
+				border-radius: 50%
+				border: 0
+				font-size: 0
+		.slick-active
+			button
+				background-color: $blue
+	.slider-watched
+		.slick-prev
+			left: -15px
+		.slick-next
+			right: -15px
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.cost-block .cost__item
+		width: 90%
+		margin: 10px auto
+	//
+	.page-content__basket .basket-item
+		max-width: 183px
+		margin: 20px auto
+	.page-content__basket .basket-item>div
+		display: block
+		margin: 15px
+		text-align: left
+	.page-content__basket .basket-item__name
+		margin: 0
+	.order-delivery__right  
+		float: none
+		margin-top: 20px
+		margin: 20px auto
+	.page-content__order
+		margin-bottom: 45px
+		h2
+			text-align: right
+			&:after
+				bottom: -20px
+	.cart-form
+		.button
+			display: block
+			margin: 25px auto 0
+			&--blue
+				display: none 
+	// 
+	.product-info
+		padding: 0
+	.product-title
+		font-size: 24px
+	.slider-watched
+		.slick-arrow
+			width: 45px
+			height: 45px
+			background-size: cover
+		.slick-prev
+			left: -10px
+		.slick-next
+			right: -10px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1600px)
+	.super-prise__img
+		left: 46%
+	.super-prise__steps:before
+		width: 48%
+

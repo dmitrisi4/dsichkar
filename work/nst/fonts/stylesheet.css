@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'book';
+    src: url('BOOKOS (1).TTF');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'book';
+    src: url('BOOKOSB.TTF');
+    font-style: normal;
+    font-weight: 700;
+}

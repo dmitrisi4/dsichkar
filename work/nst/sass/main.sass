@@ -1,0 +1,1416 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+img
+	max-width: 100%
+*
+	outline: none
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.2
+	$color-main: #000
+	overflow-x: hidden
+	font-family: $default-font
+	background-color: #fff
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.container
+	max-width: 1170px
+.wrap-oh
+	overflow: hidden 
+.header-main
+	&__top
+		padding: 20px 0
+		background-color: #f2f0eb
+		text-align: center
+		position: relative
+		&:after
+			position: absolute
+			content: ""
+			left: 0
+			right: 0
+			margin: auto
+			height: 3px
+			background-color: #be191e
+			bottom: 0
+			z-index: 100
+	&__burger
+		position: absolute
+		top: 50%
+		z-index: 100
+		transform: translateY(-50%)
+		right: 50px
+		button
+			background-color: transparent
+			border: none
+			span
+				width: 60px
+				height: 8px
+				background-color: #23326e
+				margin: 8px 0
+				display: block
+	&__nav
+		background-color: #e6e1dc
+		position: absolute
+		right: 0
+		top: 0
+		padding-top: 100px
+		text-align: left
+		padding-left: 40px
+		padding-right: 40px
+		padding-bottom: 30px
+		width: 100%
+		max-width: 330px
+		z-index: 99
+		display: none
+		font-family: $roboto
+		p
+			font-size: 12px
+			margin: 25px 0	
+			a
+				font-size: 18px
+				color: #000
+				text-decoration: none
+				display: inline-block
+				vertical-align: middle
+				margin-top: 10px
+			img
+				vertical-align: middle
+				margin-top: 10px
+				display: inline-block
+				margin-right: 15px					
+		ul
+			padding-left: 0
+			li
+				display: block
+				line-height: 24px
+				a
+					font-size: 16px
+					color: #000
+				.under-menu
+					margin: 0 0 20px
+					position: relative
+					&:after
+						width: calc(100% + 80px)
+						content: ""
+						position: absolute
+						height: 1px
+						background-color: #fff
+						bottom: -10px
+						left: -40px
+			h4
+				font-size: 16px
+				margin: 20px 0 0px
+				font-weight: 700
+				text-transform: uppercase
+.wrap-razdel
+	border-bottom: 3px solid $red
+	position: relative
+	overflow: hidden
+	&__item
+		width: 50%
+		float: left
+		background-position: center
+		background-image: url(../img/header-img1.jpg)
+		min-height: 900px
+		background-size: cover
+		position: relative
+		text-align: right
+		padding: 0 30px
+		h2
+			color: #fff
+			font-size: 48px
+			position: absolute
+			z-index: 2
+			top: 50%
+			text-align: left
+			-webkit-transform: translateY(-50%)
+			-moz-transform: translateY(-50%)
+			-ms-transform: translateY(-50%)
+			-o-transform: translateY(-50%)
+			transform: translateY(-50%)
+			right: 275px
+			&:after
+				position: absolute
+				content: ""
+				width: 120px
+				height: 2px
+				background-color: $red
+				left: 0
+				bottom: -10px
+		&:after
+			position: absolute
+			left: 0
+			top: 0
+			height: 100%
+			width: 100%
+			background-color: rgba(20,20,50, .75)
+			z-index: 0
+			content: ""
+				
+		&:nth-child(2)
+			background-image: url(../img/header-img2.jpg)
+			text-align: left
+			h2
+				right: auto
+				left: 75px
+			.wrap-list
+				right: auto
+				left: 0
+				ul
+					margin-right: 0
+					margin-left: 50px
+		&:hover
+			.wrap-list
+				opacity: 1
+				transition: all 300ms
+			h2
+				opacity: 0
+				transition: all 300ms
+
+	.arow-down
+		position: absolute
+		left: 0
+		right: 0
+		text-align: center
+		margin: auto
+		bottom: 40px
+		z-index: 3		
+	.wrap-list
+		position: absolute
+		right: 0
+		z-index: 2
+		top: 235px
+		opacity: 0
+		transition: all 300ms
+		ul
+			display: inline-block
+			margin-right: 50px
+			text-align: left
+			vertical-align: top
+			margin-top: 0
+			margin-bottom: 0
+			padding-left: 0
+			h4
+				a
+					font-size: 20px
+					font-weight: 700
+					color: #fff
+			li
+				display: block
+				line-height: 24px
+				list-style: none
+				a
+					color: #fff
+					font-size: 14px
+					font-family: $roboto
+
+
+.partner-main
+	background-image: url(../img/block1-bg1.jpg)
+	background-position: center top
+	background-repeat: no-repeat
+	background-color: #f2f0eb
+	background-size: 100%
+.catalouge-main
+	background-image: url(../img/block1-bg2.jpg)
+	background-position: center top
+	background-repeat: no-repeat
+	background-color: #f2f0eb
+	background-size: 100%
+.hidro
+	background-image: url(../img/block3-bg1.jpg)
+	background-position: center top
+	background-repeat: no-repeat
+	background-color: #f2f0eb
+	background-size: 100%
+.termo
+	background-image: url(../img/block3-bg2.jpg)
+	background-position: center top
+	background-repeat: no-repeat
+	background-color: #f2f0eb
+	background-size: 100%
+h2.title-block
+	margin: 50px 0
+	position: relative
+	font-size: 48px
+	font-weight: 400
+	letter-spacing: 0
+	color: $blue
+	text-transform: uppercase	
+	&:after
+		position: absolute
+		content: ""
+		right: 0
+		margin: auto
+		width: 75%
+		bottom: -35px
+		height: 2px	
+		background-color: $red
+	&--right
+		text-align: right
+		&:after
+			right: auto
+			left: 44%
+			width: 100%
+	&--mob
+		display: none
+	&--page
+		margin-bottom: 80px
+		margin-top: 0
+		&:after
+			left: 0
+			right: auto
+			width: 300%
+		
+.catalouge-item
+	background-color: #FFF
+	padding: 45px 25px 25px
+	position: relative
+	display: inline-block
+	margin: 0 5px
+	border-radius: 10px
+	p
+		text-align: center
+		font-family: $roboto
+		font-size: 18px
+		position: relative
+		margin: 40px 0 15px
+		&:after
+			height: 1px
+			margin: 15px auto 0
+			background-color: #e6e1dc
+			width: 100px
+			display: block
+			content: ""
+	&__new
+		position: absolute
+		right: 10px
+		top: 10px
+		border-radius: 50%
+		text-align: center
+		line-height: 34px
+		font-size: 14px
+		font-weight: 700
+		color: $red
+		width: 54px
+		height: 54px
+		border: 10px solid #f2f0eb
+	&__bot
+		button
+			float: right
+			background-color: transparent
+			border: none
+		b
+			font-size: 24px
+			color: $blue
+			font-weight: 700
+.catalouge-slider
+	padding: 0 70px 30px
+.catalouge-main
+	padding-bottom: 30px
+.slick-arrow
+	font-size: 0
+	background-color: transparent
+	border: none
+	position: absolute
+	top: 50%
+	-webkit-transform: translateY(-50%) rotate(180deg)
+	-moz-transform: translateY(-50%) rotate(180deg)
+	-ms-transform: translateY(-50%) rotate(180deg)
+	-o-transform: translateY(-50%) rotate(180deg)
+	transform: translateY(-50%) rotate(180deg)
+	outline: none
+	background-image: url(../img/slider-arow.png)
+	width: 60px
+	height: 60px
+	transition: all 300ms
+	z-index: 1
+	opacity: .7
+	&:hover
+		opacity: 1
+.slick-next
+	right: 5px
+.slick-prev	
+	-webkit-transform: translateY(-50%)
+	-moz-transform: translateY(-50%)
+	-ms-transform: translateY(-50%)
+	-o-transform: translateY(-50%)
+	transform: translateY(-50%)
+	left: 5px
+.partner-wrap
+	font-size: 0
+	margin-top: 25px
+	&__column
+		display: inline-block
+		width: 33.333%
+		position: relative
+		vertical-align: top
+		padding: 0 41px 0 30px
+		p
+			font-size: 16px
+			margin: auto
+			font-family: $roboto
+.wrap-filter
+	text-align: right
+	overflow: hidden
+	ul
+		padding-left: 0 
+		display: block
+		
+		margin: 25px 0 50px
+		li
+			display: inline-block
+			margin-left: 55px
+			a
+				font-size: 20px
+				font-family: $roboto
+				text-transform: uppercase
+				color: $blue
+				text-decoration: none
+			&.active
+				a
+					color: $red
+					text-decoration: underline
+					font-weight: 700
+.link
+	color: $red
+	text-transform: uppercase
+	font-size: 18px
+	font-weight: 700
+	text-decoration: none
+	display: inline-block
+	margin: 10px 0
+	position: relative
+	&:after
+		width: 100%
+		left: 0
+		transition: all 300ms
+		bottom: -7px
+		position: absolute
+		content: ""
+		height: 1px
+		background-color: $red
+	&:hover
+		transition: all 300ms
+		color: $blue
+		text-decoration: none
+		&:after
+			background-color: $blue
+	&--blue
+		color: $blue
+		&:after
+			background-color: $blue
+		&:hover
+			transition: all 300ms
+			color: $red
+			&:after
+				background-color: $red
+.general-partner
+	background-image: url(../img/block2-bg.jpg)
+	background-repeat: no-repeat
+	padding-bottom: 10px
+	position: relative
+	z-index: 2
+	background-size: cover
+	h2.title-block:after
+		width: 75%
+		right: 0
+		left: auto
+	&__logo
+		margin-top: 25px
+	&__img
+		position: absolute
+		left: 0
+		top: 0
+		width: 200%
+	.partner-wrap__column:nth-child(2)
+		float: right
+
+.block2-wrap
+.other-part
+	position: relative
+	margin-top: -2px
+	z-index: 1
+	background-image: url(../img/block2-bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	padding-bottom: 50px
+	h2.title-block:after
+		width: 100%
+		left: 0
+	.partner-wrap .partner-wrap__column
+		width: 100%	
+		padding-right: 20px
+	&__item
+		text-align: center
+		a
+			text-decoration: none
+			color: #000
+			p
+				text-align: left
+				margin: 0
+				min-height: 85px
+				padding: 20px 30px
+.block3-wrap
+	background-image: url(../img/block3-bg.jpg)
+	background-size: cover
+	background-position: center top
+.other-part-wrap
+	margin-top: 25px
+.hidro
+	min-height: 1060px
+	&__img
+		position: relative
+		margin-top: 25px
+		img
+			position: absolute
+			right: 25px
+			max-width: none
+			top: 0
+.termo
+	min-height: 936px
+	padding-bottom: 50px
+	h2.title-block:after
+		width: 100%
+		left: 0
+	&__img
+		position: absolute
+		left: 0
+		top: 0
+		width: 300%
+	.partner-wrap
+		position: relative
+		&:before
+			top: 0
+			left: -25px
+			content: ""
+			position: absolute
+			width: 2px
+			height: 240px
+			background-color: #cfc7c0
+		.partner-wrap__column:first-child
+			float: right	
+.foto
+	padding-bottom: 30px
+	background-image: url(../img/block2-bg.jpg)
+	background-size: cover
+	
+	.partner-wrap .partner-wrap__column
+		width: 100%
+		padding: 0 50px 0 0
+		p:first-child
+			margin-bottom: 30px 
+	.foto-wrap
+		margin-top: 25px
+		a
+			display: inline-block
+			margin-bottom: 35px
+			position: relative
+			span
+				position: absolute
+				display: none
+				width: 100%
+				min-height: 85px
+				padding-left: 40px
+				padding-top: 20px
+				font-family: $roboto
+				font-size: 16px
+				bottom: 0
+				background-color: rgba(20,20,50, .5)
+				color: #fff
+			&:hover
+				span
+					display: block
+.seminar
+	position: relative
+	background-color: #f2f0eb
+	padding: 130px 0
+	&:after
+		position: absolute
+		bottom: 25px
+		right: 10%
+		content: ""
+		background-image: url(../img/decor.png)
+		height: 232px
+		width: 342px
+	&-wrap
+		position: relative		
+		&:before
+			height: calc(100% + 140px) 
+			position: absolute
+			top: 50%
+			-webkit-transform: translateY(-50%)
+			-moz-transform: translateY(-50%)
+			-ms-transform: translateY(-50%)
+			-o-transform: translateY(-50%)
+			transform: translateY(-50%)
+			background-color: #e6e1dc
+			width: 300%
+			content: ""
+			z-index: 0
+			right: -70px		
+			margin-right: 20px
+	&-info
+		padding-left: 60px
+		.partner-wrap
+			overflow: hidden
+			padding-top: 25px
+			clear: both
+		.partner-wrap .partner-wrap__column
+			width: 50%
+			padding: 0 30px 0 0
+			&:nth-child(2)
+				float: right
+				padding: 0 0 0 30px
+		h2.title-block:after
+			width: 250%
+			clear: both
+			left: 0
+	&-item
+		background-color: #FFF
+		position: relative
+		border: 35px solid #f2f0eb
+		z-index: 1
+		padding: 140px 70px
+		h4
+			color: $blue
+			font-size: 30px
+			font-weight: 700
+			position: relative
+			&:after
+				position: absolute
+				content: ""
+				right: 0
+				margin: auto
+				width: 100%
+				bottom: -15px
+				height: 2px	
+				background-color: $red
+
+		ul
+			padding-left: 0
+			list-style: none
+			li
+				font-family: $roboto
+				font-size: 16px
+				margin: 20px 0
+	.quote
+		position: absolute
+		left: 0
+		top: 0
+		width: 120px
+		height: 120px
+		background-color: #f2f0eb
+		text-align: center
+		line-height: 120px
+.aside
+	background-image: url(../img/block2-bg.jpg)
+	background-size: cover
+	padding-bottom: 50px
+	background-repeat: no-repeat
+	h2.title-block:after
+		width: 300%
+		left: -100%
+		right: -100%
+	.aside-item
+		display: inline-block
+		max-width: 410px
+		margin: 0 17px
+		&__img
+			background-color: #8d8379
+		&__info
+			padding: 0 20px
+			p
+				font-family: $roboto
+				color: #000
+				font-size: 16px
+				margin: 25px 0
+			b
+				text-transform: uppercase
+				color: $blue
+				font-size: 30px
+	.aside-slider
+		padding: 0 70px
+		margin-top: 50px
+		margin-bottom: 40px
+		.slick-arrow
+			background-image: url(../img/slider-arow2.png)
+.contacts
+	background-image: url(../img/contacts-bg.jpg)
+	background-position: center bottom
+	position: relative
+	background-size: cover
+	
+	padding: 70px 0
+	&:before
+		position: absolute
+		content: ""
+		background-image: url(../img/decor1.png)
+		width: 113px
+		height: 112px
+		left: 7%
+		top: 185px
+	h2.title-block
+		margin-top: 0
+	h2.title-block:after
+		left: auto
+		right: 55%
+		width: 300%
+	&-info
+		p
+			font-family: $roboto
+			font-size: 16px
+			margin: 20px 0
+			&:nth-child(2)
+				padding-top: 15px
+		&__form
+			border: 18px solid #e6e1dc
+			background-color: transparent
+			padding: 50px
+			h4
+				color: $blue
+				font-size: 30px
+				margin-bottom: 10px
+				margin-top: 0
+				margin-bottom: 15px
+			input
+				height: 40px
+				margin-bottom: 4px
+				display: block
+				width: 240px
+				background-color: transparent
+				border: none
+				border-bottom: 1px solid #e6e1dc
+			button
+				background-color: transparent
+				border: none
+				
+.map
+	padding: 0 50px
+	#map
+		height: 800px
+.footer
+	background-color: #1e326e
+	padding: 45px 0
+	&-links
+		display: inline-block
+		margin-right: 45px
+		vertical-align: top
+		h4
+			position: relative
+			margin-bottom: 30px
+			&:after
+				position: absolute
+				content: ""
+				height: 2px
+				width: 180px
+				background-color: $red
+				bottom: -15px
+				left: 0
+			a
+				font-size: 24px
+				color: #fff
+		ul
+			padding-left: 0
+			margin: auto
+			li
+				list-style: none
+				a
+					color: #fff
+					text-decoration: none
+					font-family: $roboto
+					font-size: 16px
+	&-contacts
+		float: right
+		position: relative
+		padding-right: 55px
+		p
+			font-family: $roboto
+			margin: 10px 0
+			span
+				display: block
+				color: #fff
+				margin-bottom: 7px
+				font-size: 12px
+			img
+				margin-right: 15px
+			a
+				color: #fff
+				font-size: 16px
+				text-decoration: underline
+			&.phone
+				a
+					font-size: 18px
+					text-decoration: none
+		.soc-wrap
+			position: absolute
+			right: 0
+			top: 20px
+			a
+				display: block
+				margin-bottom: 15px
+	&__app
+		color: #fff
+		text-align: right
+		margin-top: 25px
+		font-family: $roboto
+		a
+			display: inline-block
+			vertical-align: middle
+			margin-left: 20px
+	&-mob
+		display: none
+
+.catalog-btn
+	background-color: $red
+	color: #fff
+	border: none
+	width: 180px
+	height: 36px
+	font-size: 20px
+	font-weight: 700
+	border-radius: 10px
+	margin-top: 15px
+	padding: 5px 15px
+	text-align: left
+	b
+		display: inline-block
+		vertical-align: middle
+		margin-left: 15px
+		span
+			display: block 
+			width: 23px
+			height: 4px
+			margin: 3px 0
+			background-color: #FFF 
+.mob-phone
+	display: none
+.hidro .link, .termo .link, .partner-main .link, .general-partner .link
+	margin-left: 25px	
+.header-page
+	background-color: #f2f0eb
+	&__top
+		border-bottom: 2px solid #fff
+		text-align: right
+		padding: 12px 0
+		ul
+			padding-left: 0
+			margin: auto
+			display: inline-block
+			vertical-align: middle
+			li
+				list-style: none
+				display: inline-block
+				margin-right: 30px
+				a
+					font-family: $roboto
+					font-size: 16px
+					color: #918f88
+					text-decoration: none
+	&__soc
+		display: inline-block
+		vertical-align: middle
+		a
+			display: inline-block
+			vertical-align: middle
+			margin-left: 5px
+	&__logo
+		display: inline-block
+		vertical-align: middle
+		p
+			display: inline-block
+			vertical-align: middle
+			color: #000
+			margin-left: 55px
+			font-family: $roboto
+			font-size: 16px
+	&__contacts
+		display: inline-block
+		vertical-align: middle
+		font-family: $roboto
+	&__middle
+		padding: 15px 0 
+	&__phone
+		display: inline-block
+		vertical-align: middle
+		margin: 0 50px
+		p
+			margin: 5px 0
+			span
+				font-size: 12px
+				display: block
+				margin-bottom: 5px
+				color: #918f88
+			a
+				display: inline-block
+				vertical-align: middle
+				margin-left: 10px
+				color: #000
+				font-size: 16px
+				text-decoration: none
+	&__call-back
+		display: inline-block
+		vertical-align: bottom
+		padding-bottom: 5px
+		p
+			margin: 0px 0
+			&:last-child
+				margin-top: 20px
+		a
+			font-size: 16px
+			display: inline-block
+			text-decoration: underline
+			vertical-align: middle
+			margin-left: 10px
+			color: #1e326e
+	&__cart
+		margin-left: 70px
+		display: inline-block
+		vertical-align: middle
+		font-family: $roboto
+		button
+			background-color: transparent
+			outline: none
+			position: relative
+			border: none
+			font-size: 16px
+			color: $red
+			span
+				text-decoration: underline
+				
+			img
+				margin-right: 20px
+			&:after
+				position: absolute
+				content: ""
+				bottom: -10px
+				left: 0
+				background-color: #cfc7c0
+				height: 4px
+				width: 100%
+	&__bot
+		background-color: #1e326e
+		padding: 10px 0
+		.catalog-btn
+			margin-top: 0
+		ul
+			display: inline-block
+			vertical-align: middle
+			margin: auto
+			li		
+				display: inline-block
+				vertical-align: middle
+				list-style: none
+				margin: 0 22px
+				a
+					font-size: 18px
+					color: #fff
+					text-transform: uppercase
+	&__search
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		input
+			border-radius: 4px
+			background-color: rgb(255, 255, 255)
+			width: 210px
+			height: 36px
+			padding-left: 10px
+			border: none
+			
+			font-family: $roboto
+			font-size: 12px
+		button
+			position: absolute
+			right: 10px
+			top: 50%
+			-webkit-transform: translateY(-50%)
+			-moz-transform: translateY(-50%)
+			-ms-transform: translateY(-50%)
+			-o-transform: translateY(-50%)
+			transform: translateY(-50%)
+			background-color: transparent
+			border: none
+			outline: none
+.bread-crumbs
+	color: #000
+	padding: 20px 0
+	font-family: $roboto
+	a
+		color: #000
+		text-decoration: none
+.page
+	background-image: url(../img/page-bg.jpg)
+	background-size: 100%
+	background-position: center top
+	background-color: #f2f0eb
+	position: relative
+	background-repeat: no-repeat
+	&--contacts:after
+		position: absolute
+		content: ""
+		right: 5%
+		bottom: 0
+		background-image: url(../img/decor-page.png)
+		width: 190px
+		height: 99px
+.side-bar
+	padding-right: 30px
+	margin-top: 87px
+	&__item
+		background-color: #e6e1dc
+		border-radius: 10px
+		padding: 15px
+		margin-bottom: 15px
+		ul
+			padding-left: 0
+			margin: auto
+			li
+				list-style: none
+				display: block
+				margin-bottom: 15px
+				&:last-child
+					margin-bottom: 10px
+				a
+					font-family: $roboto
+					font-size: 16px
+					font-weight: 400
+					color: #000
+		h4
+			margin: 10px 0 15px
+			a
+				font-size: 18px
+				color: $blue
+				text-transform: uppercase
+// 
+// basket page
+.title-block--page
+	a
+		position: relative
+		display: inline-block
+		font-size: 18px
+		font-weight: 700
+		color: $blue
+		max-width: 225px
+		padding-left: 85px
+		text-decoration: none
+		span
+			text-align: left
+		&:before
+			content: ""
+			position: absolute
+			top: 50px
+			max-width: 142px
+			width: 100%
+			height: 2px
+			background-color: $blue			
+.page-content__basket
+	.basket-item
+		margin-top: 20px
+		padding-bottom: 20px
+		border-bottom: 2px solid #e6e1dc
+		>div
+			display: inline-block
+			vertical-align: middle
+			font-family: $roboto
+			font-size: 16px
+			font-weight: 400
+			color: #000	
+		&__image
+			max-width: 180px
+			width: 100%
+		&__name
+			max-width: 170px
+			width: 100%
+			text-align: left
+			margin-left: 60px
+			
+		&__price
+			max-width: 130px
+			width: 100%
+			text-align: center
+		&__final
+			max-width: 130px
+			width: 100%
+			text-align: center
+			b
+				font-weight: 500
+		&__del
+			text-align: right
+			width: 30px
+			button
+				width: 13px
+				height: 14px
+				background: transparent url("../img/del-icon.png") no-repeat
+				border: 0
+.basket-item__cap
+	max-width: 115px
+	width: 100%
+	.dec, .inc
+		margin: 0 5px
+		width: 24px
+		height: 24px
+		border-radius: 50%
+		background-color: transparent
+		border: 2px solid #cfc7c0
+		position: relative
+		top: 5px
+		text-align: center
+		&:after
+			content: ""
+			position: absolute
+			top: -1px
+			left: 4px
+			border: 6px solid transparent
+			border-bottom: 8px solid #cfc7c0
+	.inc
+		&:after
+			transform: rotate(180deg)
+			top: 8px
+	span
+		position: relative				
+		i
+			font-style: normal
+			&:before
+				content: ""
+				position: absolute
+				top: 20px
+				display: inline-block
+				width: 33px
+				height: 2px
+				background-color: #cfc7c0
+.order-delivery
+	&__left
+		max-width: 446px
+		p
+			font-size: 16px
+			font-weight: 400
+			font-family: $roboto
+			color: #000
+	&__right
+		float: right
+		max-width: 268px
+		padding: 24px 15px 28px 15px
+		background-color: #e6e1dc;
+		color: #000
+		font-size: 16px
+		font-family: $roboto
+		p
+			font-weight: 400
+			padding-left: 20px
+			b
+				font-weight: 500
+				display: inline-block
+				vertical-align: middle
+				margin-left: 25px
+		label
+			font-size: 12px
+		.checkbox + label
+			cursor: pointer
+			font-size: 11.5px
+			font-weight: 400
+			font-family: $roboto
+		.checkbox:not(checked)
+			position: absolute
+			opacity: 0
+		.checkbox:not(checked) + label 
+			display: inline-block
+			position: relative /* будем позиционировать псевдочекбокс относительно label */
+			padding: 0 0 0 31px /* оставляем слева от label место под псевдочекбокс */
+		
+		/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+		.checkbox:not(checked) + label:before 
+			content: ""
+			position: absolute
+			top: 2px
+			left: 0
+			width: 24px
+			height: 24px
+			border-radius: 50%
+			background: #fff
+
+		/* Переключатель чекбокса, когда он включен. */
+		.checkbox:checked + label:after
+			content: ''
+			position: absolute
+			top: 8.5px
+			left: 7px
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background: #000
+			transition: all .2s
+.button
+	width: 230px
+	color: #fff
+	font-size: 24px
+	font-weight: 700
+	border: none
+	font-family: $default-font
+	margin-top: 15px
+	outline: none
+	height: 52px
+	border-radius: 4px
+	background-color: #be191e
+	transition: all 300ms
+	&:hover
+		background-color: $blue
+.page-content__order
+	margin-bottom: 70px
+	clear: both
+	overflow: hidden	
+.cart-form
+	padding-bottom: 60px
+	b
+		font-weight: 400
+		color: $blue
+		display: block
+		margin-bottom: 30px
+		font-size: 24px
+		a
+			color: $blue
+			font-weight: 700
+			text-decoration: underline
+	&__item
+		margin-bottom: 15px
+		padding-right: 60px
+		span
+			max-width: 220px
+			width: 100%
+			font-family: $roboto
+			font-size: 16px
+			display: inline-block
+			vertical-align: middle
+		input, select
+			width: 100%
+			height: 40px
+			display: inline-block
+			vertical-align: middle
+			border: none
+			max-width: 560px
+			padding-left: 30px
+			font-size: 16px
+			font-weight: 400
+			font-family: $roboto
+			&::placeholder
+				font-size: 16px
+				font-weight: 400
+				color: #000
+				font-family: $roboto
+			&:focus::placeholder
+				opacity: 0
+				transition: all 300ms
+		select
+			background-color: #fff
+			font-family: $roboto
+			color: #000
+		p
+			text-align: center
+			margin-right: 50px
+			margin-bottom: 20px
+			font-family: $roboto
+			font-size: 14px
+			color: #000
+			font-weight: 400
+	.radio 
+		vertical-align: top
+		width: 17px
+		height: 17px
+		margin: 0 3px 0 0
+
+	.radio + label 
+		cursor: pointer
+		display: block
+		margin: 18px 0
+		font-family: $roboto
+		font-weight: 400
+
+	.radio:not(checked) 
+		position: absolute
+		opacity: 0		
+	.radio:not(checked) + label
+		position: relative
+		padding: 0 0 0 35px		
+	.radio:not(checked) + label:before 
+		content: ''
+		position: absolute
+		top: -3px
+		left: 0
+		width: 24px
+		height: 24px
+		border: 1px solid #CDD1DA
+		border-radius: 50%
+		background: #fff		
+	.radio:not(checked) + label:after
+		content: ''
+		position: absolute
+		top: 5px
+		left: 7px
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		background: #000
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.5)
+		opacity: 0
+		transition: all .2s		
+	.radio:checked + label:after
+		opacity: 1
+
+	.button
+		width: 260px
+		height: 52px
+		margin-top: 35px
+		margin-right: 18px
+		border-radius: 4px
+		background-color: $red
+		border: 0
+		color: #fff
+		font-size: 24px
+		font-weight: 700
+		&:hover
+			background-color: $blue
+		&--blue
+			background-color: $blue
+			&:hover
+				background-color: $red
+.slider-for
+// Card Product
+.product-info
+	p
+		font-size: 16px
+		font-family: $roboto
+		font-weight: 400
+		margin: 0
+		color: #000
+	b
+		display: inline-block
+		font-size: 30px
+		color: $blue
+		font-weight: 700
+		margin-top: 25px
+		margin-bottom: 15px
+	.button
+		display: block
+		position: relative
+		margin-top: 13px
+		margin-bottom: 30px
+
+		&:before
+			content: ""
+			position: absolute
+			left: 17px
+			width: 29px
+			height: 29px
+			background-image: url("../img/cart-white.png")
+
+	a
+		position: relative
+		display: inline-block
+		font-family: $roboto
+		font-size: 15px
+		font-weight: 400
+		color: $red
+		margin-bottom: 30px
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	.basket-item__cap
+		font-family: $roboto
+
+.product-slider	
+	&__content
+	.slider-nav
+		margin-top: 20px
+.product-title
+	color: $blue
+	font-size: 30px
+	font-weight: 700
+.product-additional
+	margin-top: 65px
+	>div
+		display: inline-block
+		vertical-align: top
+	ul, p
+		padding: 0
+		list-style: none
+		font-size: 16px
+		font-family: $roboto
+		color: #000
+		font-weight: 400
+	&__info
+		max-width: 372px
+		margin-right: 100px
+
+	&__bonuses
+		max-width: 350px
+
+.slider-watched
+	.slick-prev
+		left: -25px
+	.slick-next
+		right: -25px
+	.item
+		max-width: 280px
+		width: 100%
+		margin: 0 15px
+		padding-top: 50px
+		background-color: #fff
+		&__image
+			img
+				display: block
+				margin: 0 auto
+		&__content
+			text-align: center
+			b
+				display: block
+				height: 60px
+				font-family: $roboto
+				font-size: 18px
+				font-weight: 400
+				color: #000
+				padding: 0 40px
+
+			p
+				display: inline-block
+				font-size: 24px
+				font-weight: 700
+				color: $blue
+			button
+				display: inline-block
+				width: 32px
+				height: 31px
+				border: none
+				background: transparent url("../img/cart-ico.png")
+				margin-left: 50px
+@import "media"

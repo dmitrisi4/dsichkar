@@ -1,0 +1,622 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+img
+	max-width: 100%
+*
+	outline: none
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	$color-main: #1f1f1f
+	overflow-x: hidden
+	font-family: $default-font
+	font-weight: 400
+	background-color: #fff
+	opacity: 1
+
+// total
+.container
+	max-width: 1200px
+	width: 100%
+
+.main-btn
+	display: inline-block
+	color: #fff
+	box-shadow: 0 23px 34px rgba(0, 0, 0, 0.11)
+	border-radius: 4px
+	font-size: 13px
+	font-weight: 700
+	line-height: 45px
+	padding: 0px 25px 0px 30px
+	&:hover, &:focus
+		color: #fff
+		text-decoration: none
+.main-btn_blue
+	background-color: #2182f6
+.main-btn_dark
+	background-color: #1b1f22
+
+.small-btn
+	background-color: #1b1f22
+	display: inline-block
+	border-radius: 4px
+	border: 0
+	font-size: 13px
+	font-weight: 700
+	padding: 14px 33px 13px
+	box-shadow: 0 23px 34px rgba(0, 0, 0, 0.11)
+	color: #fff
+.small-btn_fz
+	font-size: 24px
+	font-weight: 400
+	padding: 6px 33px
+.small-btn_width
+	max-width: 145px
+	width: 100%
+
+.section-title
+	font-size: 32px
+	color: #1c2224
+	text-align: center
+	font-weight: 400
+	margin: 0
+.section-title_white
+	color: #fff
+.bold
+	font-weight: 700
+
+.thx-mesage
+	display: none
+	max-width: 350px
+	background: #fff
+	text-align: center
+	padding: 10px 0
+	width: 100%
+
+
+.fancybox-close-small
+	background: #000 url("../img/close.png") center no-repeat !important
+	width: 24px !important
+	height: 24px !important
+
+.fancybox-close-small:after
+	display: none
+// end total
+
+
+// main-screen/header
+.main-screen
+	background: url("../img/bg-1.jpg")  center no-repeat
+	background-size: cover
+	padding-bottom: 240px
+	&__content
+		margin-top: 165px
+		color: #fff
+		text-align: center
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			left: -9%
+			top: 150%
+			width: 1236px
+			height: 354px
+			background: url("../img/iris.png")
+		h1
+			position: relative
+			font-size: 50px
+			font-weight: 700
+			text-transform: uppercase
+			margin: 0
+			&:before
+				content: ''
+				position: absolute
+				left: calc(50% - 111.5px)
+				bottom: 0
+				width: 223px
+				height: 3px
+				border-radius: 2px
+				background-color: #ffffff
+		h2
+			font-size: 30px
+			font-weight: 400
+			text-transform: uppercase
+			span
+				font-weight: 700
+				font-size: 30px
+		span
+			font-size: 24px
+	&__feedback
+		margin-top: 130px
+		margin-right: 90px
+		padding: 30px 45px 32px 27px
+		max-width: 373px
+		border-radius: 4px
+		background-color: #2182f6
+		float: right
+		position: relative
+		p
+			font-size: 17px
+			font-weight: 700
+			color: #fff
+			span
+				font-weight: 400
+
+.header
+	position: fixed
+	width: 100%
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%)
+	z-index: 100
+	padding-top: 45px
+	transition: all .2s
+
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo
+		display: inline-block
+		margin: 0
+		font-size: 25px
+		font-weight: 700
+		color: #fff
+		span
+			display: inline-block
+			padding: 5px 8px
+			box-shadow: 0 23px 34px rgba(0, 0, 0, 0.11)
+			border-radius: 4px
+			background-color: #2182f6
+			font-weight: 400
+	&__content
+		display: flex
+		align-items: center
+	&__address
+		display: inline-block
+		margin: 0
+		color: #fff
+		font-size: 16px
+		a
+			text-decoration: underline
+			color: #fff
+	&__call
+		display: inline-block
+		margin-left: 80px
+		font-size: 16px
+		font-weight: 400
+		color: #fff
+		&:hover, &:focus
+			color: #fff
+			text-decoration: none
+	.main-btn
+		margin-left: 30px
+
+.header.header-shrink
+	background: #000
+	transition: all .2s
+	padding: 10px 0
+// end
+
+// guarantees
+.guarantees
+	font-size: 15px
+	padding-bottom: 158px
+	color: #1f1f1f
+	&__wrap
+	&__right
+		float: right
+		max-width: 565px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			left: -670px
+			top: 0
+			width: 660px
+			height: 815px
+			background: url("../img/men-ok.png") center -20% no-repeat
+			background-size: 
+
+		.main-btn
+			margin-top: 35px
+	&__text
+		margin-top: 90px
+	&__list-title
+		margin-top: 65px
+	ol
+		counter-reset: myCounter
+		padding-left: 30px
+		margin-bottom: 50px
+		li
+			list-style: none
+			position: relative
+			margin: 15px 0
+			font-size: 15px
+			color: #1f1f1f
+			&:before
+				position: absolute
+				left: -30px
+				counter-increment: myCounter
+				content: counter(myCounter)
+				display: inline-block
+				font-size: 10px
+				font-weight: 700
+				color: #fff
+				background-color: #1d2125
+				line-height: 23px
+				border-radius: 50%
+				width: 20px
+				height: 20px
+				text-align: center
+
+// end guarantees
+
+// calculation
+.calculation
+	position: relative
+	background-color: #2182f6
+	padding: 130px 0 100px
+	text-align: center
+	p
+		color: #fff
+	&__text
+		font-size: 24px
+		font-weight: 400
+	.form-wrap, .form-wrap-1, .form-wrap-2
+		p
+			margin: 70px 0 0
+			font-size: 25px
+		span
+			font-weight: 700
+	.form-wrap-1, .form-wrap-2
+		display: none
+	.inscription
+		display: block
+		font-size: 32px
+		border-radius: 5px
+		font-weight: 700
+		max-width: 498px
+		margin: 50px auto 40px
+		padding: 14px 0 12px
+		color: #fff
+		background-color: rgba(255, 255, 255, .1)
+	.form-wrap-2
+		input
+			margin: 0 10px
+			padding-left: 20px
+			padding-right: 5px
+			max-width: 238px
+			width: 100%
+			height: 45px
+			border-radius: 4px
+			border: 0	
+// end - calculation
+
+// about-service
+.about-service
+	padding-top: 140px
+	padding-bottom: 110px
+	&__right
+		margin-top: 120px
+		float: right
+		max-width: 565px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			left: -700px
+			width: 670px
+			height: 570px
+			background: url("../img/men-2.jpg")
+		p, b
+			font-size: 15px
+			line-height: 30px
+		b
+			margin-top: 30px
+			display: inline-block
+		a
+			margin-top: 55px
+// end - about-service
+
+// advantages
+.advantages
+	padding-top: 110px
+	padding-bottom: 100px
+	background-color: #e4f0fe
+	text-align: center
+	.main-btn
+		margin-top: 50px		
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-top: 100px
+.advantages-item
+	max-width: 340px
+	margin: 25px 0
+	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: center
+	// img
+	// 	max-width: 69px
+	// 	max-height: 66px
+	&__title
+		font-size: 15px
+		font-weight: 700
+		color: #1f2529
+	p
+		font-size: 15px
+		margin: 15px 0 0
+.advantages-item_width
+	max-width: 360px
+// end - advantages
+
+// form-payment
+.form-payment
+	padding-bottom: 70px
+.form-wrap-on
+	display: block !important
+	&__radio
+		display: flex
+		justify-content: center
+	&__input-fields
+		margin-top: 80px
+		input
+			margin: 0 10px
+			padding-left: 20px
+			padding-right: 5px
+			max-width: 238px
+			width: 100%
+			height: 45px
+			border-radius: 4px
+			border: 0
+			&::placeholder
+				font-size: 13px
+				color: #21262b
+				opacity: 1
+				transition: all .2s
+			&:focus::placeholder
+				opacity: 0
+	.small-btn_width
+		margin-top: 40px
+		padding: 14px 16px 13px
+		&:hover, &:focus
+			color: #fff
+			text-decoration: none
+
+// end - form-payment
+
+// example
+.example
+	padding-top: 115px
+	padding-bottom: 100px
+	&__wrap
+		margin-top: 70px
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+.example-item
+	text-align: center
+	max-width: 375px
+	margin: 14px 0
+	box-shadow: 0 6px 34px rgba(42, 62, 90, 0.14)
+	&__wrap
+		padding: 30px 0 15px
+	&__title
+		font-size: 17px
+		color: #1c2224
+		font-weight: 700
+		max-width: 237px
+		margin: 0 auto
+	&__bottom
+		display: flex
+		justify-content: space-around
+		margin-top: 30px
+	&__call
+		display: inline-block
+		text-align: left
+		p
+			margin: 0
+			font-size: 13px
+			color: #20252a
+		a
+			font-size: 17px
+			color: #20252a
+			font-weight: 700
+			&:hover, &:focus
+				text-decoration: none
+				color: #20252a
+	.main-btn
+		max-width: 153px
+		width: 100%
+	
+.box-manager
+	position: relative
+	display: flex
+	margin: 14px 0
+	padding-right: 50px
+	background: #1c73dc
+	max-width: 776px
+	width: 100%
+	max-height: 386px
+	box-shadow: 0 23px 34px rgba(0, 0, 0, 0.11)
+	border-radius: 5px
+	justify-content: flex-end
+	align-items: center
+	&:before
+			content: ''
+			position: absolute
+			top: -22px
+			left: -10px
+			max-width: 302px
+			width: 100%
+			height: 408px
+			background: url("../img/wm-img.png")
+	&__wrap
+		color: #fff
+		span
+			font-size: 34px
+			font-weight: 700
+		p
+			font-size: 20px
+// end - example
+
+// map	
+#map
+	width: 100%
+	height: 620px
+	background-color: grey
+.map
+	position: relative
+.map-contact
+	position: absolute
+	top: 185px
+	left: 370px
+	z-index: 50
+	padding: 50px  32px 32px 28px
+	max-width: 454px
+	background: #1c73dc
+	border-radius: 5px
+	box-shadow: 0 23px 34px rgba(0, 0, 0, 0.11)
+	&__title
+		font-size: 32px
+		color: #fff
+	&__wrap
+		margin-top: 35px
+		display: flex
+		flex-wrap: wrap
+		color: #fff
+		justify-content: space-between
+		p
+			margin: 0
+	&__addr
+		padding-left: 23px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			left: 0px
+			z-index: 51
+			width: 15px
+			height: 17px
+			background: url("../img/map-icon.png")
+			background-position: top
+	&__tel
+		color: #fff
+		position: relative
+		&:hover, &:focus
+			color: #fff
+			text-decoration: none
+		&:before
+			content: ''
+			position: absolute
+			top: 4px
+			left: -29px
+			z-index: 51
+			width: 21px
+			height: 11px
+			background: url("../img/phone-icon.png")
+			background-position: top
+	&__hour-work
+		position: relative
+		margin-top: 15px !important
+		padding-left: 23px
+		&:before
+			content: ''
+			position: absolute
+			top: 0px
+			left: 0px
+			z-index: 51
+			width: 20px
+			height: 18px
+			background: url("../img/time-icon.png")
+			background-position: top
+
+	.main-btn
+		margin-top: 25px
+// end - map
+
+// footer
+footer
+	padding: 35px 0 27px
+	p
+		font-size: 13px
+		font-weight: 300
+		color: #21262b
+		text-align: center
+		margin: 0
+// end - footer
+
+// paralax
+#parallax-bg3
+	z-index: 3
+	position: fixed
+	left: 50%
+	top: 0
+	width: 940px
+	margin-left: -470px
+#bg3-1
+	position: absolute
+	top: 1440px
+	right: -235px
+#bg3-2
+	position: absolute
+	top: 2730px
+	right: -235px
+#bg3-3
+	position: absolute
+	top: 3610px
+	left: -255px
+// end - paralax
+
+.callback-modal
+	display: none
+	&__wrap
+		max-width: 300px
+		text-align: center
+		margin: 0 auto
+		padding: 15px 0
+		input, button
+			max-width: 250px
+			width: 100%
+			margin: 5px 0
+		button
+			border: 0
+		input
+			padding: 0 5px 0 15px
+			height: 40px
+		p
+			font-size: 14px
+			font-weight: 700
+
+
+
+@import "media" // Всегда в конце

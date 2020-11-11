@@ -1,0 +1,747 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+img
+	max-width: 100%
+*
+	outline: none
+
+body
+	font-size: 16px
+	font-weight: 400
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	color: $color-main
+	overflow-x: hidden
+	font-family: $default-font
+	background-color: #fff
+	opacity: 1
+
+// global
+.container
+	max-width: 1200px
+	width: 100%
+
+.logo
+	margin-top: 5px
+	font-family: $secondary-font
+	font-size: 22px
+	font-weight: 700
+	color: $color-main
+	transition: all .2s
+	cursor: default
+	&:hover, &:focus
+		color: $color-main
+		text-decoration: none
+		outline: none
+		transition: all .2s
+
+.box-callback
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	&__call-link
+		color: $color-second
+		font-family: $secondary-font
+		font-size: 16px
+		font-weight: 700
+		&:hover, &:focus
+			color: $color-second
+			text-decoration: none
+	&__order
+		max-width: 115px
+		color: #000
+		font-size: 16px
+		font-weight: 300
+		border-bottom: 1px dashed $color-second
+		transition: all .2s
+		&:hover, &:focus
+			color: $color-second
+			transition: all .2s
+			text-decoration: none
+
+.price
+	margin-top: 55px
+	&__old
+		font-size: 24px
+		font-weight: 400
+		color: #ff0e88
+		text-decoration: line-through
+		span
+			color: #aeaeae
+	&__new
+		color: $color-second
+		font-size: 36px
+		font-weight: 800
+		margin-left: 30px
+.form-buy
+	display: flex
+.main-input
+	padding: 12px 5px 10px 36px
+	max-width: 210px 
+	border: 1px solid $color-pink
+	background-color: #fff
+	border-radius: 22px
+	font-size: 16px
+	color: #0a0a0a
+	&::placeholder
+		opacity: 1
+		color: #0a0a0a
+		transition: all .2s
+	&:focus::placeholder
+		opacity: 0
+		transition: all .2s
+.main-btn
+	max-width: 210px
+	position: relative
+	background-color: $color-pink
+	border: 0
+	border-radius: 23px
+	color: #fff
+	padding: 12px 65px 10px 41px
+	font-size: 16px
+	font-weight: 700
+	&:before
+		content: '+'
+		position: absolute
+		top: calc(50% - 16px)
+		right: 9px
+		display: flex
+		justify-content: center
+		width: 32px
+		height: 32px
+		border-radius: 50%
+		background-color: #fff
+		color: $color-pink
+		line-height: 36px
+		font-weight: 400
+		font-size: 24px
+		transition: all .2s
+	&:hover
+		transition: all .2s
+		box-shadow: 0 0 25px rgba(0, 0, 0, 0.25)
+
+.section-title
+	font-size: 30px
+	font-weight: 400
+	color: $color-second
+	line-height: 40px
+	text-transform: uppercase
+	margin: 0
+	display: block
+	text-align: center
+	span
+		display: block
+		font-weight: 800
+	b
+		font-weight: 800
+
+.scroll
+	position: relative
+	display: block
+	width: 50px
+	height: 50px
+	margin: 110px auto 0
+	background-color: $color-second
+	box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.2)
+	border-radius: 50%
+	&:before
+		content: ''
+		position: absolute
+		top: 52%
+		left: 50%
+		transform: translate(-50%, -50%)
+		display: block
+		width: 20px
+		height: 12px
+		background-image: url(../img/spritesheet.png)
+		background-position: -5px -55px
+	&_up:before
+		top: 50%
+		transform: translate(-50%, -50%) rotate(180deg)
+
+
+// end - global
+
+// header / menu-bar
+.header
+	padding-top: 20px
+	position: fixed
+	z-index: 10
+	width: 100%
+	transition: all .2s
+	background-color: #fff
+
+.header.header-shrink
+	padding: 10px 0 5px
+	transition: all .2s
+.menu-bar
+	display: flex
+	justify-content: space-between	
+	&__nav
+		max-width: 693px
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-self: center
+		a
+			color: $color-main
+			font-size: 16px
+			padding-bottom: 10px
+			transition: all .2s
+			border-bottom: 3px solid transparent
+			&:hover
+				color: $color-second
+				text-decoration: none
+				border-bottom: 3px solid $color-second
+				transition: all .2s
+			&:focus
+				text-decoration: none
+				transition: all .2s
+.footer
+	.menu-bar__nav
+		a
+			padding: 0
+			&:hover
+			border: 0
+
+.open-menu
+	display: none
+	position: relative
+	width: 30px
+	height: 20px
+	background-color: transparent
+	border: 0
+	padding: 0
+	transition: .5s ease-in-out
+	span
+		width: 100%
+		position: absolute
+		left: 0
+		display: block
+		height: 2px
+		border-radius: 1px
+		background-color: #000
+		transition: .5s ease-in-out
+		opacity: 1
+		&:first-child
+			top: 0
+		&:nth-child(2, 3)
+			top: 10px
+		&:last-child
+			bottom: 0
+.push-wrap .open-menu
+	span
+		&:first-child
+			top: 10px
+			left: 50%
+			width: 0
+			opacity: 0
+		&:nth-child(2)
+			transform: rotate(45deg)
+		&:nth-child(3)
+			transform: rotate(-45deg)
+		&:last-child
+			top: 10px
+			left: 50%
+			width: 0
+			opacity: 0
+
+.push-wrap.mobile-menu
+	display: block
+
+
+
+
+
+
+
+// end - header/menu-bar
+
+// main-board
+.main-board
+	padding-top: 65px
+	&__wrap
+		padding: 80px 0 200px
+		background: url(../img/bg-main-board.png) right 12% no-repeat
+	&__title
+		color: $color-second
+		font-size: 32px
+		font-weight: 800
+		letter-spacing: 0.64px
+		line-height: 44px
+		margin: 0
+	&__tagline
+		max-width: 390px
+		p
+			margin: 35px 0 0
+			font-size: 18px
+			font-weight: 400
+			line-height: 26px
+			max-width: 355px
+	&__form-wrap
+		margin-top: 52px
+		.main-btn
+			margin-left: 50px	
+// end - main-board
+
+// advantages
+.advantages
+	padding-bottom: 125px
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		box-shadow: 0 8px 37px rgba(0, 0, 0, 0.1)
+	.advantages-item
+		display: flex
+		&__image
+			max-width: 50%
+			width: 100%
+			img
+				object-fit: cover
+		&__content
+			max-width: 50%
+			width: 100%
+			padding: 56px 86px 25px 150px
+			max-height: 420px
+		&__title
+			position: relative
+			color: $color-second
+			font-size: 28px
+			font-weight: 700
+			margin: 0
+			&:before				
+				content: ''
+				position: absolute
+				top: 9px
+				left: -95px
+				width: 45px
+				height: 41px
+				background-image: url(../img/spritesheet.png)
+			&_before-medicine:before
+				background-position: -183px -104px
+			&_before-alerts:before
+				width: 38px
+				height: 54px
+				background-position: -50px -5px
+			&_before-report:before
+				width: 38px
+				height: 50px
+				background-position: -70px -104px
+
+		&__wrap
+			margin-top: 28px
+			max-width: 280px
+			p
+				margin: 0
+			p:not(:first-child)
+				margin-top: 28px
+// end - advantages
+
+// comparison
+.comparison
+	padding-top: 100px
+	&__wrap
+		margin-top: 100px
+		text-align: center
+// end - comparison
+
+// profit
+.profit
+	padding-top: 114px
+	&__wrap
+		margin-top: 95px
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+.profit-item
+	max-width: 360px
+	width: 100%
+	padding-left: 90px
+	margin-bottom: 55px
+	&__title
+		position: relative
+		font-size: 22px
+		font-weight: 700
+		&:before
+			content: ''
+			position: absolute
+			top: 5px
+			left: -90px
+			width: 55px
+			height: 55px
+			background-image: url(../img/spritesheet.png)
+		&_before-target:before
+			background-position: -248px -115px
+		&_before-hours:before
+			background-position: -118px -104px
+		&_before-cloud:before
+			height: 39px
+			background-position: -5px -104px
+		&_before-wifi:before
+			height: 43px
+			background-position: -5px -225px
+		&_before-share:before
+			background-position: -250px -5px
+		&_before-plant:before
+			background-position: -183px -155px
+	p
+		max-width: 268px
+		margin: 30px 0 0
+// end - profit
+
+// app-info
+.app-info
+	padding: 75px 0 70px
+	&__wrap
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		padding: 113px 0 0
+		justify-content: space-around
+
+.slick-dots
+	display: flex
+	list-style: none
+	padding: 0
+	margin: 30px auto 0
+	li
+		margin: 0 8px
+		button
+			display: block
+			font-size: 0
+			width: 16px
+			height: 16px
+			border: 0
+			border-radius: 50%
+			background-color: $color-second
+	.slick-active
+		button
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50% , -50%)
+				width: 8px
+				height: 8px
+				background-color: #fff
+				border-radius: 50%
+
+.app-function
+	max-width: 294px
+	width: 100%
+	text-align: center
+	margin-bottom: 65px
+	p
+		margin: 45px auto 0
+		max-width: 244px
+
+
+// end - app-info
+
+// download-application
+.download-application
+	padding: 85px 0 40px
+	background-color: #f5f5f5
+	&__wrap
+		display: flex
+		justify-content: center		
+		align-items: center
+	&__right
+		max-width: 465px
+		margin-left: 95px
+		p
+			max-width: 340px
+			margin: 35px 0 0
+			line-height: 25px
+	&__link-dwn
+		display: flex
+		justify-content: space-between
+		margin-top: 65px
+		.bth-img, .ios-img, .android-img
+			display: block
+			max-width: 140px
+			width: 100%
+			height: 40px
+		.bth-img
+			max-width: 120px
+			background-image: url(../img/bluetooth-img.png)
+		.ios-img
+			background-image: url(../img/ios-badge.jpg)
+		.android-img
+			background-image: url(../img/android-badge.jpg)
+.section-title_small
+	font-size: 24px
+// end - download-application
+
+// box-order
+.box-order
+	padding: 145px 0 110px
+	&__wrap
+		display: flex
+		justify-content: space-between
+
+.tovar-info
+	color: #1c1c1c
+	&__name
+		font-size: 26px
+		font-weight: 700
+	&__stock
+		float: right
+		position: relative
+		font-size: 14px
+		margin: 0
+		span
+			position: absolute
+			top: -4px
+			left: -36px
+			width: 25px
+			height: 24px
+			background: #fbe35e
+			border-radius: 50%
+			&:before
+				content: ''
+				position: absolute
+				top: calc(50% - 4px)
+				left: calc(50% - 5px)
+				width: 10px
+				height: 8px
+				background: url(../img/spritesheet.png) -35px -70px
+	&__characteristics
+		padding: 0
+		margin: 40px 0 0
+		list-style: none
+		font-size: 15px
+		color: #757575
+		font-weight: 300
+		li:not(:first-child)
+			margin-top: 10px
+		li
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				width: 10px
+				height: 8px
+
+// slider
+.slider-for
+	max-width: 420px
+	width: 100%
+	max-height: 388px
+	overflow: hidden
+	&__item
+		width: 100% !important
+		max-width: 470px
+		height: 350px
+		img
+			object-fit: fill
+			// display: block
+			// width: 100%
+	.slick-arrow
+		top: calc(50% - 10px)
+		width: 12px
+		height: 20px
+		font-size: 0
+		background-color: transparent
+		background-image: url(../img/spritesheet.png)
+		background-position: -98px -55px
+		border: 0
+		position: absolute
+		z-index: 1
+	.slick-prev
+		transform: rotate(180deg)
+	.slick-next
+		right: 0
+
+
+
+.tovar-slider
+	max-width: 470px
+	display: none
+	margin-left: 20px
+.tovar-slider.active
+	display: block
+.tabs-caption
+	display: flex
+	margin: 0
+	padding: 0
+	list-style: none
+	li:not(:first-child)
+		margin-left: 15px
+	.color-btn
+		border-radius: 50%
+		width: 25px
+		height: 25px
+		border: 0
+		&_gray
+			background-color: #b8b8b8
+		&_blue
+			background-color: #22b3b0
+		&_pink
+			background-color: #ff0e88
+.active .color-btn
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		width: 13px
+		height: 13px
+		background-color: #fff
+		border-radius: 50%
+.slider-nav
+	max-width: 370px
+	&__item
+		cursor: pointer
+		img
+			width: 70px
+			height: 70px
+			object-fit: contain
+// end - slider
+
+// delivery
+.delivery
+	margin-top: 100px
+	background-color: #e9ffff
+	&__wrap
+		display: flex
+		justify-content: space-between
+	&__item
+		display: flex
+		position: relative
+		align-items: center
+		justify-content: center
+		max-width: 296px
+		width: 100%
+		padding: 45px 0
+		margin: 0
+		font-size: 11px
+		font-weight: 700
+		&:not(:last-child)
+			border-right: 4px solid #fff
+		span
+			position: relative;
+			max-width: 210px;
+			padding-left: 60px
+			text-transform: uppercase
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				left: 0
+				width: 35px
+				height: 35px
+				background-image: url(../img/spritesheet.png)
+		&_aeroplane span:before
+			background-position: -5px -5px
+		&_wallet span:before
+			background-position: -248px -180px
+		&_return span:before
+			height: 31px
+			background-position: -155px -216px
+		&_shield span:before
+			width: 31px
+			background-position: -250px -70px
+
+// end - delivery
+// end - box-order
+
+// gallery
+.gallery
+	&__wrap
+		padding: 105px 0 90px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		img
+			margin-bottom: 30px
+			max-width: 270px
+			max-height: 270px
+
+// end - gallery
+
+// сall-action
+.сall-action
+	background: url(../img/сall-action-bg.jpg) center no-repeat
+	&__wrap
+		padding: 55px 0 30px
+		display: flex
+		justify-content: space-around
+	&__order
+		max-width: 525px
+	&__title
+		font-size: 36px
+		font-weight: 700
+		color: #fff
+	&__tagline
+		margin: 10px 0 0
+		font-size: 18px
+		color: #fff
+		font-weight: 400
+		b
+			font-weight: 700
+	&__form
+		margin-top: 35px
+		max-width: 465px
+		p
+			margin: 12px 0 0
+			font-size: 12px
+			font-weight: 300
+			color: #fff
+			text-align: right
+			span
+				color: #000
+				font-weight: 400
+		.form-buy
+			display: flex
+			justify-content: space-between
+			.main-input
+				border: 2px solid $color-pink
+			.main-btn
+				margin-left: 0
+		.main-board__form-wrap
+			margin: 0
+// end - сall-action
+
+// footer
+.footer
+	padding: 110px 0 90px
+	&__wrap
+		.scroll_up
+			margin-top: 70px
+// end - footer
+
+
+
+@import "media" // Всегда в конце

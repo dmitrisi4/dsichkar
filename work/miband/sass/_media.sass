@@ -1,0 +1,983 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	// header
+	.header 
+		&__link-city
+			font-size: 11px
+		.header-element
+			&__number
+				font-size: 16px
+			p
+				font-size: 10px
+		.btn-main
+			max-width: 140px
+			font-size: 10px
+		&__availability, &__textelement
+			font-size: 11px
+	.logo
+		max-width: 125px
+		&__link
+			font-size: 24px
+			span
+				font-size: 30px
+				width: 15px
+				height: 34px
+	// end - header
+
+	// footer
+	.footer
+		.logo__info
+			font-size: 12px
+			max-width: 160px
+		&__title
+			font-size: 14px
+		&__number
+			font-size: 16px
+		&__address
+			font-size: 12px
+			max-width: 190px
+			width: 100%
+		&__working-hours p
+			font-size: 12px
+		&__feedback .btn-main
+			max-width: 150px
+			font-size: 11px
+		.community__wrap
+			margin-top: 30px
+			margin-right: 30px
+		.footer-nav__item
+			font-size: 12px
+	// end - footer
+
+	// inform-item
+	.inform-item
+		&__title
+			font-size: 12px
+		p
+			font-size: 12px
+	// end inform-item
+
+	// catalog
+	.catalog__wrap
+		justify-content: space-around
+	// end - catalog
+
+	// ordering
+	.flex-row__flex-9
+		max-width: 678px
+	.flex-row__flex-3
+		max-width: 248px
+	.delivery-options__title
+		font-size: 16px
+	.order-card
+		&__name
+			font-size: 18px
+		&__price
+			font-size: 28px
+	.order-form
+		padding-left: 20px
+		padding-right: 20px
+		&__title
+			font-size: 16px
+		ol li
+			font-size: 12px
+		.button-buy
+			padding: 0
+			max-width: 190px
+			height: 60px
+			font-size: 30px
+		.total-payment
+			text-align: center
+			br
+				display: none
+			&__cost span
+				font-size: 40px
+	// end - ordering
+
+	// reviews
+	.reviews__wrap
+		justify-content: space-around
+
+	.reviewsOpen-item
+		display: flex
+		&__content
+			p
+				font-size: 13px
+	
+	.product-info:before
+		right: -80px
+
+
+
+	/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	// header
+	.header
+		&__availability
+			display: none
+		.header-element
+			&__number
+				font-size: 14px
+		&__textelement
+			max-width: 150px
+	// end - header
+
+	// footer
+	.footer
+		&__title
+			font-size: 11px
+		&__number
+			display: block
+			font-size: 14px
+		&__link-city
+			font-size: 12px
+		.logo
+			max-width: 160px
+			&__info
+				margin-top: 10px
+	.footer-nav
+		display: none !important
+	// end - footer
+
+	// section
+	.section-title
+		font-size: 28px
+	// end section
+	.section-title_big
+		font-size: 36px
+
+	// product-card
+	.product-info__name
+		font-size: 18px
+	// end - product-card
+
+	// novelty
+	.novelty
+		padding: 25px 0 20px
+		&__item
+			span
+				font-size: 20px
+			p
+				font-size: 12px
+	// end - novelty
+
+	// video-review
+	.video-review
+		padding: 20px 0 24px
+		&__video
+			max-width: 600px
+			min-height: auto
+			iframe
+				max-height: 400px
+				min-height: 400px
+	// end - video-review
+
+	// slider-reviews
+	.slider-reviews .slider-box
+		max-width: 470px
+	// end - slider reviews
+
+	// inform-item
+	.inform-item
+		flex-wrap: wrap
+		max-width: 570px
+		justify-content: center
+		margin: auto
+		&__number
+			max-width: 42px
+			height: 42px
+			border-width: 7px 
+			font-size: 24px
+			line-height: 26px
+			margin-right: 15px
+		&__address
+			max-width: 130px
+
+	.store-addresses .map
+		margin-top: 20px
+	// end - inform-item
+
+	.content-item__image_big
+		width: 100%
+		text-align: center
+	.product-info:before
+		display: none
+	
+	.product-info .button-buy
+		font-size: 18px
+		height: 43px
+
+	.main-board
+		padding: 55px 0 110px
+		p
+			font-size: 60px
+	.content-item p
+		font-size: 12px
+	// catalog-card
+	.card-info
+		padding-top: 20px
+		&__wrap-review
+		span
+			font-size: 18px
+			margin-bottom: 20px
+			&:before
+				bottom: -10px
+		p
+			font-size: 12px
+			margin: 5px 0
+	.card-info__characteristics
+		.card-info__wrap div>div span
+			font-size: 14px
+	// end - catalog-card
+
+	// store-addresses
+	.store-addresses
+		.map
+			margin-top: 0
+		.inform-item
+			margin: 15px 0
+	// end - store-addresses
+
+	// ordering
+	.flex-row
+		flex-direction: column
+		&__flex-3
+			order: -1
+			max-width: 100%
+		&__flex-9
+			max-width: 100%
+	.delivery-options
+	// end ordering
+
+	// reviews
+	.reviews-item
+		max-width: 300px
+		&__image
+			min-height: 306px
+		&__content
+			padding: 10px 30px 15px
+
+	.reviewsOpen-item
+		padding: 10px
+		&__content
+			max-width: 100%
+			margin-left: 20px
+			padding: 0
+			p
+				font-size: 12px
+	// end - reviews
+
+	// 404
+	.box-404
+		&__wrap
+			flex-direction: column
+			align-items: center
+	// end - 404
+
+	.no-js .slider-box
+		width: 1000px
+		max-width: 1000px
+		flex-wrap: wrap
+		a
+			display: inline-block
+			max-width: 200px
+	.no-js
+		.slider-reviews__wrap
+			.container
+				max-width: 600px
+				overflow-x: scroll
+
+	.no-js
+		.slider-product-nav
+			display: none
+
+	.order-card__name
+		font-size: 14px
+	.order-form .button-buy
+		height: 50px
+		font-size: 24px
+		max-width: none
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	// header
+	.header
+		.logo
+			max-width: 100%
+			text-align: center
+		&__wrap
+			flex-direction: column
+			padding-top: 5px
+		&__textelement
+			display: none
+		.tell-mobile
+			display: none
+			position: absolute
+			right: 0
+			top: 40px
+			background-color: #fff
+			padding: 0 0px 12px 0px
+			text-align: center
+			a
+				display: block !important
+			.btn-main
+				width: 100%
+				margin: 0
+				padding: 10px 5px 0 5px
+				border-radius: 0
+				border: 0
+				transition: all .2s
+				&:hover
+					background-color: #d8440d
+			.header-element__number
+				margin-top: 5px
+				font-size: 12px
+		.open-tel
+			display: block
+			position: absolute
+			top: 0
+			right: 0
+			width: 40px
+			height: 40px
+			background: #3dc0c4 url("../img/btn-tel.png") center no-repeat
+			border: 0
+			&:focus
+				outline: none
+		&__nav
+			position: absolute
+			top: 45px
+			width: 100%
+			z-index: 100
+			.main-nav
+				display: none
+				flex-direction: column
+			.open-menu
+				display: block
+				position: absolute
+				top: -44px
+				left: 25px
+				width: 30px
+				height: 40px
+				padding: 0
+				border: 0
+				background-color: transparent
+				&:focus
+					outline: none
+				span
+					display: block
+					background-color: #3dc0c4
+					width: 100%
+					height: 4px
+					transition: all 1s
+					&:nth-child(2)
+						margin: 4px 0
+		&__nav.push-wrap
+			.open-menu
+				span
+					position: absolute
+					transition: all 1s
+				span:first-child
+					transform: rotate(50deg)
+				span:nth-child(2)
+					transform: translateX(100px)
+					opacity: 0
+				span:last-child
+					transform: rotate(-50deg)
+			
+		.header-element
+			margin-top: 5px
+			&__number
+				display: none
+			&__number_small
+				display: block
+				text-align: center
+		.btn-main
+			display: none
+
+	.main-nav
+		display: none !important
+	.header__nav.push-wrap
+		.main-nav
+			display: block !important
+	// end - header
+
+	.main-board
+		text-align: center
+		padding: 55px 0 55px
+		background-position: 57% 50%
+		p
+			margin: auto
+
+	.slider-product-nav
+		position: relative
+		left: 0
+		top: 0
+
+	.slider-product-nav .slick-slide
+		margin: 5px
+		max-width: 105px
+	
+	.article-preview
+		&__image
+		margin: 0 auto
+		&__content
+			margin-top: 20px
+
+	.order-card
+		padding-left: 15px
+		&__price
+			font-size: 20px
+			text-align: center
+		&__name
+			width: 255px
+	
+	.article-open__image
+		max-height: 265px
+		margin-bottom: 20px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px)
+	.article-open__image
+		max-height: none
+		img
+			object-fit: cover
+			object-position: left	
+	.thanks-item__subtitle
+	.section-title
+		font-size: 17px
+	.container
+		max-width: 400px
+	// header
+	.header
+		.logo
+			max-width: 100%
+			text-align: center
+		&__wrap
+			flex-direction: column
+			padding-top: 5px
+		&__textelement
+			display: none
+		.tell-mobile
+			display: none
+			position: absolute
+			right: 0
+			top: 40px
+			background-color: #fff
+			padding: 0 0px 12px 0px
+			text-align: center
+			a
+				display: block !important
+			.btn-main
+				width: 100%
+				margin: 0
+				padding: 10px 5px 0 5px
+				border-radius: 0
+				border: 0
+				transition: all .2s
+				&:hover
+					background-color: #d8440d
+			.header-element__number
+				margin-top: 5px
+				font-size: 12px
+		.open-tel
+			display: block
+			position: absolute
+			top: 0
+			right: 0
+			width: 40px
+			height: 40px
+			background: #3dc0c4 url("../img/btn-tel.png") center no-repeat
+			border: 0
+			&:focus
+				outline: none
+		&__nav
+			position: absolute
+			top: 45px
+			width: 100%
+			z-index: 100
+			.main-nav
+				flex-direction: column
+			.open-menu
+				display: block
+				position: absolute
+				top: -41px
+				left: 25px
+				width: 30px
+				height: 40px
+				padding: 0
+				border: 0
+				background-color: transparent
+				&:focus
+					outline: none
+				span
+					display: block
+					background-color: #3dc0c4
+					width: 100%
+					height: 4px
+					transition: all 1s
+					&:nth-child(2)
+						margin: 4px 0
+		&__nav.push-wrap
+			.open-menu
+				span
+					position: absolute
+					transition: all 1s
+				span:first-child
+					transform: rotate(50deg)
+				span:nth-child(2)
+					transform: translateX(100px)
+					opacity: 0
+				span:last-child
+					transform: rotate(-50deg)
+			
+		.header-element
+			margin-top: 5px
+			&__number
+				display: none
+			&__number_small
+				display: block
+				text-align: center
+		.btn-main
+			display: none
+	// end - header
+	
+	
+	// main-board
+	.main-board
+		padding: 5px 0 25px
+		span
+			font-size: 18px
+		p
+			font-size: 19px
+			line-height: 50px
+		&__buy
+			margin: 0
+			p
+				span
+					font-size: 40px
+	// end - main-board
+
+	// card-product
+	.card-product
+		margin-top: 15px
+
+	.product-info
+		margin-top: 15px
+		&__price
+			font-size: 36px
+		&:before
+			top: -12px
+			right: -88px
+			width: 49%
+		.button-buy
+			font-size: 20px
+
+	.slider-product-nav .slick-slide
+		margin: 5px
+	.slider-product-for
+		max-height: 327px
+	// end card-product
+
+	// novelty
+	.novelty__item 
+		span
+			font-size: 14px
+			&:before
+				max-width: 120px
+		p
+			font-size: 10px
+	// end - novelty
+
+	// video-review
+	.video-review__video
+		max-width: 325px
+		iframe
+			min-height: 250px
+	// end
+	// slider-review
+	.slider-reviews .slider-box
+		max-width: 190px
+	.all-reviews
+		display: block
+		margin: 10px 0  0 !important
+	// end - slider-review
+
+	// inform-item
+	.inform-item
+		justify-content: space-around
+	.inform-item
+		&__mail
+			max-width: 240px
+		&__tel
+			max-width: 360px
+			width: 100%
+			display: flex
+			flex-direction: row
+			div
+				max-width: 150px
+				width: 100%
+				margin: 0 auto
+	// end - inform-item
+
+	.product-content__title
+		font-size: 20px
+	// about-product
+	.page-title
+		font-size: 24px
+	.article-preview__image
+		min-height: fit-content
+	.article-preview
+		&__content 
+			position: relative
+			span
+				display: block
+				margin-top: 10px
+			p
+				font-size: 12px
+			a
+				position: absolute
+				bottom: -30px
+				right: 0
+	// end about-product
+
+	// about-open page
+	.article-open span
+		font-size: 30px
+	.article-open__content
+		p
+			font-size: 12px
+		span
+			font-size: 16px
+	// end - about-open page
+
+	// contact-city
+	.attention__wrap
+		padding-left: 90px
+		span
+			font-size: 16px
+		p
+			font-size: 11px
+	.what
+		span
+			font-size: 16px
+		p
+			font-size: 12px
+	// end - contact-city
+	
+	// order
+	.delivery-options
+		p
+			font-size: 13px
+		&__title
+			font-size: 14px
+		.radio
+			span
+				font-size: 11px
+			&__text
+			font-size: 12px
+	.order-card
+		padding: 5px 25px 5px 5px;
+		&__name
+			font-size: 10px
+		&__price
+			font-size: 14px
+			span
+				font-size: 11px
+		&__delete
+			top: 6px
+			right: 2px
+			button
+				width: 20px
+				height: 20px
+				background-size: cover
+	.order-form
+		position: relative
+		padding: 5px 10px 70px
+		flex-direction: column
+		&__input-wrap
+			max-width: 100% !important
+		.total-payment__cost
+			span
+				font-size: 30px
+		.button-buy
+			max-width: 200px
+			line-height: 37px
+			position: absolute
+			bottom: 15px
+			left: calc(50% - 100px)
+			height: 46px
+			border-width: 4px
+			margin: 0 !important
+	// end - order
+	
+	// question
+	.accordeon
+		span
+			font-size: 14px
+		p
+			font-size: 12px
+	// end - question
+
+	// reviews
+	.reviews-item__image
+		min-height: 274px
+	.reviews-open
+		&__wrap
+			margin-top: 10px
+			padding-top: 5px
+			box-shadow: 1px 1px 6px 1px rgba(0,0,0,.3)
+		&__link a
+			margin: 0
+	.reviewsOpen-item
+		flex-direction: column
+		box-shadow: none
+		max-height: 100%
+		&__content
+			margin-left: 0
+			p
+				font-weight: 400
+	// end - reviews
+
+	// 404
+	.box-404
+		&__title
+			font-size: 37px
+		&__subtitle
+			font-size: 21px
+		&__content
+			p
+				font-size: 19px
+			div
+				font-size: 16px
+	// end - 404
+
+	// thanks
+	.thanks__title
+		font-size: 20px
+		margin-top: 10px
+	.thanks-item__wrap
+		flex-direction: column
+	.thanks-item__subtitle
+		padding-top: 5px
+		line-height: normal
+		font-size: 13px
+		height: 30px
+	.thanks-item__right
+		margin: 0
+		span
+			font-size: 14px
+	.thanks-item__right a, .thanks-item__right p
+		font-size: 14px
+	.thanks-item__right .total-price span
+		font-size: 16px
+	.box-404
+		&__content
+			margin: 0
+			display: flex
+			flex-direction: column
+			align-items: center
+			p
+				font-size: 15px
+
+	// end - thanks
+
+	.no-js
+		.slider-box
+			max-width: initial
+
+	.novelty__item_bottom
+		margin-top: 20px
+		
+	.catalog-item
+		max-width: 334px
+		width: 100%
+		&__name
+			font-size: 15px
+
+	.order-form__input-wrap
+		margin: 0 !important
+
+@media only screen and (max-width : 375px)
+	.container
+		max-width: 300px
+
+	// main-board
+	.main-board
+		background-position: 58%
+	// end - main-board
+
+	.product-info:before
+		display: none
+
+	.product-info
+		&__name
+			font-size: 15px
+		.button-buy
+			padding: 0
+			font-size: 16px
+			height: 40px
+
+	.slider-product-nav__item
+		min-width: 80px
+
+	.novelty__wrapp
+		flex-wrap: wrap
+
+	.video-review .section-title
+		padding: 5px
+		font-size: 15px
+
+	.slider-reviews .slick-arrow
+		left: -50px
+	.slider-reviews .slick-next
+		left: auto
+		right: -50px
+
+	.inform-item
+		position: relative
+		justify-content: space-between
+		&__title
+			font-size: 11px
+		&__number
+			position: absolute
+			right: 30px
+			bottom: 20px
+			max-width: 40px
+			height: 40px
+			border-width: 4px
+			line-height: 30px
+			margin-right: 15px
+		&__address
+			max-width: 120px
+		&__tel
+			div
+				min-width: 140px
+
+	.thanks-item__subtitle
+		height: 48px
+
+	.community
+		margin: auto
+		text-align: center
+		&__wrap
+			a
+				margin: 10px
+
+	.inform-item
+		padding-top: 40px
+		&__number
+			top: 0
+			right: auto
+			bottom: auto
+			left: 0
+
+	.article-open__image
+		img
+			object-position: -20px 0
+
+@media only screen and (max-width : 767px)
+	.slider-reviews .all-reviews
+		display: block
+		margin: 10px 0
+
+	.inform-item__mail
+		margin-left: 10px
+
+	.footer
+		&__wrap
+			position: relative
+			padding: 20px 0 60px
+			flex-direction: column
+			align-items: center
+		&__inners
+			flex-direction: column
+			align-items: center
+		&__address
+			max-width: fit-content
+		&__working-hours
+			max-width: fit-content
+		&__feedback
+			text-align: center
+			.btn-main
+				margin-top: 10px
+		.logo
+			max-width: fit-content
+			&__info
+				display: none
+		.community
+			position: absolute
+			bottom: 15px
+			left: calc(50% - 90px)
+			max-width: 180px
+			width: 100%
+			&__wrap
+				margin-top: 10px!important
+				margin-right: 0!important
+	.footer__feedback
+		.footer__title
+			display: none
+
+	.order-form
+		&__input-wrap
+			max-width: 250px
+			margin-left: 15px
+		&__input
+			input::placeholder
+				font-size: 14px
+		.button-buy
+			display: block
+			margin: 10px auto
+
+	.acc-head
+		font-size: 14px
+
+	.reviews-open__back-list
+		display: block
+		margin-top: 10px !important
+
+@media only screen and (max-width : 650px)
+	.order-card
+		flex-direction: column
+		text-align: center
+		&__cap
+			margin-top: 10px
+
+	
+
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	.tell-mobile-js
+		display: none
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1600px)
+	/**/
+
