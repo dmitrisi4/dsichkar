@@ -1,34 +1,12 @@
 @import "vars"
 
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
+*, a
+	&:focus
+		outline: 2px solid orange
 
-*:-moz-placeholder
-	color: #666
-	opacity: 1
-
-*::-moz-placeholder
-	color: #666
-	opacity: 1
-
-*:-ms-input-placeholder
-	color: #666
-	opacity: 1
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
 img
 	max-width: 100%
-*
-	outline: none
-a:focus
-	outline: none
-	text-decoration: none
+
 
 body
 	font-size: 16px
@@ -46,169 +24,201 @@ h1
 	margin: 0
 
 .container
-	max-width: 1170px 
+	max-width: 1170px
 
 // header
 .header
 	padding-bottom: 40px
 	background-color: rgba(26, 188, 156, 0.6)
 	box-shadow: 1px 1px 5px 0px black
-	.header-top	
-		padding-top: 20px
-		&__wrap, &__logo
-			display: flex
-			align-items: center
-			justify-content: space-between
-		&__logo
-			p
-				margin: 0
-				font-size: 33px
-				font-weight: 700
-				color: #34495e
-				span
-					color: $color-h
-			> span
-				font-size: 12px
-				font-weight: 400
-				align-self: flex-start
+	&__logo
+		margin-top: 20px
+// logo
+.logo
+	display: flex
+	max-width: 130px
+	&:hover, &:focus
+		text-decoration: none
+	&:focus
+		outline: none
+	p
+		margin: 0
+		font-size: 33px
+		font-weight: 700
+		color: #34495e
+		font-style: italic
+		span
+			color: $color-h
+	> span
+		font-size: 12px
+		font-weight: 400
+		align-self: flex-start
+		color: #fff
+		box-shadow: -1px 0px 3px 0px #00000063
+		border-radius: 4px
+		border-bottom-left-radius: 0px
+	&:focus
+		> span
+			color: orange
 
-	.pages-title
-		// margin-top: 115px
-		&__wrap
-			display: flex
-			align-items: center
-			justify-content: space-between
-		&__title
-			h1
-				font-size: 22px
-				font-weight: 400
-			p
-				font-size: 15px
-				font-weight: 400
-				margin-left: 20px
-		&__links
-			background-color: rgba(183, 193, 208, 0.56)
-			position: relative
-			padding: 15px			
-			span
-				font-size: 18px
-				font-weight: 400
-				text-transform: uppercase
-				color: #bdc3c7
-			ul
-				list-style: none
-				padding: 0
-				margin-bottom: 0
-				li
-					display: inline-block
-					margin-right: 8px
-	.header-image
-		width: 150px
-		height: 150px
-		display: flex
-		margin: 0 auto
-		background-color: #FFF
+
+
+
+.header-content
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+
+.page-title
+	font-size: 22px
+	font-weight: 400
+	@media screen and (max-width: 375px)
+		font-size: 18px
+.page-subtitle
+	font-size: 16px
+	font-weight: 300
+	font-style: italic
+	margin-left: 20px
+	@media screen and (max-width: 375px)
+		font-size: 12px
+		margin-left: 10px
+// animation jumping
+@keyframes jumping
+	0%
+		transform: translateY(0)
+	50%
+		transform: translateY(-15px)
+		box-shadow: 0px 5px 3px 0px #00000063
+	100%
+		transform: translateY(0)
+//
+
+.contact-links
+	display: flex
+	background-color: rgba(183, 193, 208, 0.56)
+	box-shadow: -1px 0px 3px 0px #00000063
+	position: relative
+	padding: 10px 10px
+	list-style: none
+	margin: 0
+	@media screen and (max-width: 520px)
+		flex-direction: column
+	&__item
+		position: relative
+		display: block
+		margin: 0 15px
+		max-width: 50px
+		width: 100%
+		@media screen and (max-width: 520px)
+			margin: 10px 0
+	&__link-icon
+		width: 100%
 		border-radius: 50%
-		img
-			margin: auto
+		&:hover
+			animation-name: jumping
+			animation-duration: 1s
 
-// 
+.header-image
+	width: 150px
+	height: 150px
+	display: flex
+	margin: 0 auto
+	background-color: #FFF
+	border-radius: 50%
+	overflow: hidden
+	margin-top: 50px
+	img
+		margin: auto
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+// section-title
+.section-title
+	font-size: 18px
+	font-weight: 300
+	font-style: italic
+	margin: 0
+	position: relative
+	display: inline-block
+	padding-bottom: 5px
+	&::after
+		content: ''
+		position: absolute
+		bottom: 0
+		left: -10%
+		width: 100%
+		height: 1px
+		background-color: $main-color
 
 // main
-main
-	padding-top: 10px
+.main
+	padding-top: 50px
 	text-align: center
-	h2
-		font-size: 18px
-		font-weight: 700
-		margin: 0
-	.wrap-grids
-		display: flex
-		align-items: center
-		justify-content: center
-		flex-wrap: wrap
-		margin-top: 40px
 
-		.wrap-grids__item 
-			max-width: 260px
-			margin-left: 20px
-			margin-bottom: 30px
-			text-align: center
+.section-work
+	&__list
+		list-style: none
+		display: grid
+		grid-template-columns: repeat(auto-fill, minmax(150px, auto))
+		grid-template-rows: 2fr
+		justify-items: left
+		justify-content: space-between
+		width: 100%
+		gap: 20px
+		padding: 50px 25px
+		background-color: #0000002b
+
+	&__list-item
+		position: relative
+		a
+			color: #fff
 			position: relative
-			cursor: pointer
-			&:before
+			z-index: 1
+			padding: 5px 10px
+			font-weight: 300
+			&:hover, &:focus
+				text-decoration: none
+			&::before
 				content: ''
-				transition: all 500ms
 				position: absolute
-				top: 0
-				left: 0
-				max-width: 260px
 				width: 100%
-				height: 175px
-				z-index: 1
-			&:hover::before
-				background-color: rgba(7, 9, 10, 0.72)
-				border: 1px solid rgba(26, 188, 156, 0.6)
-			&:hover .item__img				
-				span
-					opacity: 1
-				img
-					transform: scale(1.2)
+				height: 1px
+				background-color: #2f8e83
+				opacity: 0
+				transition: all .2s
+				z-index: -1
+				box-shadow: -1px 0px 3px 0px #00000063
+			&::before
+				left: -100px
 
-			p
-				font-size: 16px
-				font-weight: 700
-				color: #ecf0f1
-			.item__img
-				position: relative
-				max-width: 260px
-				overflow: hidden
-				img
-					transition: all 500ms
-				span
-					position: absolute
-					transition: all 500ms
-					opacity: 0
-					top: calc(50% - 17.5px)
-					left: calc(50% - 35px)
-					width: 70px
-					height: 35px
-					z-index: 2
-					border: 1px solid #1c9079
-					background: rgba(26, 188, 156, 0.6) url(../img/look-icon.png) 50% 50% no-repeat
-					&:before, &:after
-						content: ''
-						display: block
-						position: absolute
-						top: -10px
-						left: 5px
-						width: 13px
-						height: 10px
-						background-color: rgba(28, 144, 121, 0.7)
-					&:after
-						left: auto
-						right: 5px
+			&:hover
+				background-color: #2f8e83
+				&::before
+					opacity: 1
+					transition: all .2s
+				&::before
+					left: 0
+
 
 //
 
 // footer
 .footer
-	padding-top: 65px
+	padding-top: 40px
 	padding-bottom: 40px
 	margin-top: 40px
 	margin-bottom: 10px
 	background-color: rgba(26, 188, 156, 0.6)
 	box-shadow: 1px 1px 5px 0px black
-
 	&__wrapper
 		display: flex
-		justify-content: space-between
+		justify-content: center
 	&__title
 		font-size: 16px
-		font-weight: 700
-		text-transform: uppercase
+
 	&__info
-		max-width: 265px
 		p
 			font-size: 13px
 			font-weight: 400
@@ -219,103 +229,3 @@ main
 				&:hover
 					color: $color-h
 					text-decoration: none
-	&__form
-		max-width: 600px
-		width: 100%
-		form
-			display: flex
-			flex-wrap: no-wrap
-			margin-top: 18px
-			justify-content: space-between
-			width: 100%
-			> div:first-child
-				display: flex
-				flex-wrap: wrap
-				width: 100%
-				justify-content: space-between
-
-			input
-				width: 48%
-				height: 35px
-				padding: 0 15px
-				border: 1px dashed $main-color
-			textarea, input
-				color: #666
-				transition: all 2s
-				&::-webkit-input-placeholder
-					color: $main-color
-					font-size: 13px
-					transition: all 0.3s ease
-				&::-moz-placeholder
-					color: $main-color /* Firefox 19+ */
-					font-size: 13px
-					transition: all 0.3s ease
-				&:-ms-input-placeholder
-					color: $main-color
-					font-size: 13px
-					transition: all 0.3s ease
-				&:focus::-webkit-input-placeholder
-					opacity: 0
-					transition: all 0.3s ease
-				&:focus::-moz-placeholder
-					opacity: 0
-					transition: all 0.3s ease
-				&:focus:-ms-input-placeholder
-					opacity: 0
-					transition: all 0.3s ease
-				&:focus
-					border-style: solid
-			textarea
-				max-width: 600px
-				width: 100%
-				height: 120px
-				margin-top: 15px
-				padding: 15px
-				border: 1px dashed $main-color
-				resize: none
-				overflow: hidden
-			button
-				width: 35px
-				height: 170px
-				margin-left: 10px
-				padding: 10px
-				word-wrap: break-word
-				background-color: #fff
-				border: 1px dashed $main-color
-				font-weight: 300
-				transition: all 200ms
-				&:hover
-					border-style: 1px $main-color
-
-
-// 
-.frame-wrap
-	position: fixed
-	top: 0
-	width: 100%
-	height: 100%
-	background-color: rgba(0, 0, 0, 0.49)
-	display: none
-	z-index: 5
-	#close-frame
-		position: absolute
-		top: 30px
-		right: 150px
-		right: 130px
-		width: 24px
-		height: 24px
-		border: none
-		background: transparent url("../img/close.png") no-repeat
-	.myframe
-		display: none
-		position: absolute
-		top: 50px
-		z-index: 10
-		left: calc(50% - 500px)
-		width: 1000px
-		height: 600px
-.hidden-y
-	overflow-y: hidden
-
-@import "src/media"
-// Всегда в конце

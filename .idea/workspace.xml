@@ -20,115 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a83841b-4d7a-4c79-a49d-4b1fef41e126" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/1-icon.dcd9eef3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/2-icon.e64181e1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/3-icon.8bf680e1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bootstrapGrid.6d307817.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/close.f9a566bc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/g-icon.6dadd0b6.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/css/jquery.fancybox.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/css/media.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/css/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/css/slick.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/Gilroy-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/Gilroy-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/Gilroy-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/HelveticaNeueCyr-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/HelveticaNeueCyr-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/HelveticaNeueCyr-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/HelveticaNeueCyr-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/HelveticaNeueCyr-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/HelveticaNeueCyr-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/HelveticaNeueCyr-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/HelveticaNeueCyr-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/HelveticaNeueCyr-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/font/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9657-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9658-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9660-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9664-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9668-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9670-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9672-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9673-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9674-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9675-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9676-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9678-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9681-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9682-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/IMG_9683-17-07-17-11-42.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/arrow-next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/arrow-prev.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/ball.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/bg-m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/bg-m.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/btn-close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/che.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/furshet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/inf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/insta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/li.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/li2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/love.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/min1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/min2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/min3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/min4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/min5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/min6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/min7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/min8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/modal-close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/modal-close.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/presnt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/slide1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/img/unche.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/js/jquery-3.2.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/js/jquery.fancybox.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/js/jspatch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/assets/js/slick.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/dist/jquery.fancybox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/dist/jquery.fancybox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/dist/jquery.fancybox.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/dist/jquery.fancybox.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/src/css/core.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/src/css/fullscreen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/src/css/slideshow.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/src/css/thumbs.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/src/js/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/src/js/fullscreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/src/js/guestures.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/src/js/hash.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/src/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/src/js/media.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/src/js/slideshow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/fancybox-master/src/js/thumbs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/mobilka_seminar999 (2).psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/seminar.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/seminar_999 (2).psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/config.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/fonts/slick.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/fonts/slick.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/fonts/slick.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/fonts/slick.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/slick-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/slick-theme.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/slick-theme.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/slick.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/slick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/slick.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/slick.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/seminar/slick/slick.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/look-icon.6614fb89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.d3a7e7c6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src.45aab89b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/_media.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_vars.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/_vars.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +76,7 @@
       <workItem from="1604906666029" duration="9194000" />
       <workItem from="1605006622430" duration="6096000" />
       <workItem from="1605012758315" duration="3122000" />
-      <workItem from="1605084769353" duration="2227000" />
+      <workItem from="1605084769353" duration="21361000" />
     </task>
     <servers />
   </component>
@@ -197,9 +103,13 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="458" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.875@0.25.1440.875" timestamp="1605007461952" />
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1605010517429">
+    <state x="421" y="95" width="597" height="735" key="find.popup" timestamp="1605096442744">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1605010517429" />
+    <state x="421" y="95" width="597" height="735" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1605096442744" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1605098179048">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1605098179048" />
   </component>
 </project>
