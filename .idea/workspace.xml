@@ -21,36 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3a83841b-4d7a-4c79-a49d-4b1fef41e126" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/ava.64c114a6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bootstrapGrid.6d307817.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/gmail.ad527f6d.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.98e76a9e.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src.45aab89b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/tg-icon.7a252749.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/2-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/3-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/ap_citiesboulder_1_lego-icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/fb-icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/g-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/item1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/item10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/item11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/item12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/item2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/item3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/item4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/item5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/item6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/item7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/item8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/item9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/lego-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/look-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tw-icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +81,7 @@
       <workItem from="1605012758315" duration="3122000" />
       <workItem from="1605084769353" duration="22900000" />
       <workItem from="1606761276402" duration="3000" />
-      <workItem from="1608539584851" duration="315000" />
+      <workItem from="1608539584851" duration="820000" />
     </task>
     <servers />
   </component>
@@ -123,7 +93,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -132,19 +114,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="458" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605007461952">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state x="458" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.875@0.25.1440.875" timestamp="1605007461952" />
-    <state x="421" y="95" width="597" height="735" key="find.popup" timestamp="1605096442744">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state x="421" y="95" width="597" height="735" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1605096442744" />
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1605098179048">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1605098179048" />
   </component>
 </project>
