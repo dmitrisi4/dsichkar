@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 *:focus, a:focus {
   outline: 2px solid orange;
 }
@@ -15,8 +24,6 @@ body {
   font-family: "Lato", sans-serif;
   background-color: #34495e;
   color: #fff;
-  opacity: 1;
-  padding-top: 10px;
 }
 
 h1 {
@@ -25,38 +32,37 @@ h1 {
 
 .container {
   max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header {
+  margin-top: 10px;
+  padding-top: 20px;
   padding-bottom: 40px;
   background-color: rgba(26, 188, 156, 0.6);
   box-shadow: 1px 1px 5px 0px black;
-}
-.header__logo {
-  margin-top: 20px;
 }
 
 .logo {
   display: flex;
   max-width: 130px;
-}
-.logo:hover, .logo:focus {
   text-decoration: none;
 }
 .logo:focus {
-  outline: none;
+  text-decoration: none;
 }
-.logo p {
+.logo__text {
   margin: 0;
   font-size: 33px;
   font-weight: 700;
   color: #34495e;
   font-style: italic;
 }
-.logo p span {
+.logo__text_filled {
   color: #1abc9c;
 }
-.logo > span {
+.logo__text-small {
   font-size: 12px;
   font-weight: 400;
   align-self: flex-start;
@@ -64,9 +70,6 @@ h1 {
   box-shadow: -1px 0px 3px 0px #00000063;
   border-radius: 4px;
   border-bottom-left-radius: 0px;
-}
-.logo:focus > span {
-  color: orange;
 }
 
 .header-content {
@@ -145,7 +148,7 @@ h1 {
   animation-duration: 1s;
 }
 
-.header-image {
+.photo-frame {
   width: 150px;
   height: 150px;
   display: flex;
@@ -155,30 +158,11 @@ h1 {
   overflow: hidden;
   margin-top: 50px;
 }
-.header-image img {
+.photo-frame__image {
   margin: auto;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.section-title {
-  font-size: 18px;
-  font-weight: 300;
-  font-style: italic;
-  margin: 0;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -10%;
-  width: 100%;
-  height: 1px;
-  background-color: #fff;
 }
 
 .main {
@@ -251,16 +235,18 @@ h1 {
 .footer__title {
   font-size: 16px;
 }
-.footer__info p {
+
+.contact-info__string {
   font-size: 13px;
   font-weight: 400;
+  margin: 10px 0;
 }
-.footer__info p a {
+.contact-info__link {
   margin-left: 5px;
   color: #fff;
   transition: all 300ms;
 }
-.footer__info p a:hover {
+.contact-info__link:hover {
   color: #1abc9c;
   text-decoration: none;
 }

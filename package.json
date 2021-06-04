@@ -1,13 +1,11 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-
   "scripts": {
     "clear": "rimraf dist",
     "dev": "npm run clear && parcel src/index.html",
     "build": "npm run clear && parcel build src/index.html --public-url . --no-source-maps --no-minify"
   },
-
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "rimraf": "^3.0.2",
