@@ -1,0 +1,124 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.0 127.0">
+<path stroke="none" fill="transparent" d="M1.02778 1.02778L0 28L0 101L1.02778 125.972L19 127L70 127L106 127L118.972 125.972L120 99L120 26L118.972 1.02778L101 0L50 0L14 0L1.02778 1.02778z"/>
+<path stroke="none" fill="#34495e" d="M60.1667 4.5L64.5 5.33334L60.1667 4.5z"/>
+<path stroke="none" fill="#34495e" d="M61 5.33334C57.3983 6.12784 56.9596 9.99652 55.8333 13C52.8871 20.8566 50.1587 30.657 49 39C48.6507 41.5152 48.0577 50 44.1667 50C41.9552 50 40.4234 43.634 39.8333 42C37.544 35.6603 36 24.8252 36 18C36 14.9144 36.8951 10.1977 33 9.16666C27.9799 7.83782 27 13.5159 27 17C27 25.7994 29.2099 36.5767 31.6667 45C31.9623 46.0137 32.0665 55 32.8333 55C26.9029 55 28.5034 33.6242 28 30C27.6092 27.1863 25.2846 23.584 22 25.5C15.0294 29.5662 19.3643 52.461 20 59C21.2608 71.9679 17.141 85.011 19.6667 98C20.4892 102.23 20.2272 107.886 24 110.833C26.9861 113.166 34.1714 113.791 38 115.333C42.155 117.007 46.4067 118.447 51 118C58.2035 117.3 62.9518 112.275 69 109.167C78.4205 104.326 91.9473 100.768 99.3333 93C102.531 89.6366 114.801 83.8813 110 79C103.709 72.6042 90.3401 82.3961 84 84.3333C80.1046 85.5236 76.2381 88.0322 73.5 83C65.7966 68.8424 72.7684 43.9053 75.6667 29C76.3895 25.2825 77.4083 12.1582 72 11.1667C68.5713 10.5381 68.7525 15.8445 68.3333 18C66.5049 27.4032 64.0062 35.8358 61.3333 45C60.9994 46.1449 59.483 54 58.1667 54C57.5602 54 59.9205 43.1817 60.1667 42C62.1278 32.5868 65.5387 23.7681 67.1667 14C67.8729 9.76257 66.9232 4.02675 61 5.33334z"/>
+<path stroke="none" fill="#505050" d="M57.3333 7.66666L57.6667 8.33334L57.3333 7.66666z"/>
+<path stroke="none" fill="#656565" d="M66 7L67 8z"/>
+<path stroke="none" fill="#949494" d="M31.6667 8.33334L32.3333 8.66666L31.6667 8.33334z"/>
+<path stroke="none" fill="#8a8a8a" d="M29 9L30 10z"/>
+<path stroke="none" fill="#828282" d="M34 9L35 10z"/>
+<path stroke="none" fill="#979797" d="M28 10L29 11z"/>
+<path stroke="none" fill="#646464" d="M56.3333 10.6667L56.6667 11.3333L56.3333 10.6667z"/>
+<path stroke="none" fill="#bdbdbd" d="M68.5 10.6667L68.6667 14.3333L68.5 10.6667z"/>
+<path stroke="none" fill="#c6c6c6" d="M70.6667 10.3333L71.3333 10.6667L70.6667 10.3333z"/>
+<path stroke="none" fill="#484848" d="M67.3333 12.6667L67.6667 14.3333L67.3333 12.6667z"/>
+<path stroke="none" fill="#606060" d="M36.3333 13.6667L36.6667 14.3333L36.3333 13.6667z"/>
+<path stroke="none" fill="#878787" d="M74 13L75 14z"/>
+<path stroke="none" fill="#a4a4a4" d="M26.3333 14.6667L26.6667 16.3333L26.3333 14.6667z"/>
+<path stroke="none" fill="#1f1f1f" d="M36.3333 15.6667L36.6667 24.3333L36.3333 15.6667z"/>
+<path stroke="none" fill="#969696" d="M67.6111 15.8333L66.3889 29.9444L67.6111 15.8333z"/>
+<path stroke="none" fill="#505050" d="M75.3333 15.6667L75.6667 16.3333L75.3333 15.6667z"/>
+<path stroke="none" fill="#858585" d="M54.3333 16.6667L54.6667 17.3333L54.3333 16.6667z"/>
+<path stroke="none" fill="#373737" d="M26.3333 17.6667L26.6667 23.3333L26.3333 17.6667z"/>
+<path stroke="none" fill="#535353" d="M66.3333 18.6667L66.6667 19.3333L66.3333 18.6667z"/>
+<path stroke="none" fill="#a2a2a2" d="M76.3333 18.6667L76.6667 19.3333L76.3333 18.6667z"/>
+<path stroke="none" fill="#575757" d="M53.3333 20.6667L53.6667 21.3333L53.3333 20.6667z"/>
+<path stroke="none" fill="#616161" d="M76.3333 20.6667L76.6667 22.3333L76.3333 20.6667z"/>
+<path stroke="none" fill="#575757" d="M67.3333 22.6667L67.6667 24.3333L67.3333 22.6667z"/>
+<path stroke="none" fill="#7e7e7e" d="M52.3333 23.6667L52.6667 25.3333L52.3333 23.6667z"/>
+<path stroke="none" fill="#acacac" d="M76.3333 23.6667L76.6667 25.3333L76.3333 23.6667z"/>
+<path stroke="none" fill="#666666" d="M22.6667 24.3333L24.3333 24.6667L22.6667 24.3333z"/>
+<path stroke="none" fill="#6e6e6e" d="M21 25L22 26z"/>
+<path stroke="none" fill="#8a8a8a" d="M27.625 26.3657L29 39.6343L27.625 26.3657z"/>
+<path stroke="none" fill="#868686" d="M37.3333 25.6667L37.6667 27.3333L37.3333 25.6667z"/>
+<path stroke="none" fill="#646464" d="M26 26L27 27z"/>
+<path stroke="none" fill="#6f6f6f" d="M51.3333 27.6667L51.6667 28.3333L51.3333 27.6667z"/>
+<path stroke="none" fill="#6d6d6d" d="M19.3333 29.6667L19.6667 30.3333L19.3333 29.6667z"/>
+<path stroke="none" fill="#b8b8b8" d="M38.3333 29.6667L38.6667 31.3333L38.3333 29.6667z"/>
+<path stroke="none" fill="#8c8c8c" d="M75.3333 29.6667L75.6667 31.3333L75.3333 29.6667z"/>
+<path stroke="none" fill="#b9b9b9" d="M64.8333 30.6667L61.6667 42.3333L64.8333 30.6667z"/>
+<path stroke="none" fill="#767676" d="M50.3333 31.6667L50.6667 33.3333L50.3333 31.6667z"/>
+<path stroke="none" fill="#666666" d="M18.3333 33.6667L18.6667 36.3333L18.3333 33.6667z"/>
+<path stroke="none" fill="#c7c7c7" d="M49.3333 34.6667L49.6667 36.3333L49.3333 34.6667z"/>
+<path stroke="none" fill="#3b3b3b" d="M64.3333 34.6667L64.6667 35.3333L64.3333 34.6667z"/>
+<path stroke="none" fill="#494949" d="M74.3333 34.6667L74.6667 36.3333L74.3333 34.6667z"/>
+<path stroke="none" fill="#818181" d="M39.3333 35.6667L39.6667 41.3333L39.3333 35.6667z"/>
+<path stroke="none" fill="#3e3e3e" d="M18.3333 37.6667L18.6667 49.3333L18.3333 37.6667z"/>
+<path stroke="none" fill="#d2d2d2" d="M74.3333 37.6667L74.6667 41.3333L74.3333 37.6667z"/>
+<path stroke="none" fill="#bfbfbf" d="M29.6065 41.3657L33.037 54.8935L29.6065 41.3657z"/>
+<path stroke="none" fill="#3f3f3f" d="M60.3333 40.6667L60.6667 42.3333L60.3333 40.6667z"/>
+<path stroke="none" fill="#929292" d="M48.3333 41.6667L48.6667 42.3333L48.3333 41.6667z"/>
+<path stroke="none" fill="#545454" d="M73.3333 41.6667L73.6667 45.3333L73.3333 41.6667z"/>
+<path stroke="none" fill="#313131" d="M29.3333 43.6667L29.6667 51.3333L29.3333 43.6667z"/>
+<path stroke="none" fill="#9f9f9f" d="M60.5278 43.8333L58.8333 52.9444L60.5278 43.8333z"/>
+<path stroke="none" fill="#2b2b2b" d="M31.3333 44.6667L31.6667 51.3333L31.3333 44.6667z"/>
+<path stroke="none" fill="#9d9d9d" d="M41 46L42 47z"/>
+<path stroke="none" fill="#6a6a6a" d="M47 46L48 47z"/>
+<path stroke="none" fill="#8b8b8b" d="M73.3333 46.6667L73.6667 48.3333L73.3333 46.6667z"/>
+<path stroke="none" fill="#6a6a6a" d="M46 48L47 49z"/>
+<path stroke="none" fill="#929292" d="M18.3333 50.6667L18.6667 52.3333L18.3333 50.6667z"/>
+<path stroke="none" fill="#b5b5b5" d="M43.6667 50.3333L44.3333 50.6667L43.6667 50.3333z"/>
+<path stroke="none" fill="#5c5c5c" d="M72.3333 52.6667L72.6667 53.3333L72.3333 52.6667z"/>
+<path stroke="none" fill="#5a5a5a" d="M57.5 53.6667L58.3333 54.5L57.5 53.6667z"/>
+<path stroke="none" fill="#d3d3d3" d="M72.3333 54.6667L72.6667 58.3333L72.3333 54.6667z"/>
+<path stroke="none" fill="#525252" d="M19.3333 56.6667L19.6667 57.3333L19.3333 56.6667z"/>
+<path stroke="none" fill="#888888" d="M19.3333 58.6667L19.6667 59.3333L19.3333 58.6667z"/>
+<path stroke="none" fill="#404040" d="M71.3333 58.6667L71.6667 60.3333L71.3333 58.6667z"/>
+<path stroke="none" fill="#dddddd" d="M19.3333 60.6667L19.6667 68.3333L19.3333 60.6667z"/>
+<path stroke="none" fill="#9c9c9c" d="M71.3333 61.6667L71.6667 63.3333L71.3333 61.6667z"/>
+<path stroke="none" fill="#686868" d="M70.3333 66.6667L70.6667 68.3333L70.3333 66.6667z"/>
+<path stroke="none" fill="#4a4a4a" d="M19.3333 69.6667L19.6667 72.3333L19.3333 69.6667z"/>
+<path stroke="none" fill="#a3a3a3" d="M70.3333 69.6667L70.6667 70.3333L70.3333 69.6667z"/>
+<path stroke="none" fill="#606060" d="M71.3333 73.6667L71.6667 74.3333L71.3333 73.6667z"/>
+<path stroke="none" fill="#888888" d="M18.3333 76.6667L18.6667 79.3333L18.3333 76.6667z"/>
+<path stroke="none" fill="#7e7e7e" d="M101.667 76.3333L106.333 76.6667L101.667 76.3333z"/>
+<path stroke="none" fill="#4a4a4a" d="M72.3333 77.6667L72.6667 78.3333L72.3333 77.6667z"/>
+<path stroke="none" fill="#393939" d="M99.6667 77.3333L100.333 77.6667L99.6667 77.3333z"/>
+<path stroke="none" fill="#a9a9a9" d="M108 77L109 78z"/>
+<path stroke="none" fill="#6b6b6b" d="M97 78L98 79z"/>
+<path stroke="none" fill="#7c7c7c" d="M109 78L110 79z"/>
+<path stroke="none" fill="#797979" d="M95 79L96 80z"/>
+<path stroke="none" fill="#8f8f8f" d="M110 79L111 80z"/>
+<path stroke="none" fill="#525252" d="M18.3333 80.6667L18.6667 92.3333L18.3333 80.6667z"/>
+<path stroke="none" fill="#a4a4a4" d="M73.3333 80.6667L73.6667 83.3333L73.3333 80.6667z"/>
+<path stroke="none" fill="#6d6d6d" d="M92 81L93 82z"/>
+<path stroke="none" fill="#3a3a3a" d="M85.6667 83.3333L90.3333 83.6667L85.6667 83.3333z"/>
+<path stroke="none" fill="#9e9e9e" d="M74 84L75 85z"/>
+<path stroke="none" fill="#999999" d="M83 84L84 85z"/>
+<path stroke="none" fill="#858585" d="M109 84L110 85z"/>
+<path stroke="none" fill="#5a5a5a" d="M75 85L76 86z"/>
+<path stroke="none" fill="#414141" d="M78.6667 86.3333L79.3333 86.6667L78.6667 86.3333z"/>
+<path stroke="none" fill="#6b6b6b" d="M106 86L107 87z"/>
+<path stroke="none" fill="#a2a2a2" d="M105 87L106 88z"/>
+<path stroke="none" fill="#737373" d="M101 90L102 91z"/>
+<path stroke="none" fill="#767676" d="M100 91L101 92z"/>
+<path stroke="none" fill="#6a6a6a" d="M99 92L100 93z"/>
+<path stroke="none" fill="#9a9a9a" d="M18.3333 93.6667L18.6667 95.3333L18.3333 93.6667z"/>
+<path stroke="none" fill="#777777" d="M96 95L97 96z"/>
+<path stroke="none" fill="#4f4f4f" d="M19.3333 97.6667L19.6667 99.3333L19.3333 97.6667z"/>
+<path stroke="none" fill="#5c5c5c" d="M91 97L92 98z"/>
+<path stroke="none" fill="#828282" d="M87 99L88 100z"/>
+<path stroke="none" fill="#737373" d="M84 101L85 102z"/>
+<path stroke="none" fill="#969696" d="M83 102L84 103z"/>
+<path stroke="none" fill="#929292" d="M20.3333 103.667L20.6667 104.333L20.3333 103.667z"/>
+<path stroke="none" fill="#5d5d5d" d="M80 104L81 105z"/>
+<path stroke="none" fill="#ababab" d="M76.6667 106.333L77.3333 106.667L76.6667 106.333z"/>
+<path stroke="none" fill="#a7a7a7" d="M73.6667 107.333L74.3333 107.667L73.6667 107.333z"/>
+<path stroke="none" fill="#c5c5c5" d="M70.6667 108.333L71.3333 108.667L70.6667 108.333z"/>
+<path stroke="none" fill="#838383" d="M23 110L24 111z"/>
+<path stroke="none" fill="#6b6b6b" d="M66 110L67 111z"/>
+<path stroke="none" fill="#808080" d="M24 111L25 112z"/>
+<path stroke="none" fill="#7e7e7e" d="M25.6667 112.333L26.3333 112.667L25.6667 112.333z"/>
+<path stroke="none" fill="#b9b9b9" d="M27.6667 112.333L29.3333 112.667L27.6667 112.333z"/>
+<path stroke="none" fill="#343434" d="M30.6667 112.333L31.3333 112.667L30.6667 112.333z"/>
+<path stroke="none" fill="#747474" d="M33 113L34 114z"/>
+<path stroke="none" fill="#898989" d="M62 113L63 114z"/>
+<path stroke="none" fill="#a5a5a5" d="M35 114L36 115z"/>
+<path stroke="none" fill="#5e5e5e" d="M60 114L61 115z"/>
+<path stroke="none" fill="#666666" d="M38 115L39 116z"/>
+<path stroke="none" fill="#898989" d="M40 116L41 117z"/>
+<path stroke="none" fill="#717171" d="M56 116L57 117z"/>
+<path stroke="none" fill="#747474" d="M43.6667 117.5L52.3333 118.667L43.6667 117.5z"/>
+</svg>

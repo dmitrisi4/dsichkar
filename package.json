@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "clear": "rimraf dist",
-    "dev": "npm run clear && parcel src/index.html",
+    "dev": "npm run clear && parcel src/*.html",
     "build": "npm run clear && parcel build src/index.html --public-url . --no-source-maps --no-minify"
   },
   "devDependencies": {

@@ -1,8 +1,25 @@
-@import "vars"
+$default-font: 'Lato', sans-serif
+$color-green: rgb(26, 188, 156)
+$color-green-clear: rgba(26, 188, 156, 0.6)
+$dark-blue-gray: #34495e
+$black-tranparent: rgb(0 0 0 / 67%)
+$main-color: #fff
+
+
+html, body
+	height: 100%
 
 body
+	position: relative
+	display: flex
+	flex-direction: column
 	margin: 0
 	padding: 0
+
+.content
+	flex: 1 0 auto
+.footer
+	flex-shrink: 0
 
 *, *::before, *::after
 	box-sizing: border-box
@@ -15,12 +32,20 @@ img
 body
 	font-size: 16px
 	min-width: 320px
-	position: relative
 	line-height: 1.4
 	overflow-x: hidden
 	font-family: $default-font
-	background-color: #34495e
+	background-color: $dark-blue-gray
 	color: $main-color
+
+.page-wrapper
+	position: relative	
+
+p
+	margin: 0
+
+.mt-20
+	margin-top: 20px
 
 h1
 	margin: 0
@@ -29,13 +54,16 @@ h1
 	max-width: 1170px
 	margin: 0 auto
 	padding: 0 15px
-// header
+
 .header
-	margin-top: 10px
 	padding-top: 20px
 	padding-bottom: 40px
-	background-color: rgba(26, 188, 156, 0.6)
+	background-color: $color-green-clear
 	box-shadow: 1px 1px 5px 0px black
+
+.name-title
+	font-size: 18px
+	margin: 0
 
 // logo
 .logo
@@ -48,10 +76,10 @@ h1
 		margin: 0
 		font-size: 33px
 		font-weight: 700
-		color: #34495e
+		color: $dark-blue-gray
 		font-style: italic
 		&_filled
-			color: $color-h
+			color: $color-green
 	&__text-small
 		font-size: 12px
 		font-weight: 400
@@ -64,9 +92,30 @@ h1
 
 .header-content
 	display: flex
-	align-items: center
-	justify-content: space-between
-
+	align-items: start
+	padding-top: 40px
+	flex-wrap: wrap
+	@media screen and (min-width: 768px)
+		flex-wrap: nowrap
+	&__wrap
+		padding-top: 10px
+		max-width: 100%
+		margin-left: 20px
+		@media screen and (min-width: 470px)
+			max-width: 270px
+		@media screen and (min-width: 550px)
+			max-width: 300px
+		@media screen and (min-width: 650px)
+			max-width: 400px
+		@media screen and (min-width: 768px)
+			max-width: 600px
+			padding-top: 0
+			padding-left: 40px
+			margin-right: 40px
+			margin-left: 0
+	&__text
+		font-weight: 400
+		font-size: 14px
 
 .page-title
 	font-size: 22px
@@ -77,65 +126,86 @@ h1
 	font-size: 16px
 	font-weight: 300
 	font-style: italic
+	margin: 0 auto
 	margin-left: 20px
 	@media screen and (max-width: 375px)
 		font-size: 12px
 		margin-left: 10px
 
-// animation jumping
-@keyframes jumping
-	0%
-		transform: translateY(0)
-	50%
-		transform: translateY(-15px)
-		box-shadow: 0px 5px 3px 0px #00000063
-	100%
-		transform: translateY(0)
-//
-
-.contact-links
-	display: flex
-	background-color: rgba(183, 193, 208, 0.56)
-	box-shadow: -1px 0px 3px 0px #00000063
-	position: relative
-	padding: 10px 10px
-	list-style: none
-	margin: 0
-	@media screen and (max-width: 520px)
-		flex-direction: column
-	&__item
-		position: relative
-		display: block
-		margin: 0 15px
-		max-width: 50px
-		width: 100%
-		@media screen and (max-width: 520px)
-			margin: 10px 0
-	&__link-icon
-		width: 100%
-		border-radius: 50%
+.contact-info
+	margin-left: 0
+	margin-top: 20px
+	@media screen and (min-width: 768px)
+		margin-left: auto
+		margin-top: 0
+	&__string
+		font-size: 13px
+		font-weight: 400
+		margin: 10px 0
+	&__link
+		margin-left: 5px
+		color: $main-color
+		transition: all 300ms
 		&:hover
-			animation-name: jumping
-			animation-duration: 1s
+			text-decoration: none
 
+.contact-list
+	padding-left: 0
+	list-style: none	
+	@media screen and (max-width: 767px)
+		display: grid
+		grid-template-columns: 1fr 1fr
+		column-gap: 30px
 .photo-frame
-	width: 150px
-	height: 150px
+	width: 200px
+	height: 200px
 	display: flex
-	margin: 0 auto
 	background-color: #FFF
-	border-radius: 50%
 	overflow: hidden
-	margin-top: 50px
+	margin-top: 10px
+	cursor: pointer
+	@media screen and (min-width: 470px)
+		width: 150px
+		height: 150px
+	@media screen and (min-width: 550px)
+		width: 200px
+		height: 200px
 	&__image
 		margin: auto
 		width: 100%
 		height: 100%
 		object-fit: cover
 
+.photo-opened
+	display: none
+	position: absolute
+	inset: 0
+	z-index: 100
+	padding-top: 40px
+	background-color: $black-tranparent
+	justify-content: start
+	align-items: center
+	flex-direction: column
+	cursor: pointer
+	&__image
+		width: 70%
+		max-width: 400px
+
+.btn-close-photo
+	margin-top: 20px
+	padding: 6px
+	border: 1px solid #fff
+	border-radius: 12px
+	background-color: transparent
+	color: #fff
+	cursor: pointer
+	&:hover, &:focus-visible
+		background-color: #fff
+		color: #000
+
 
 .main
-	padding-top: 50px
+	padding-top: 10px
 	text-align: center
 
 .section-work
@@ -184,27 +254,13 @@ h1
 
 
 .footer
-	padding-top: 40px
-	padding-bottom: 40px
+	padding-top: 10px
+	padding-bottom: 10px
 	margin-top: 40px
-	margin-bottom: 10px
-	background-color: rgba(26, 188, 156, 0.6)
+	background-color: $color-green-clear
 	box-shadow: 1px 1px 5px 0px black
-	&__wrapper
-		display: flex
-		justify-content: center
-	&__title
-		font-size: 16px
+	display: flex
+	justify-content: center
 
-.contact-info
-	&__string
-		font-size: 13px
-		font-weight: 400
-		margin: 10px 0
-	&__link
-		margin-left: 5px
-		color: $main-color
-		transition: all 300ms
-		&:hover
-			color: $color-h
-			text-decoration: none
+.footer-image 
+		max-width: 50px	
